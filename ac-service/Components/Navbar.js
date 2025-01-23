@@ -7,13 +7,11 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const services = [
-    'Window AC Services',
-    'Split Ac',
-    'Cassette Ac',
-    'Ducting Ac',
-    'Refrigerator Repair',
-    'Tower Ac',
-    'De Fridge',
+    'Window AC',
+    'Split AC',
+    'Cassette AC',
+    'Ducting AC',
+    'Tower AC',
     'Copper Pipe Fitting',
   ];
 
@@ -27,11 +25,13 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav className={styles.navbar}>
         <div className={styles.navbarBrand}>
-          <img
-            src="/logo.png"
-            alt="AC Service Gurgaon"
-            className={styles.logo}
-          />
+          <Link href="/">
+            <img
+              src="/logo.png"
+              alt="AC Service Gurgaon"
+              className={styles.logo}
+            />
+          </Link>
         </div>
 
         <div className={styles.navbarLinks}>
@@ -80,6 +80,8 @@ const Navbar = () => {
           <Link href="/contact" className={styles.navbarLink}>
             Contact Us
           </Link>
+
+
         </div>
       </nav>
     </>

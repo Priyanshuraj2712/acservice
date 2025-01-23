@@ -7,6 +7,7 @@ export default function Document() {
       <title>My page title</title>
         <link rel="icon" href="/logo.png" />
         {/* Add additional link tags for other favicon files and sizes here */}
+
       </Head>
       <body>
         <Main />
