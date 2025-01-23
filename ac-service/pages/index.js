@@ -3,10 +3,12 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 // import styles from "@/styles/Home.module.css";
 
+import Navbar from "@/Components/Navbar";
+
 export default function Home() {
   return (
     <>
-     
+     <Navbar></Navbar>
     </>
   );
 }
