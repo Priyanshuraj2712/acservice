@@ -8,6 +8,17 @@
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
 }
+.contactLink {
+  color: #fff; /* Matches the text color of the top bar */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #ffd54f; /* Light yellow on hover */
+  /* text-decoration: underline; Adds an underline on hover for better visibility */
+}
 
 .navbar {
   display: flex;

@@ -1,7 +1,7 @@
 .header {
     width: 100%; /* Ensures the header spans the full width */
     padding: 20px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     background-color: #f9f9f9; /* Optional: Add a subtle background for visibility */
     box-sizing: border-box; /* Include padding in width calculations */
   }
@@ -10,6 +10,7 @@
     text-align: center; /* Center-align the heading */
     font-size: 2.5rem;
     font-weight: bold;
+    margin-top: 60px;
     margin-bottom: 15px;
     color: #333333;
     font-family: "Poppins", sans-serif;
@@ -26,34 +27,36 @@
   
   .cardContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+    background-color: #f9f9f9;;
+    grid-template-columns: repeat(3, 1fr); /* Always show 3 cards in a row */
+    gap: 30px; /* Space between the cards */
     padding: 20px;
     justify-items: center;
   }
   
   .card {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Default white background for the card */
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 300px;
-    height: 370px; /* Slightly increased height */
+    max-width: 350px; /* Increased width */
+    height: 400px; /* Increased height */
+    margin-top: 20px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   }
   
   .card:hover {
-    transform: translateY(-15px) rotate(2deg); /* Slight upward lift with rotation */
+    background-color: #f9f4d3; /* Light yellowish background inside card on hover */
+    transform: translateY(-15px) rotate(1deg); /* Slight upward lift and small rotation */
     box-shadow: 0px 20px 30px rgba(249, 168, 37, 0.6); /* Enhanced yellow glow on hover */
-    border: 2px solid #f9a825; /* Yellow border on hover */
+    border: 2px solid #f9a825; /* Adds a yellow border on hover */
   }
   
   .cardImage {
     width: 100%;
-    height: 200px;
+    height: 250px; /* Adjusted height for the larger card */
     object-fit: cover;
   }
   
@@ -62,17 +65,17 @@
   }
   
   .cardTitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem; /* Increased font size */
     font-family: "Poppins", sans-serif;
-    color: #333333;
+    color: #333333; /* Dark gray for text */
     margin: 10px 0;
   }
   
   .cardButton {
     background: linear-gradient(to right, #f9a825, #ffcc33); /* White-yellow gradient */
-    color: #ffffff;
+    color: #ffffff; /* White text */
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.1rem; /* Slightly larger button text */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -82,12 +85,11 @@
   
   .cardButton:hover {
     background: linear-gradient(to right, #ffd54f, #f9a825); /* Brighter yellow on hover */
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   
   @media (max-width: 768px) {
     .cardContainer {
       grid-template-columns: 1fr; /* Single column on smaller screens */
     }
-  }
-  
+  }  

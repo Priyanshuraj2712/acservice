@@ -6,6 +6,7 @@
 import Navbar from "@/Components/Navbar";
 import ServiceContainer from "@/Components/ServiceContainer";
 import ACCards from  "@/Components/ACCard";
+import HowWeWork from "@/Components/HowWeWork";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
      <Navbar></Navbar>
      <ServiceContainer></ServiceContainer>
      <ACCards></ACCards>
+     <HowWeWork></HowWeWork>
     </>
   );
 }
