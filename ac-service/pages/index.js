@@ -4,11 +4,13 @@
 // import styles from "@/styles/Home.module.css";
 
 import Navbar from "@/Components/Navbar";
+import ServiceContainer from"@/Components/ServiceContainer";
 
 export default function Home() {
   return (
     <>
      <Navbar></Navbar>
+     <ServiceContainer></ServiceContainer>
     </>
   );
 }
