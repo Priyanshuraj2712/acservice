@@ -4,13 +4,15 @@
 // import styles from "@/styles/Home.module.css";
 
 import Navbar from "@/Components/Navbar";
-import ServiceContainer from"@/Components/ServiceContainer";
+import ServiceContainer from "@/Components/ServiceContainer";
+import ACCards from  "@/Components/ACCard";
 
 export default function Home() {
   return (
     <>
      <Navbar></Navbar>
      <ServiceContainer></ServiceContainer>
+     <ACCards></ACCards>
     </>
   );
 }

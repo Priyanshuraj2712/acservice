@@ -1,15 +1,21 @@
+/* Service Container CSS */
+
 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    /* margin: 0 auto; */
-    margin-top: 60px;
-    margin-left: 100px;
+    /* width: 100%; */
+    max-width: 1400px;
+    margin-top: 30px;
     padding: 20px;
     gap: 70px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('/acservice/ac-service/public/service.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    color: white;
   }
   
   .imageSection {
@@ -18,84 +24,83 @@
   
   .fullImage {
     max-width: 800px;
-    max-height: 600px; /* Limits the maximum height of the image */
+    max-height: 600px;
     height: auto;
-    opacity: 0.8; /* Image blends with background */
-    transition: all 0.3s ease; /* Smooth hover effect */
-    filter: brightness(80%); /* Darken image slightly to blend with background */
-    margin-bottom: 20px;
-    border-radius: 10px; /* Rounded edges for appeal */
-    margin-left: auto;
-    margin-right: auto; /* Center image horizontally */
-    
-    /* Light effect */
-    box-shadow: 0 0 30px 15px rgba(249, 168, 37, 0.6); /* Yellow glow behind image */
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    filter: brightness(85%);
+    box-shadow: 0 0 30px 15px rgba(255, 166, 0, 0.6);
   }
   
   .fullImage:hover {
     opacity: 1;
-    filter: brightness(100%); /* Brighten the image on hover */
-    transform: scale(1.05); /* Slight zoom-in effect */
-    box-shadow: 0 0 50px 25px rgba(249, 168, 37, 0.8); /* Intensified yellow glow on hover */
-  }  
+    filter: brightness(100%);
+    transform: scale(1.05);
+    box-shadow: 0 0 50px 25px rgba(255, 140, 0, 0.8);
+  }
   
   .textSection {
     flex: 1;
     text-align: left;
-    background-color: #fff9e6; /* Light yellow background to match the theme */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
-    border-radius: 15px; /* Subtle rounded corners */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
-    border: 1px solid #f9a825; /* Thin yellow border for emphasis */
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #F4A21D;
   }
   
   .textSection h2 {
-    font-size: 2.8rem; /* Slightly larger heading */
+    font-size: 2.8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
-    text-transform: capitalize; /* Capitalized styling for better readability */
+    text-transform: capitalize;
   }
   
   .textSection p {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.8; /* Increased line height for readability */
+    line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
   }
   
   .textSection p:last-of-type {
-    margin-bottom: 30px; /* Slightly more space after the final paragraph */
+    margin-bottom: 30px;
   }
   
   .button {
-    background-color: #f9a825; /* Yellow button to match the theme */
+    background-color: #F4A21D;
     color: #fff;
-    padding: 12px 24px; /* Slightly larger button */
-    font-size: 1.1rem; /* Larger text for better accessibility */
+    padding: 12px 24px;
+    font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     border: none;
-    border-radius: 25px; /* Rounded button for a modern look */
+    border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .button:hover {
-    background-color: #e69100; /* Slightly darker yellow on hover */
-    transform: scale(1.05); /* Subtle zoom effect */
+    background-color: #F4A21D;
+    transform: scale(1.05);
   }
-  
   
   @media (max-width: 768px) {
     .container {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
   
     .textSection {
-      text-align: center;
+        text-align: center;
+        padding: 20px;
     }
-  }  
+  }
