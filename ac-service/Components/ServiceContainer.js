@@ -19,9 +19,12 @@ const ServiceContainer = () => {
 
       {/* Text Section */}
       <div className={styles.textSection}>
-        <h2>Request a Service</h2>
+        <h2>Need Assistance? We’re Here for You!</h2>
         <p>
-          Need assistance? Reach out to us for exceptional service and support. We are here to help you!
+          At AC Service Gurgaon, we pride ourselves on delivering exceptional service and support. Whether you have questions, need guidance, or require help with a specific issue, our dedicated team is ready to assist you.
+        </p>
+        <p>
+          Let us know how we can help. Your satisfaction is our success!
         </p>
         <button onClick={handleRequest} className={styles.button}>
           Request Now
