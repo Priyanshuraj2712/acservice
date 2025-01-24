@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 import styles from "@/styles/Navbar.module.css";
 
 const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const dropdownTimeoutRef = useRef(null);
 
   const services = [
     'Window AC',
@@ -14,6 +15,17 @@ const Navbar = () => {
     'Tower AC',
     'Copper Pipe Fitting',
   ];
+
+  const handleMouseEnter = () => {
+    if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+    setIsServicesOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setIsServicesOpen(false);
+    }, 300); // Delay to allow smooth transitions
+  };
 
   return (
     <>
@@ -46,8 +58,8 @@ const Navbar = () => {
           {/* Services Dropdown */}
           <div
             className={styles.servicesDropdown}
-            onMouseEnter={() => setIsServicesOpen(true)}
-            onMouseLeave={() => setIsServicesOpen(false)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             <div className={`${styles.navbarLink} ${styles.dropdownTrigger}`}>
               Services
@@ -80,8 +92,6 @@ const Navbar = () => {
           <Link href="/contact" className={styles.navbarLink}>
             Contact Us
           </Link>
-
-
         </div>
       </nav>
     </>
