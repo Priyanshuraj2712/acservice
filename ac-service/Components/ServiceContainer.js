@@ -2,8 +2,9 @@ import React from "react";
 import styles from "@/styles/ServiceContainer.module.css";
 
 const ServiceContainer = () => {
-  const handleRequest = () => {
-    alert("Service requested successfully!");
+  const handleRequest = (e) => {
+    e.preventDefault();
+    window.location.href = "/contact";
   };
 
   return (
