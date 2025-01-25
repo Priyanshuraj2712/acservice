@@ -8,7 +8,6 @@
   align-items: center;
   padding: 40px 20px;
   background-color: #f4faff; /* Soft blue background */
-  border-radius: 16px; /* Slightly more rounded corners for modern look */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
   gap: 20px;
   font-family: 'Poppins', sans-serif; /* Apply font globally to this section */
