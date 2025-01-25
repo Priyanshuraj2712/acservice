@@ -1,14 +1,15 @@
 .footer {
-    background-color: #3a3535;
+    background-color: #282424;
     padding: 2rem 1rem;
     font-family: Arial, sans-serif;
+    width: 100%;
   }
   
   .footerContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
   }
   
@@ -19,7 +20,7 @@
   
   .footerLogo p {
     font-size: 1.2rem;
-    color: #555;
+    color: #0a0909;
   }
   
   .footerLinks {
@@ -45,12 +46,12 @@
   
   .footerLinks ul li {
     margin: 0.5rem 0;
-    color: #555;
+    color: #f0ebeb;
     cursor: pointer;
   }
   
   .footerLinks ul li:hover {
-    color: #000;
+    color:#5f5b5b
   }
   
   .socialIcons span {
