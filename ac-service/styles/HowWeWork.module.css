@@ -5,6 +5,8 @@
   font-family: 'Poppins', sans-serif; /* Apply Poppins to the entire component */
   text-align: center;
   padding: 1.5rem;
+  padding-left: 100px;
+  padding-right: 100px;
   background: #f9f9f9; /* Soft background */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
