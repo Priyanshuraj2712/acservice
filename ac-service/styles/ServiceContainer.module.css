@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    margin-top: 107px;
     gap: 70px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('/acservice/ac-service/public/service.webp');
     background-size: cover;

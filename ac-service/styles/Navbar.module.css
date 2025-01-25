@@ -7,10 +7,12 @@
   font-size: 1rem;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  position: sticky; /* Sticks the top bar to the top */
+  position: fixed; /* Fixed position to stick at the top */
   top: 0; /* Ensures the top bar is at the very top */
-  z-index: 1001; /* Keeps it above the navbar and other elements */
+  width: 100%; /* Stretches across the full width of the viewport */
+  z-index: 1001; /* Keeps it above all other elements */
 }
+
 .contactLink {
   color: #fff; /* Matches the text color of the top bar */
   text-decoration: none;
@@ -31,9 +33,10 @@
   height: 68px;
   background-color: #ffffff;
   border-bottom: 2px solid #f9a825; /* Yellow border */
-  position: sticky; /* Ensures the navbar stays in view */
-  top: 2.5rem; 
-  z-index: 1000; /* Ensures the navbar stays above other elements */
+  position: fixed; /* Fixed position to keep it in view */
+  top: 2.5rem; /* Position it below the top bar */
+  width: 100%; /* Stretches across the full width of the viewport */
+  z-index: 1000; /* Stays below the top bar but above other elements */
 }
 
 .navbarBrand img {
