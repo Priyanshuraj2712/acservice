@@ -1,0 +1,102 @@
+/* Base styling to apply Poppins font globally */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.brandSection {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f4faff; /* Soft blue background */
+  border-radius: 16px; /* Slightly more rounded corners for modern look */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+  gap: 20px;
+  font-family: 'Poppins', sans-serif; /* Apply font globally to this section */
+}
+
+.brandLogos {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 400px; /* Keep logo container balanced */
+}
+
+.brandLogos img {
+  width: 600px;
+  height: 300px; /* Maintains aspect ratio */
+  border-radius: 12px; /* Softly rounded corners for the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  margin-left: 250px;
+}
+
+.brandLogos img:hover {
+  transform: scale(1.08); /* Slightly stronger zoom effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+}
+
+.brandInfo {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  text-align: left; /* Aligns text to the left for structure */
+}
+
+.brandInfo h2 {
+  font-size: 2.0rem; /* Bold and eye-catching */
+  font-weight: 600; /* Medium-bold for elegance */
+  margin-bottom: 20px;
+  color: #2a2a2a; /* Deep gray for clarity */
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.2; /* Compact but readable headline spacing */
+}
+
+.brandInfo p {
+  font-size: 1.2rem; /* Slightly larger for readability */
+  font-weight: 400; /* Light weight for contrast */
+  line-height: 1.5; /* Comfortable line spacing */
+  text-align: justify;
+  color: #4a4a4a; /* Neutral, easy-on-the-eyes tone */
+}
+
+@media (max-width: 768px) {
+  .brandSection {
+    flex-direction: column; /* Stack content on smaller screens */
+    padding: 20px;
+  }
+
+  .brandLogos {
+    max-width: 100%; /* Full width for small screens */
+  }
+
+  .brandInfo {
+    text-align: center; /* Center-align text for small screens */
+  }
+
+  .brandInfo h2 {
+    font-size: 2rem; /* Adjust headline size for smaller devices */
+  }
+
+  .brandInfo p {
+    font-size: 1rem; /* Adjust body text size for smaller screens */
+  }
+}
+
+/* Optional: Add subtle animations */
+.brandSection {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
