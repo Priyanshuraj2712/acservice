@@ -20,22 +20,23 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send(
-      "service_oka0lq2", // Replace with your EmailJS Service ID
-      "template_6gglxsr", // Replace with your EmailJS Template ID
-      {
-        from_name: formData.name, // Sender's name
-        to_name: "AC Service Gurgaon", // Your name
-        email: formData.email, // Sender's email
-        phone: formData.phone, // Sender's phone
-        timings: formData.timing, // Sender's timing
-        service: formData.service, // Selected service
-        message: formData.message, // Message content
-      },
-      "KhhyFGP7FHMWlOGI9" // Replace with your EmailJS Public Key
-    )
+    emailjs
+      .send(
+        "service_oka0lq2",
+        "template_6gglxsr",
+        {
+          from_name: formData.name,
+          to_name: "AC Service Gurgaon",
+          email: formData.email,
+          phone: formData.phone,
+          timings: formData.timing,
+          service: formData.service,
+          message: formData.message,
+        },
+        "KhhyFGP7FHMWlOGI9"
+      )
       .then(
-        (result) => {
+        () => {
           alert("Your message has been sent!");
           setFormData({
             name: "",
@@ -46,7 +47,7 @@ const ContactPage = () => {
             message: "",
           });
         },
-        (error) => {
+        () => {
           alert("Failed to send your message. Please try again later.");
         }
       );
@@ -138,6 +139,27 @@ const ContactPage = () => {
           Submit
         </button>
       </form>
+
+      <div className={styles.contactInfoBox}>
+        <h2 className={styles.heading}>Contact Information</h2>
+        <p>
+          <strong>Address:</strong> 195/1 Lajpat Nagar, Gurgaon
+        </p>
+        <p>
+          <strong>Phone:</strong>{" "}
+          <a href="tel:+91810954362">+91810954362</a>
+        </p>
+        <p>
+          <strong>Landline:</strong>{" "}
+          <a href="tel:+917011132581">+917011132581</a>
+        </p>
+        <p>
+          <strong>Day:</strong> All 7 Days
+        </p>
+        <p>
+          <strong>Business Hours:</strong> 8am - 10pm
+        </p>
+      </div>
     </div>
   );
 };
