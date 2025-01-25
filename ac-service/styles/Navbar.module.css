@@ -32,7 +32,7 @@
   background-color: #ffffff;
   border-bottom: 2px solid #f9a825; /* Yellow border */
   position: sticky; /* Ensures the navbar stays in view */
-  top: 2.5rem; /* Sticks the navbar to the top of the viewport */
+  top: 2.5rem; 
   z-index: 1000; /* Ensures the navbar stays above other elements */
 }
 
