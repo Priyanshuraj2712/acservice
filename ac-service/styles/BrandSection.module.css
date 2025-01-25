@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px 20px;
-  background-color: #f4faff; /* Soft blue background */
+  background-color: #f9f9f9; /* Soft blue background */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
   gap: 20px;
   font-family: 'Poppins', sans-serif; /* Apply font globally to this section */
@@ -27,7 +27,7 @@
   height: 300px; /* Maintains aspect ratio */
   border-radius: 12px; /* Softly rounded corners for the image */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
-  margin-left: 250px;
+  margin-left: 300px;
 }
 
 .brandLogos img:hover {
@@ -39,26 +39,44 @@
   flex: 1;
   max-width: 600px;
   padding: 20px;
+  margin-right: 40px;
   text-align: left; /* Aligns text to the left for structure */
+  background: linear-gradient(135deg, #f9f9f9, #ffffff); /* Soft gradient background */
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+}
+
+.brandInfo:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .brandInfo h2 {
-  font-size: 2.0rem; /* Bold and eye-catching */
-  font-weight: 600; /* Medium-bold for elegance */
+  font-size: 1.8rem; /* Bold and eye-catching */
+  font-weight: 700; /* Bolder for elegance */
   margin-bottom: 20px;
-  color: #2a2a2a; /* Deep gray for clarity */
-  text-transform: uppercase;
+  color: #1a1a1a; /* Darker for strong contrast */
   text-align: left;
-  letter-spacing: 1px;
-  line-height: 1.2; /* Compact but readable headline spacing */
+  letter-spacing: 1.5px; /* Slightly wider spacing for emphasis */
+  line-height: 1.2; /* Balanced spacing */
+  background: linear-gradient(90deg, #1db954, #1a73e8); /* Gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make gradient text visible */
 }
 
 .brandInfo p {
-  font-size: 1.2rem; /* Slightly larger for readability */
+  font-size: 1.3rem; /* Larger for readability */
   font-weight: 400; /* Light weight for contrast */
-  line-height: 1.5; /* Comfortable line spacing */
-  text-align: justify;
-  color: #4a4a4a; /* Neutral, easy-on-the-eyes tone */
+  line-height: 1.6; /* Comfortable line spacing */
+  letter-spacing: 0.6px; /* Slightly wider for elegance */
+  text-align: left;
+  color: #555555; /* Neutral gray tone */
+}
+
+.brandInfo p:hover {
+  color: #1db954; /* Subtle hover effect on text */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 @media (max-width: 768px) {
