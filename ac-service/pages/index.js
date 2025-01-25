@@ -7,6 +7,7 @@ import Navbar from "@/Components/Navbar";
 import ServiceContainer from "@/Components/ServiceContainer";
 import ACCards from  "@/Components/ACCard";
 import HowWeWork from "@/Components/HowWeWork";
+import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
      <ServiceContainer></ServiceContainer>
      <ACCards></ACCards>
      <HowWeWork></HowWeWork>
+     <Footer></Footer>
     </>
   );
 }
