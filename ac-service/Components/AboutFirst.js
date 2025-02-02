@@ -43,13 +43,16 @@ const AboutUs = () => {
             <SkillBar title="Window AC" percentage={98} />
             <SkillBar title="Split AC" percentage={100} />
             <SkillBar title="Cassette AC" percentage={100} />
-            <SkillBar title="Duct AC" percentage={100} />
           </div>
           <div className={styles.skillsColumn}>
-            <SkillBar title="Refrigerator" percentage={100} />
+            <SkillBar title="Ductable AC" percentage={100} />
+            <SkillBar title="VRV/VRF AC" percentage={100} />
             <SkillBar title="Tower AC" percentage={100} />
-            <SkillBar title="De Fridge" percentage={100} />
+          </div>
+          <div className={styles.skillsColumn}>
             <SkillBar title="Copper Pipe Fitting" percentage={100} />
+            <SkillBar title="AHU/CFU AC" percentage={100} />
+            <SkillBar title="package AC" percentage={100} />
           </div>
         </div>
       </div>

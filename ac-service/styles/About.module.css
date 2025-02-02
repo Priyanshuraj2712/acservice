@@ -49,7 +49,7 @@
 }
 
 .content h2 {
-    font-size: 28px;
+    font-size: 2.5rem;
     color: #222;
     margin-bottom: 15px;
 }
@@ -62,17 +62,16 @@
 
 /* Skills Section */
 .skillsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 40px; /* Spacing between items */
     margin-top: 40px;
-    gap: 20px;
 }
 
 .skillsColumn {
-    width: 48%;
-    min-width: 300px;
+    width: 100%;
 }
+
 
 /* Skill Bar */
 .skillBar {

@@ -1,139 +1,195 @@
 /* General container styling */
 .container {
-    width: 100%;
-    padding: 50px 0;
-    background-color: #f9f9f9; /* Light gray background */
-  }
-  
-  /* Banner styling (same as Contact page) */
-  .banner {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Adjust height as needed */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('/contactbanner.jpg'); /* Same banner as Contact page */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .banner h1 {
-    color: #fff;
-    font-size: 4rem;
-    font-weight: bold;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* General container styling */
-.container {
-    display: flex;
-    width: 100%;
-    padding: 50px;
-    background-color: #f9f9f9; /* Light gray background */
-    justify-content: space-between;
-  }
-  
-  /* Left Section: Blog Posts */
-  .blog-section {
-    width: 65%; /* Blog posts take 65% of the page */
-  }
-  
-  /* Individual blog post */
-  .post {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .post:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Image inside the post */
-  .post img {
-    width: 180px; /* Large image */
-    height: 120px;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-right: 15px;
-  }
-  
-  /* Blog title */
-  .title {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #222;
-    text-decoration: none;
-  }
-  
-  .title:hover {
-    color: #007bff;
-  }
-  
-  /* Metadata (date, category) */
-  .meta {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Summary text */
-  .summary {
-    color: #444;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  /* Sidebar */
+  display: flex;
+  width: 100%;
+  padding: 60px;
+  background-color: #f9f9f9; /* Light gray background */
+  justify-content: space-between;
+  gap: 30px; /* Adds space between the main content and sidebar */
+  box-sizing: border-box;
+}
+
+/* Banner styling */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/contactbanner.jpg'); /* Same banner as Contact page */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Blog Section */
+.blog-section {
+  width: 65%; /* Blog posts take 65% of the page */
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden; /* Prevents overflow issues */
+}
+
+.post:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post img {
+  width: 180px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  color: #007bff;
+}
+
+.meta {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.summary {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Sidebar */
+/* Sidebar */
+.sidebar {
+  width: 30%; /* Sidebar takes 30% of the page */
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  color: #333; /* Ensure text color is dark enough */
+}
+
+/* Sidebar on hover */
+.sidebar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Search Box */
+.search-box input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.2rem; /* Increased font size for better readability */
+  margin-bottom: 20px;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+  color: #222; /* Ensure input text is dark enough */
+}
+
+/* Focus effect on search input */
+.search-box input:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+
+/* Sidebar Heading */
+.sidebar h3 {
+  font-size: 1.8rem; /* Increased font size */
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px; /* Increased margin for more spacing */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+/* Featured Blog List */
+.featured-posts {
+  margin-top: 20px;
+}
+
+.featured-post {
+  margin-bottom: 20px; /* Increased bottom margin */
+}
+
+.featured-post a {
+  font-size: 1.3rem; /* Increased font size */
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for featured posts */
+.featured-post a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Sidebar responsive for mobile */
+@media (max-width: 768px) {
   .sidebar {
-    width: 30%; /* Sidebar takes 30% of the page */
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      margin-top: 30px;
   }
-  
-  /* Search bar */
+
   .search-box input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+      padding: 10px;
   }
-  
-  /* Sidebar Heading */
+
   .sidebar h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+      font-size: 1.2rem;
   }
-  
-  /* Featured Blog List */
-  .featured-posts {
-    margin-top: 20px;
+
+  .banner h1 {
+      font-size: 3rem;
   }
-  
-  .featured-post {
-    margin-bottom: 10px;
+
+  .blog-section {
+      width: 100%;
   }
-  
-  .featured-post a {
-    font-size: 1rem;
-    color: #007bff;
-    text-decoration: none;
+
+  .sidebar {
+      width: 100%;
+      margin-top: 20px;
   }
-  
-  .featured-post a:hover {
-    text-decoration: underline;
-  }
-  
+}

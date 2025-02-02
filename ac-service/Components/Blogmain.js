@@ -10,7 +10,7 @@ const blogPosts = [
     categories: ['Cassette AC', 'Ducting AC', 'Split AC', 'Uncategorized', 'Window AC'],
     summary: 'A Split Air Conditioner system has become a necessity rather than a luxury...',
     link: '/blog/best-split-ac-installation',
-    image: '/split-ac.jpg',
+    image: '/Best_Ac.png',
   },
   {
     title: 'Split AC on Rent in Gurgaon',
@@ -18,7 +18,7 @@ const blogPosts = [
     categories: ['Split AC'],
     summary: 'ACServiceGurgaon.com stands out as the preferred choice for those seeking reliable AC rental...',
     link: '/blog/split-ac-on-rent',
-    image: '/ac-rental.jpg',
+    image: '/rent_split.jpeg',
   },
   {
     title: 'Window AC On Rent in Gurgaon',
@@ -26,14 +26,16 @@ const blogPosts = [
     categories: ['Window AC'],
     summary: 'Welcome to ACServiceGurgaon.com, your one-stop destination for hassle-free Window AC rentals...',
     link: '/blog/window-ac-on-rent',
-    image: '/window-ac.jpg',
+    image: 'rent_window.jpeg',
   },
 ];
 
 const featuredBlogs = [
-  { title: "How to Clean Your AC Filter", link: "/blog/clean-ac-filter" },
-  { title: "5 Signs You Need AC Repair", link: "/blog/ac-repair-signs" },
-  { title: "Choosing the Right AC for Your Home", link: "/blog/right-ac-home" },
+  { title: "Best Split AC Installation: Gurgaon Residents", link: "/blog/clean-ac-filter" },
+  { title: "Split AC on rent in Gurgaon", link: "/blog/ac-repair-signs" },
+  { title: "Window AC on rent in Gurgaon", link: "/blog/right-ac-home" },
+  { title: "Split AC service repair in Gurgaon – Split AC mechanic in Sector 21", link: "/blog/right-ac-home" },
+  { title: "Commercial and Residential AC Repair Services in Sector 23 Gurgaon", link: "/blog/right-ac-home" },
 ];
 
 const Blogcontent = () => {
