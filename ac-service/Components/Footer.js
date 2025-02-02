@@ -44,7 +44,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className={styles.footerBottom}>
-          <p>© {new Date().getFullYear()} Your Company Name. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} AC Service Gurgaon. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

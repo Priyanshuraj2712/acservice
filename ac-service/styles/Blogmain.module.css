@@ -1,0 +1,139 @@
+/* General container styling */
+.container {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light gray background */
+  }
+  
+  /* Banner styling (same as Contact page) */
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/contactbanner.jpg'); /* Same banner as Contact page */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* General container styling */
+.container {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    background-color: #f9f9f9; /* Light gray background */
+    justify-content: space-between;
+  }
+  
+  /* Left Section: Blog Posts */
+  .blog-section {
+    width: 65%; /* Blog posts take 65% of the page */
+  }
+  
+  /* Individual blog post */
+  .post {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .post:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image inside the post */
+  .post img {
+    width: 180px; /* Large image */
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  /* Blog title */
+  .title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+  }
+  
+  .title:hover {
+    color: #007bff;
+  }
+  
+  /* Metadata (date, category) */
+  .meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Summary text */
+  .summary {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 30%; /* Sidebar takes 30% of the page */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search bar */
+  .search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Sidebar Heading */
+  .sidebar h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Featured Blog List */
+  .featured-posts {
+    margin-top: 20px;
+  }
+  
+  .featured-post {
+    margin-bottom: 10px;
+  }
+  
+  .featured-post a {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .featured-post a:hover {
+    text-decoration: underline;
+  }
+  
