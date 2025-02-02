@@ -1,14 +1,12 @@
 import Navbar from "@/Components/Navbar";
-import ContactBanner from "@/Components/ContactBanner";
-import ContactForm from "@/Components/ContactForm";
+import ChoosePage from "@/Components/ChooseUsContent";
 import Footer from "@/Components/Footer";
 
 export default function Contact() {
     return (
       <>
        <Navbar></Navbar>
-       <ContactBanner></ContactBanner>
-       <ContactForm></ContactForm>
+       <ChoosePage></ChoosePage>
        <Footer></Footer>
        
       </>
