@@ -17,7 +17,8 @@ const AboutUs = () => {
           className={styles.heroImage}
         />
         <div className={styles.heroOverlay}>
-          <h1>About Us | Best AC Mechanic In Gurgaon</h1>
+          <h1>About Us</h1>
+          <p>Best AC Mechanic In Gurgaon</p>
         </div>
       </div>
 
