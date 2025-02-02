@@ -2,13 +2,13 @@ import React from "react";
 import styles from "@/styles/ACCard.module.css";
 
 const acTypes = [
-  { name: "Window AC", image: "window.jpeg" },
-  { name: "Split AC", image: "split.jpeg" },
+  { name: "Window AC", image: "window.jpg" },
+  { name: "Split AC", image: "split.jpg" },
   { name: "Cassette AC", image: "cassette.jpg" },
   { name: "Ductable AC", image: "ductable.jpeg" },
   { name: "VRV/VRF AC", image: "vrv.jpg" },
-  { name: "Tower AC", image: "tower.webp" },
-  { name: "Copper Pipe Fitting", image: "copper.webp" },
+  { name: "Tower AC", image: "tower.jpg" },
+  { name: "Copper Pipe Fitting", image: "copper.jpg" },
   { name: "AHU/CFU AC", image: "AHU.jpg" },
   { name: "Package AC", image: "package.webp" },
 ];
