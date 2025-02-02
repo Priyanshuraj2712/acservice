@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <title>My page title</title>
+      <title>AC Service Gurgaon</title>
         <link rel="icon" href="/logo.png" />
         {/* Add additional link tags for other favicon files and sizes here */}
 
