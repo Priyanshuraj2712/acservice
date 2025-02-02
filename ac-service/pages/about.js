@@ -2,13 +2,14 @@
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import AboutUs from "@/Components/AboutFirst";
-import WhyChooseUs from "@/Components/AboutSecond";
+
+import SatisfactionGuarantee from "@/Components/SatisfactionGuarantee";
 const About = () => {
   return (
     <>
     <Navbar></Navbar>
     <AboutUs></AboutUs>
-    <WhyChooseUs></WhyChooseUs>
+    <SatisfactionGuarantee></SatisfactionGuarantee>
     <Footer></Footer>
     </>
   );
