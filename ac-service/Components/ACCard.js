@@ -5,15 +5,19 @@ const acTypes = [
   { name: "Window AC", image: "window.jpg" },
   { name: "Split AC", image: "split.jpg" },
   { name: "Cassette AC", image: "cassette.jpg" },
-  { name: "Ductable AC", image: "ductable.jpeg" },
+  { name: "Ductable AC", image: "ductable.jpg" },
   { name: "VRV/VRF AC", image: "vrv.jpg" },
   { name: "Tower AC", image: "tower.jpg" },
   { name: "Copper Pipe Fitting", image: "copper.jpg" },
   { name: "AHU/CFU AC", image: "AHU.jpg" },
-  { name: "Package AC", image: "package.webp" },
+  { name: "Package AC", image: "package.jpg" },
 ];
 
 const ACCards = () => {
+  const handleClick = (acName) => {
+    alert(`You clicked on ${acName}`);
+  };
+
   return (
     <div>
       {/* Header Section */}
@@ -30,7 +34,7 @@ const ACCards = () => {
       {/* Card Section */}
       <div className={styles.cardContainer}>
         {acTypes.map((ac, index) => (
-          <div key={index} className={styles.card}>
+          <button key={index} className={styles.card} onClick={() => handleClick(ac.name)}>
             <img
               src={ac.image}
               alt={`${ac.name} Illustration`}
@@ -38,9 +42,8 @@ const ACCards = () => {
             />
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{ac.name}</h3>
-              <button className={styles.cardButton}>Know More</button>
             </div>
-          </div>
+          </button>
         ))}
       </div>
     </div>
