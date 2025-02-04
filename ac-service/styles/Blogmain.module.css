@@ -195,3 +195,43 @@
     font-size: 3rem;
   }
 }
+.popularCategories, .recentComments {
+  margin-top: 20px;
+}
+
+.popularCategories ul, .recentComments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popularCategories li, .recentComments li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.popularCategories a, .recentComments a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.popularCategories a:hover, .recentComments a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+/* Add spacing between sidebar sections */
+.searchBox,
+.featuredPosts,
+.recentComments {
+  margin-bottom: 5px; /* Adds space between sections */
+}
+
+/* Optional: Add padding inside each section */
+.sidebar div {
+  padding-bottom: 10px; /* Adds spacing within each section */
+  border-bottom: 1px solid #ddd; /* Adds a subtle divider */
+}
+
+.sidebar div:last-child {
+  border-bottom: none; /* Remove border from last section */
+}
