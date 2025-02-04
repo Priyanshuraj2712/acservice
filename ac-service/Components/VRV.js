@@ -1,18 +1,19 @@
 import React from "react";
+import styles from "@/styles/VRV.module.css";
 
 const VRV_VRF_Services = () => {
   return (
-    <div className="aboutContainer">
+    <div className={styles.aboutContainer}>
       {/* Hero Section */}
-      <div className="hero">
-        <div className="heroOverlay">
+      <div className={styles.hero}>
+        <div className={styles.heroOverlay}>
           VRV and VRF Air Conditioning System Services in Gurgaon
           <p>Professional Installation, Repair, Gas Refilling & Maintenance</p>
         </div>
       </div>
 
       {/* Content Section */}
-      <div className="content">
+      <div className={styles.content}>
         <h2>Welcome to AC Service Gurgaon</h2>
         <p>
           Your one-stop solution for VRV and VRF air conditioner system services
