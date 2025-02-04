@@ -10,7 +10,7 @@ const acTypes = [
   { name: "Tower AC", image: "tower.jpg" },
   { name: "Copper Pipe Fitting", image: "copper.jpg" },
   { name: "AHU/CFU AC", image: "AHU.jpg" },
-  { name: "Package AC", image: "package.jpg" },
+  { name: "Window/Split AC On Rent", image: "package.jpg" },
 ];
 
 const ACCards = () => {

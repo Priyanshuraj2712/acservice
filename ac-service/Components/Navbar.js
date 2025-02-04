@@ -11,9 +11,13 @@ const Navbar = () => {
     'Window AC',
     'Split AC',
     'Cassette AC',
-    'Ducting AC',
+    'Ductable AC',
+    'VRV/VRF AC',
     'Tower AC',
+    'AHU/CFU AC',
+    'AC On Rent',
     'Copper Pipe Fitting',
+    
   ];
 
   const handleMouseEnter = () => {
