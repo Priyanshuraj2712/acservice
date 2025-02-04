@@ -26,23 +26,52 @@ const blogPosts = [
     categories: ['Window AC'],
     summary: 'Welcome to ACServiceGurgaon.com, your one-stop destination for hassle-free Window AC rentals...',
     link: '/blog/window-ac-on-rent',
-    image: 'rent_window.jpeg',
+    image: '/rent_window.jpeg',
   },
 ];
 
-const featuredBlogs = [
-  { title: "Best Split AC Installation: Gurgaon Residents", link: "/blog/clean-ac-filter" },
-  { title: "Split AC on rent in Gurgaon", link: "/blog/ac-repair-signs" },
-  { title: "Window AC on rent in Gurgaon", link: "/blog/right-ac-home" },
-  { title: "Split AC service repair in Gurgaon – Split AC mechanic in Sector 21", link: "/blog/right-ac-home" },
-  { title: "Commercial and Residential AC Repair Services in Sector 23 Gurgaon", link: "/blog/right-ac-home" },
+const additionalBlogs = [
+  {
+    title: "Split AC service repair in Gurgaon – Split AC mechanic in Sector 21",
+    date: "May 8, 2022",
+    categories: ["Cassette AC", "Ducting AC", "Split AC", "Window AC"],
+    summary: "Is Your Split AC Functioning? Call us for Your Split AC repair anywhere in Gurgaon +91-9810954362...",
+    link: "/blog/split-ac-service-repair",
+    image: "/Split-AC.jpg" 
+  },
+  {
+    title: "Commercial and Residential AC Repair Services in Sector 23 Gurgaon",
+    date: "Feb 20, 2021",
+    categories: ["Uncategorized"],
+    summary: "We repair Commercial AC units for all makes and models in Sector 23 Gurgaon. Contact us at +919810954362...",
+    link: "/blog/commercial-residential-ac-repair",
+    image: "Commercial-AC.jpg" // Add image URL here
+  },
+  {
+    title: "AC Repair & Service in Sector 22 Gurgaon",
+    date: "Feb 20, 2021",
+    categories: ["Uncategorized"],
+    summary: "As the leading AC Repair and Services in Gurgaon Sector 22, we provide AC Repair, AC Installation, AC Servicing...",
+    link: "/blog/ac-repair-sector-22",
+    image: "AC-Gas.jpg" // Add image URL here
+  }
 ];
+
+const featuredBlogs = [
+  { title: "Best Split AC Installation: Gurgaon Residents", link: "/blog/best-split-ac-installation" },
+  { title: "Split AC on rent in Gurgaon", link: "/blog/split-ac-on-rent" },
+  { title: "Window AC on rent in Gurgaon", link: "/blog/window-ac-on-rent" },
+  { title: "Split AC service repair in Gurgaon – Split AC mechanic in Sector 21", link: "/blog/split-ac-service-repair" },
+  { title: "Commercial and Residential AC Repair Services in Sector 23 Gurgaon", link: "/blog/commercial-residential-ac-repair" },
+  { title: "AC Repair & Service in Sector 22 Gurgaon", link: "/blog/ac-repair-sector-22" },
+];
+
+const allBlogs = [...blogPosts, ...additionalBlogs];
 
 const Blogcontent = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Filter blogs based on search
-  const filteredBlogs = blogPosts.filter((post) =>
+  const filteredBlogs = allBlogs.filter((post) =>
     post.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -54,7 +83,6 @@ const Blogcontent = () => {
       </div>
 
       <div className={styles.container}>
-        {/* Left Side: Blog Posts */}
         <div className={styles.blogSection}>
           {filteredBlogs.map((post, index) => (
             <a key={index} href={post.link} className={styles.post}>
@@ -70,7 +98,6 @@ const Blogcontent = () => {
           ))}
         </div>
 
-        {/* Right Side: Sidebar */}
         <div className={styles.sidebar}>
           <div className={styles.searchBox}>
             <input
@@ -80,7 +107,7 @@ const Blogcontent = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-
+          
           <div className={styles.featuredPosts}>
             <h3>Featured Blogs</h3>
             {featuredBlogs.map((blog, index) => (
