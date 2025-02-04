@@ -35,7 +35,7 @@
 }
 
 /* Blog Section */
-.blog-section {
+.blogSection {
   width: 65%; /* Blog posts take 65% of the page */
   display: flex;
   flex-direction: column;
@@ -93,7 +93,6 @@
 }
 
 /* Sidebar */
-/* Sidebar */
 .sidebar {
   width: 30%; /* Sidebar takes 30% of the page */
   padding: 25px;
@@ -111,20 +110,23 @@
 }
 
 /* Search Box */
-.search-box input {
+.searchBox {
+  margin-bottom: 20px;
+}
+
+.searchBox input {
   width: 100%;
   padding: 14px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1.2rem; /* Increased font size for better readability */
-  margin-bottom: 20px;
   transition: border 0.3s ease;
   box-sizing: border-box;
   color: #222; /* Ensure input text is dark enough */
 }
 
 /* Focus effect on search input */
-.search-box input:focus {
+.searchBox input:focus {
   border: 1px solid #007bff;
   outline: none;
 }
@@ -142,15 +144,15 @@
 }
 
 /* Featured Blog List */
-.featured-posts {
+.featuredPosts {
   margin-top: 20px;
 }
 
-.featured-post {
+.featuredPost {
   margin-bottom: 20px; /* Increased bottom margin */
 }
 
-.featured-post a {
+.featuredPost a {
   font-size: 1.3rem; /* Increased font size */
   color: #007bff;
   text-decoration: none;
@@ -160,36 +162,36 @@
 }
 
 /* Hover effect for featured posts */
-.featured-post a:hover {
+.featuredPost a:hover {
   color: #0056b3;
   text-decoration: underline;
 }
 
 /* Sidebar responsive for mobile */
 @media (max-width: 768px) {
-  .sidebar {
-      width: 100%;
-      margin-top: 30px;
+  .container {
+    flex-direction: column;
+    padding: 20px;
   }
 
-  .search-box input {
-      padding: 10px;
+  .blogSection {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .searchBox input {
+    padding: 10px;
   }
 
   .sidebar h3 {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .banner h1 {
-      font-size: 3rem;
-  }
-
-  .blog-section {
-      width: 100%;
-  }
-
-  .sidebar {
-      width: 100%;
-      margin-top: 20px;
+    font-size: 3rem;
   }
 }
