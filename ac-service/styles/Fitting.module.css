@@ -1,0 +1,55 @@
+/* Hero Section */
+.hero {
+    background: url('/path-to-your-image.jpg') center/cover no-repeat;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  /* Content Section */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  
+  .textSection {
+    width: 60%;
+  }
+  
+  .form {
+    width: 35%;
+    background: #f4a742;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form input, .form select, .form textarea, .form button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+  }
+  
+  /* Contact Section */
+  .contactSection {
+    background: #e0f7f7;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .contactButton, .callButton {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
