@@ -1,55 +1,95 @@
-/* Hero Section */
-.hero {
-    background: url('/path-to-your-image.jpg') center/cover no-repeat;
+/* Main Container */
+.container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url("/path-to-your-image.jpg") no-repeat center center/cover;
     text-align: center;
     color: white;
-    padding: 50px 20px;
+    padding: 80px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
   }
   
   /* Content Section */
   .content {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
+    margin: 40px 0;
   }
   
-  .textSection {
-    width: 60%;
+  .heading {
+    font-size: 1.8rem;
+    color: #2d2d8f;
+    font-weight: bold;
   }
   
-  .form {
-    width: 35%;
-    background: #f4a742;
-    padding: 20px;
-    border-radius: 5px;
+  .highlight {
+    color: #d17700;
+    font-weight: bold;
   }
   
-  .form input, .form select, .form textarea, .form button {
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px;
-    border: none;
+  .boldText {
+    font-weight: bold;
   }
   
   /* Contact Section */
   .contactSection {
-    background: #e0f7f7;
+    background: #eafaf6;
     text-align: center;
-    padding: 30px;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 8px;
   }
   
-  .buttons {
+  .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .buttonContainer {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
   }
   
-  .contactButton, .callButton {
-    padding: 10px 20px;
+  .contactButton,
+  .callButton {
+    padding: 12px 24px;
+    font-size: 1rem;
     border: none;
-    background: black;
-    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .contactButton {
+    background-color: #333;
+    color: white;
+  }
+  
+  .callButton {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  .contactButton:hover {
+    background-color: #555;
+  }
+  
+  .callButton:hover {
+    background-color: #e65c00;
   }
   
