@@ -1,0 +1,52 @@
+.banner {
+    background: url('/banner.jpg') center/cover no-repeat;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .blogContent {
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .commentForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .commentForm textarea,
+  .commentForm input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .commentForm button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .commentForm button:hover {
+    background: #0056b3;
+  }
+  

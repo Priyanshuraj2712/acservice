@@ -13,11 +13,13 @@ const BlogPost = () => {
       <div className={styles.container}>
         <div className={styles.blogPostPage}>
           <div className={styles.blogPostHeader}>
-            <img
-              className={styles.blogPostImage}
-              src="/Best_Ac.png"
-              alt="Split AC Installation"
-            />
+            <div className={styles.imageContainer}>
+              <img
+                className={styles.blogPostImage}
+                src="/Best_Ac.png"
+                alt="Split AC Installation"
+              />
+            </div>
             <div className={styles.blogPostMeta}>
               <span className={styles.author}>by acservicegurgaon | May 2, 2024</span>
               <span className={styles.categories}>
@@ -53,12 +55,18 @@ const BlogPost = () => {
           <div className={styles.commentSection}>
             <h3>Leave a Comment</h3>
             <form className={styles.commentForm}>
-              <label>Name</label>
-              <input type="text" name="name" placeholder="Your Name" required />
-              <label>Email</label>
-              <input type="email" name="email" placeholder="Your Email" required />
-              <label>Comment</label>
-              <textarea name="comment" placeholder="Your Comment" required></textarea>
+              <div className={styles.formGroup}>
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Your Name" required />
+              </div>
+              <div className={styles.formGroup}>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Your Email" required />
+              </div>
+              <div className={styles.formGroup}>
+                <label>Comment</label>
+                <textarea name="comment" placeholder="Your Comment" required></textarea>
+              </div>
               <button className={styles.submitBtn} type="submit">
                 Submit Comment
               </button>
