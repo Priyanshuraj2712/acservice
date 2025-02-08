@@ -7,7 +7,8 @@ const BlogPost = () => {
     <>
       <Navbar />
       <div className={styles.banner}>
-        <h1>Window AC On Rent in Gurgaon
+        <h1>Split AC on rent in Gurgaon
+
         </h1>
       </div>
 
@@ -17,8 +18,8 @@ const BlogPost = () => {
             <div className={styles.imageContainer}>
               <img
                 className={styles.blogPostImage}
-                src="/rent_window.jpeg"
-                alt="Window AC Installation"
+                src="/rent_split.jpeg"
+                alt="rent_split.jpeg"
               />
             </div>
             <div className={styles.blogPostMeta}>
@@ -30,41 +31,43 @@ const BlogPost = () => {
           </div>
 
           <div className={styles.blogPostContent}>
-            <h2>Window AC On Rent in Gurgaon
+            <h2>Split AC on rent in Gurgaon
+
             </h2>
-            <p>
-            Welcome to ACServiceGurgaon.com, your one-stop destination for hassle-free Window air conditioner on rent in Gurgaon,
-When the summer heat becomes unbearable, and you’re in need of a cooling escape,
-our air conditioner rental services have got you covered.
-            </p>
+            
+            <p>If you’re looking for a convenient and cost-effective solution, renting a split AC in Gurgaon might be the perfect choice for you. In this blog, we’ll explore the benefits of opting for split AC rentals in Gurgaon.</p>
+
+            <h2>How to Rent a Split AC with ACServiceGurgaon.com
+            </h2>
 
             <ul className={styles.installationSteps}>
-              <li>Reliability and Reputation</li>
-              <li>Budget-Friendly Options</li>
-              <li>User-Friendly Experience</li>
-              <li>Cost-Effective Cooling </li>
-              <li>Affordable Rental Packages
+              <li>Visit the Website</li>
+              <li>Choose your plan</li>
+              <li>Enjoy Hassle-Free Cooling
               </li>
-              <li>Easy Online Booking Process
-              </li>
-              <li>Quality Assurance and Maintenance
-              </li>
+              
             </ul>
 
             {/* Continue with the rest of your blog content */}
             
 
-            <h2>Why Choose ACServicesGurgaon.com for Window AC Rental
+            <h2>Why Choose ACServicesGurgaon.com for Split AC Rental
             </h2>
-            <p>At ACServicesGurgaon.com, reliability is our hallmark. Our well-maintained window ACs ensure efficient cooling, backed by a reputation for providing top-notch cooling solutions in Gurgaon.</p>
+            <p>Wide Range of Top-Tier Split AC ACServiceGurgaon.com offers a diverse range of market-leading split ACs to cater to various room sizes and cooling needs. Whether you’re looking to cool a compact bedroom or a spacious living area, their extensive selection ensures you find the perfect match for your requirements.</p>
 
-            <h2>Cost-Effective Cooling</h2>
-            <p>Compared to split ACs, window ac units are more budget-friendly both in upfront costs and energy consumption. Renting from ACServicesGurgaon.com lets you enjoy cool air without burning a hole in your pocket.
+            <h2>Flexible Rental Plans
+            </h2>
+            <p>ACServiceGurgaon.com understands that every customer’s cooling needs are unique. That’s why they offer flexible rental plans, allowing you to choose a duration and package that aligns with your budget and requirements. Say goodbye to one-size-fits-all solutions and hello to personalized comfort.</p>
 
-Renting an Window air conditioner in Gurgaon has never been this easy! With ACServicesGurgaon.com,
-you can enjoy a cool and comfortable space without the stress of ownership.
-Take advantage of our user-friendly website and competitive rental packages.
-Stay cool, save money, and beat the heat with ACServicesGurgaon.com – your trusted partner in Window air conditioner on rentals contact us.</p>
+
+            <h2>Transparent Pricing and No Hidden Costs
+            </h2>
+            <p>ACServiceGurgaon.com believes in transparency when it comes to pricing. With no hidden costs, you can rent a split AC with confidence, knowing that you’re getting the best value for your money. Say goodbye to unpleasant surprises in your bill and enjoy straightforward and affordable cooling solutions.
+
+If you are interested in renting a split AC and would like to get in touch with ACServiceGurgaon.com or any other service provider, you can use the following contact information:
+
+
+</p>
 
 
 

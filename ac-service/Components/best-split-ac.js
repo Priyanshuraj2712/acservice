@@ -40,16 +40,20 @@ const BlogPost = () => {
             </p>
 
             {/* Continue with the rest of your blog content */}
-            <p>Choosing the Right Location</p>
-            <p>Preparing the Space</p>
-            <p>Mounting the Indoor Unit</p>
-            <p>Installing the Outdoor Unit</p>
-            <p>Refrigerant Charging and Testing</p>
-            <p>Final Checks and Adjustments</p>
+            <h3>Key Installation Steps:</h3>
+            <ul className={styles.installationSteps}>
+              <li>Choosing the Right Location</li>
+              <li>Preparing the Space</li>
+              <li>Mounting the Indoor Unit</li>
+              <li>Installing the Outdoor Unit</li>
+              <li>Refrigerant Charging and Testing</li>
+              <li>Final Checks and Adjustments</li>
+            </ul>
 
             <div className={styles.callToAction}>
-              Contact us for expert Split AC installation in Gurgaon today!
-            </div>
+  Contact us for expert 
+  <a href="/contact" className={styles.contactLink}> Split AC installation in Gurgaon today!</a>
+</div>
           </div>
 
           <div className={styles.commentSection}>

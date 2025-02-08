@@ -1,5 +1,5 @@
 import Navbar from "@/Components/Navbar";
-import BlogPostPage from "@/Components/split-ac-on-rent-Blog";
+import BlogPostPage from "@/Components/ac-repair-sector-Blog";
 
 import Footer from "@/Components/Footer";
 

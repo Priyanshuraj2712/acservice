@@ -111,7 +111,15 @@
   text-align: center;
   text-transform: capitalize;
 }
+.blogPostContent h3{
+  color: #000;
+}
 
+.installationSteps{
+  color: #000;
+  margin-bottom: 30px;
+  font-size: large;
+}
 .blogPostContent p {
   font-size: 1.2rem;
   color: #000; /* Changed to black */
@@ -125,7 +133,7 @@
   font-weight: 500;
   color: #fff;
   text-align: center;
-  background-color: #007bff;
+  background-color: #F4A21D;
   padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
@@ -134,73 +142,125 @@
 }
 
 .callToAction:hover {
-  background-color: #0056b3;
+  background-color: #F4A21D;
   cursor: pointer;
 }
 
 /* Comment Section */
+/* Comment Section */
 .commentSection {
-  margin-top: 40px;
-  color:#000;
+  margin-top: 50px;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; /* Increased width */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #000;
+  margin-bottom: auto;
 }
 
+/* Form Container */
 .commentForm {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Form Groups */
 .formGroup {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
+  text-align: left;
+  width: 100%;
+  color: #000;
 }
 
-.commentForm label {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #333;
-}
-
+/* Input and Textarea */
 .commentForm input,
 .commentForm textarea {
-  padding: 12px;
+  width: 100%;
+  max-width: 800px; /* Increased input width */
+  padding: 15px;
   font-size: 1.1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
-  color: #333;
-  transition: border-color 0.3s ease;
+  background: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Input Focus Effect */
+.commentForm input:focus,
+.commentForm textarea:focus {
+  border-color: #F4A21D;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Textarea Styling */
 .commentForm textarea {
-  min-height: 150px;
+  min-height: 140px;
   resize: vertical;
 }
 
-.commentForm input:focus,
-.commentForm textarea:focus {
-  border-color: #007bff;
-}
-
+/* Submit Button */
 .submitBtn {
-  padding: 12px;
-  font-size: 1.1rem;
-  background-color: #007bff;
-  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #F4A21D;
+  color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 400px; /* Keeps button manageable */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .submitBtn:hover {
-  background-color: #0056b3;
+  background: #F4A21D;
+  transform: translateY(-2px);
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .commentSection {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .commentForm {
+    padding: 20px;
+  }
+
+  .commentForm input,
+  .commentForm textarea {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .submitBtn {
+    font-size: 1rem;
+    padding: 12px;
+    max-width: 100%;
+  }
+}
+
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
