@@ -136,9 +136,9 @@ const Blogcontent = () => {
   <h3>Recent Comments</h3>
   <ul>
     {[
-      { name: "Pawan", comment: "Great tips on AC installation!", link: "/blog/best-split-ac-installation" },
-      { name: "Priyanshu", comment: "I rented a Split AC from here, amazing service!", link: "/blog/split-ac-on-rent" },
-      { name: "Rahul", comment: "Helped me choose the best AC for my home.", link: "/blog/window-ac-on-rent" },
+      { name: "Pawan", comment: "Great tips on AC installation!", link: "/best-split-ac-installation" },
+      { name: "Priyanshu", comment: "I rented a Split AC from here, amazing service!", link: "/split-ac-on-rent" },
+      { name: "Rahul", comment: "Helped me choose the best AC for my home.", link: "/window-ac-on-rent" },
     ].map((comment, index) => (
       <li key={index}>
         <strong>{comment.name}:</strong> {comment.comment} – <a href={comment.link}>Read More</a>
