@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 107px;
+    margin-top: calc(2.5rem + 68px); /* Push container below navbar */
     gap: 70px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('/acservice/ac-service/public/service.webp');
     background-size: cover;
@@ -12,13 +12,13 @@
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     color: white;
     background-color: #fff;
-  }
-  
-  .imageSection {
+}
+
+.imageSection {
     flex: 1;
-  }
-  
-  .fullImage {
+}
+
+.fullImage {
     max-width: 800px;
     max-height: 600px;
     height: auto;
@@ -29,48 +29,48 @@
     border-radius: 10px;
     filter: brightness(85%);
     box-shadow: 0 0 30px 15px rgba(255, 166, 0, 0.6);
-  }
-  
-  .fullImage:hover {
+}
+
+.fullImage:hover {
     opacity: 1;
     filter: brightness(100%);
     transform: scale(1.05);
     box-shadow: 0 0 50px 25px rgba(255, 140, 0, 0.8);
-  }
-  
-  .textSection {
+}
+
+.textSection {
     flex: 1;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
-    margin-top:20px;
+    margin-top: 20px;
     border-radius: 15px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid #F4A21D;
-  }
-  
-  .textSection h2 {
+}
+
+.textSection h2 {
     font-size: 2.8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
     text-transform: capitalize;
-  }
-  
-  .textSection p {
+}
+
+.textSection p {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
-  }
-  
-  .textSection p:last-of-type {
+}
+
+.textSection p:last-of-type {
     margin-bottom: 30px;
-  }
-  
-  .button {
+}
+
+.button {
     background-color: #F4A21D;
     color: #fff;
     padding: 12px 24px;
@@ -81,22 +81,87 @@
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #F4A21D;
     transform: scale(1.05);
-  }
-  
-  @media (max-width: 768px) {
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px;
+        margin-top: 140px;
+    }
+
+    .imageSection {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fullImage {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .textSection {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        margin-top: 200px;
+        gap: 20px;
     }
-  
+
+    .imageSection {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fullImage {
+        max-width: 90%;
+        height: auto;
+    }
+
     .textSection {
         text-align: center;
         padding: 20px;
+        width: 90%;
     }
-  }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+        gap: 15px;
+    }
+
+    .textSection h2 {
+        font-size: 2rem;
+    }
+
+    .textSection p {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+}

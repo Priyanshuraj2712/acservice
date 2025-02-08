@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px 20px;
-  background-color: #f9f9f9; /* Soft blue background */
+  background-color: #f9f9f9; /* Soft background */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
   gap: 20px;
   font-family: 'Poppins', sans-serif; /* Apply font globally to this section */
@@ -20,6 +20,7 @@
   align-items: center;
   padding: 20px;
   max-width: 400px; /* Keep logo container balanced */
+  width: 100%; /* Ensure full width in smaller screens */
 }
 
 .brandLogos img {
@@ -29,6 +30,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
   margin-left: 300px;
 }
+
 
 .brandLogos img:hover {
   transform: scale(1.08); /* Slightly stronger zoom effect on hover */
@@ -79,7 +81,8 @@
   transition: color 0.3s ease; /* Smooth color transition */
 }
 
-@media (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .brandSection {
     flex-direction: column; /* Stack content on smaller screens */
     padding: 20px;
@@ -87,10 +90,16 @@
 
   .brandLogos {
     max-width: 100%; /* Full width for small screens */
+    padding: 10px;
+  }
+  .brandLogos img{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .brandInfo {
     text-align: center; /* Center-align text for small screens */
+    margin-right: 0; /* Remove margin for better spacing */
   }
 
   .brandInfo h2 {
@@ -99,6 +108,67 @@
 
   .brandInfo p {
     font-size: 1rem; /* Adjust body text size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .brandSection {
+    flex-direction: column; /* Stack content for mobile */
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .brandLogos {
+    max-width: 100%; /* Ensure logo container takes full width */
+    padding: 0;
+  }
+  .brandLogos img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .brandInfo {
+    max-width: 100%; /* Ensure info container takes full width */
+    padding: 20px;
+    text-align: center; /* Center-align content */
+    margin-right: 0; /* No margin on mobile */
+  }
+
+  .brandInfo h2 {
+    font-size: 1.5rem; /* Smaller headline for mobile */
+  }
+
+  .brandInfo p {
+    font-size: 1rem; /* Smaller text for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .brandSection {
+    padding: 15px; /* Reduced padding for mobile */
+    gap: 10px;
+  }
+  .brandLogos img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .brandInfo {
+    padding: 15px; /* Reduced padding for mobile */
+  }
+
+  .brandInfo h2 {
+    font-size: 1.4rem; /* Smaller font for mobile */
+  }
+
+  .brandInfo p {
+    font-size: 0.9rem; /* Smaller text for mobile */
+  }
+
+  .brandLogos img {
+    max-width: 100%; /* Ensure images take full width */
   }
 }
 
