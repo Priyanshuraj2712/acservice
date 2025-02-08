@@ -4,9 +4,7 @@
 .container {
   font-family: 'Poppins', sans-serif; /* Apply Poppins to the entire component */
   text-align: center;
-  padding: 1.5rem;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 2rem; /* Increased padding for better spacing */
   background: #f9f9f9; /* Soft background */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -36,6 +34,7 @@
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem; /* Increased spacing between steps */
+  flex-wrap: wrap; /* Ensures that steps stack properly on smaller screens */
 }
 
 .step {
@@ -81,15 +80,74 @@
 }
 
 /* Responsive Design for Small Screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 2.4rem; /* Slightly smaller heading for medium screens */
+  }
+
+  .subheading {
+    font-size: 1.1rem; /* Adjust subheading size for smaller screens */
+  }
+
   .steps {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on medium screens */
+    justify-content: center; /* Center items */
   }
 
   .step {
-    max-width: 90%;
-    margin-bottom: 1.5rem; /* Spacing between steps on smaller screens */
+    max-width: 45%; /* Allow steps to take more width on medium screens */
+    margin-bottom: 2rem; /* Increase space between steps */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem; /* Reduce padding on smaller screens */
+  }
+
+  .heading {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  .subheading {
+    font-size: 1rem; /* Adjust subheading size */
+  }
+
+  .steps {
+    flex-direction: column; /* Stack steps vertically */
+    gap: 1.5rem; /* Add space between stacked steps */
+    justify-content: center; /* Center content */
+  }
+
+  .step {
+    max-width: 90%; /* Full width for small screens */
+    margin-bottom: 1.5rem; /* More space between steps */
+  }
+
+  .icon {
+    height: 60px; /* Reduce icon size for mobile */
+  }
+
+  .title {
+    font-size: 1.2rem; /* Smaller title size */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Adjust description text for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem; /* Even smaller heading for very small screens */
+  }
+
+  .subheading {
+    font-size: 0.9rem; /* Smaller subheading for tiny screens */
+  }
+
+  .step {
+    max-width: 100%; /* Full width for very small screens */
   }
 }
 

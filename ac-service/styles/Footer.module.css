@@ -6,7 +6,7 @@
   padding: 3.5rem 1.5rem;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
-  height: 420px;
+  height: auto; /* Adjust height to auto for better responsiveness */
 }
 
 /* Wave Animation */
@@ -146,4 +146,93 @@
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.7;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .footerLinks {
+    flex-direction: column; /* Stack footer links vertically */
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .footerLinks div {
+    text-align: center;
+    min-width: 200px; /* Adjust minimum width */
+  }
+
+  .socialIcons {
+    gap: 0.8rem;
+  }
+
+  .icon {
+    font-size: 1.6rem; /* Adjust icon size */
+  }
+
+  .footerBottom {
+    font-size: 0.8rem; /* Smaller text on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem; /* Adjust footer padding */
+  }
+
+  .footerLinks {
+    padding: 1.2rem;
+    gap: 1.5rem;
+  }
+
+  .footerLinks h4 {
+    font-size: 1.2rem; /* Smaller text for headings */
+  }
+
+  .footerLinks ul li {
+    font-size: 0.9rem; /* Adjust list item size */
+  }
+
+  .socialIcons {
+    margin-top: 1rem;
+  }
+
+  .icon {
+    font-size: 1.4rem; /* Smaller icons for mobile */
+  }
+
+  .footerBottom {
+    font-size: 0.7rem; /* Smaller text at the bottom */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 1rem; /* Further reduced padding for mobile */
+  }
+
+  .footerLinks {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .footerLinks h4 {
+    font-size: 1rem; /* Even smaller heading for mobile */
+  }
+
+  .footerLinks ul li {
+    font-size: 0.8rem; /* Smaller text for mobile screens */
+  }
+
+  .socialIcons {
+    margin-top: 0.8rem;
+  }
+
+  .icon {
+    font-size: 1.2rem; /* Smaller icons for small screens */
+  }
+
+  .footerBottom {
+    font-size: 0.6rem; /* Smaller text for mobile */
+  }
 }
