@@ -165,6 +165,7 @@
 @media (max-width: 1024px) {
   .hero {
     height: 400px;
+    margin-top: 150px;
   }
   
   .heroOverlay {
@@ -193,6 +194,7 @@
 @media (max-width: 768px) {
   .hero {
     height: 280px;
+    margin-top: 200px;
   }
 
   .heroOverlay {

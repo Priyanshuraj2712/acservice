@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "@/Components/Navbar";
-import Footer from "@/Components/Footer";
+
 import styles from "@/styles/Blogmain.module.css";
 
 const blogPosts = [
@@ -73,7 +72,7 @@ const Blogcontent = () => {
 
   return (
     <>
-      <Navbar />
+      
       <div className={styles.banner}>
         <h1 className={styles.heading}>Our Blog</h1>
       </div>
@@ -149,7 +148,6 @@ const Blogcontent = () => {
 
         </div>
       </div>
-      <Footer />
     </>
   );
 };

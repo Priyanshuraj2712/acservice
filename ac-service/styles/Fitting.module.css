@@ -139,6 +139,7 @@
 @media (max-width: 1024px) {
   .hero {
     height: 400px;
+    margin-top: 150px;
   }
   
   .heroOverlay {
@@ -213,6 +214,9 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* .hero{
+    margin-top: 200px;
+  } */
   .heroOverlay {
       font-size: 2.5rem;
       max-width: 90%;

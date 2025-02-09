@@ -188,9 +188,9 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .contactPage{
+  /* .contactPage{
     margin-top: 100px;
-  }
+  } */
   .heading {
     font-size: 2rem; /* Slightly smaller font size */
   }
