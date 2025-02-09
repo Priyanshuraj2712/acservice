@@ -1,64 +1,225 @@
-import React from "react";
-import styles from "@/styles/VRV.module.css"; 
-
-const ACServiceComponent = () => {
-  return (
-    <div className={styles.acServiceContainer}>
-      <h1 className={styles.title}>AHU Air Conditioning System Maintenance Services in Gurgaon</h1>
-      <p className={styles.description}>
-        Welcome to AC Service Gurgaon, your trusted provider of AHU (Air Handling Unit) air conditioning system maintenance services in Gurgaon! With our professional expertise, we ensure your AHU systems operate efficiently, providing superior air quality and comfort for your space.
-      </p>
-
-      <section className={styles.whyChooseSection}>
-        <h2>Why Choose AC Service Gurgaon for AHU Maintenance?</h2>
-        <ul className={styles.whyChooseList}>
-          <li>Expertise in AHU Systems</li>
-          <li>Comprehensive Maintenance Solutions</li>
-          <li>Quick and Reliable Service</li>
-          <li>Affordable and Transparent Pricing</li>
-        </ul>
-      </section>
-
-      <section className={styles.whatIsAHU}>
-        <h2>What is an AHU System?</h2>
-        <p>
-          An Air Handling Unit (AHU) is a vital component of HVAC systems that circulates, filters, and conditions air. AHUs are commonly used in:
-        </p>
-        <ul className={styles.ahuApplications}>
-          <li>Offices and commercial spaces</li>
-          <li>Industrial facilities</li>
-          <li>Hospitals and healthcare centers</li>
-          <li>Residential complexes</li>
-        </ul>
-        <p>
-          Proper maintenance of AHUs is crucial to ensure optimal performance, energy efficiency, and indoor air quality.
-        </p>
-      </section>
-
-      <section className={styles.services}>
-        <h2>Our AHU Maintenance Services</h2>
-        <ul className={styles.servicesList}>
-          <li>Routine Inspection</li>
-          <li>Filter Cleaning and Replacement</li>
-          <li>Coil Cleaning and Servicing</li>
-          <li>Fan and Motor Servicing</li>
-          <li>Duct Cleaning</li>
-          <li>Electrical Component Check</li>
-          <li>Refrigerant Level Check</li>
-        </ul>
-      </section>
-
-      <section className={styles.benefits}>
-        <h2>Why Regular AHU Maintenance Matters</h2>
-        <ul className={styles.benefitsList}>
-          <li>Improved Air Quality</li>
-          <li>Energy Efficiency</li>
-          <li>System Longevity</li>
-          <li>Cost Savings</li>
-        </ul>
-      </section>
-    </div>
-  );
+.aboutContainer {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f4f8fc;
 }
 
-export default ACServiceComponent;
+.hero {
+  background: url('/contactbanner.jpg') center/cover no-repeat;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.heroOverlay {
+  padding: 30px;
+  border-radius: 12px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.heroOverlay p {
+  font-size: 22px;
+  font-weight: 800px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Content Section */
+.content {
+  padding: 50px 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  margin-left:20px;
+  margin-right:20px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.content h2 {
+  color: #f9a825;
+  border-bottom: 3px solid #f9a825;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.content h3 {
+  color: #f9a825;
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.content p {
+  line-height: 1.8;
+  font-size: 17px;
+  color: #444;
+}
+
+/* List Styling */
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.content ul li {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 12px;
+  font-size: 17px;
+  color: #333;
+}
+
+.content ul li::before {
+  content: '✓';
+  color: #28a745;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Button Styles */
+/* Contact Section Styling */
+.contactSection {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background for the section */
+  border-radius: 12px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.tagline {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contactButton, .callButton {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #f9a825; /* Button background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contactButton:hover, .callButton:hover {
+  background-color: #d17a00; /* Darker shade on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.contactButton:focus, .callButton:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle focus outline */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero {
+    height: 400px;
+    margin-top: 150px;
+  }
+  
+  .heroOverlay {
+    font-size: 24px;
+    padding: 25px;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 280px;
+    margin-top: 200px;
+  }
+
+  .heroOverlay {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 22px;
+  }
+
+  .content h3 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}

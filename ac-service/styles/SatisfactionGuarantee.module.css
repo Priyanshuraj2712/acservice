@@ -1,68 +1,129 @@
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 100px;
-    padding-left: 120px;
-    padding-right: 80px;
-    padding-bottom: 50px;;
-    background-color: #f8f8f8; /* Light gray background for better contrast */
-    color: #333;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 100px;
+  padding-left: 120px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  background-color: #f8f8f8; /* Light gray background for better contrast */
+  color: #333;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Content Styling */
+.content {
+  flex: 1;
+  min-width: 320px;
+  padding-right: 20px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.benefitsList li {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Image Styling */
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.imageContainer img {
+  max-width: 240px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.imageContainer img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 70px; /* Adjusted padding for tablet */
   }
-  
-  .content {
-    flex: 1;
-    min-width: 320px;
-    padding-right: 20px;
-  }
-  
   .heading {
-    font-size: 30px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 16px;
+      font-size: 26px; /* Slightly smaller heading */
   }
-  
   .description {
-    font-size: 17px;
-    color: #444;
-    line-height: 1.7;
-    margin-bottom: 14px;
+      font-size: 15px; /* Adjusted font size for better readability */
   }
-  
-  .benefitsList {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-  }
-  
-  .benefitsList li {
-    font-size: 17px;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-  
-  .imageContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-  }
-  
   .imageContainer img {
-    max-width: 240px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+      max-width: 200px; /* Smaller image size on tablets */
   }
-  
-  .imageContainer img:hover {
-    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px; /* Adjust padding for mobile */
   }
-  
+  .heading {
+      font-size: 22px; /* Smaller heading on mobile */
+      text-align: center;
+  }
+  .description {
+      font-size: 14px; /* Smaller text for mobile */
+      text-align: center;
+      padding: 0 10px;
+  }
+  .benefitsList li {
+      font-size: 15px; /* Adjust font size for better readability */
+  }
+  .imageContainer img {
+      max-width: 180px; /* Smaller image size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 30px; /* Adjust padding for very small screens */
+  }
+  .heading {
+      font-size: 20px; /* Smaller heading for small devices */
+      text-align: center;
+  }
+  .description {
+      font-size: 12px; /* Smaller text for small screens */
+      text-align: center;
+  }
+  .imageContainer img {
+      max-width: 150px; /* Adjust image size for very small screens */
+  }
+}

@@ -1,0 +1,106 @@
+/* General Container */
+.header {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 20px 30px 60px;
+    color: #333;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px auto;
+    max-width: 800px;
+    color: #333;
+}
+
+/* Grid Layout */
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+
+    /* Make all cards same size */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 320px; /* Adjust this to fit your content */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.cardImage {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Card Content */
+.cardContent {
+    flex-grow: 1; /* Pushes content evenly */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f9a825;
+    margin-top: 10px;
+}
+
+/* Additional Info Section */
+.additionalInfo {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.additionalInfo h3 {
+    font-size: 1.5rem;
+    color: #f9a825;
+    margin-bottom: 10px;
+}
+
+.additionalInfo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.additionalInfo li {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 8px 0;
+}

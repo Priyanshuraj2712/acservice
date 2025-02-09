@@ -14,7 +14,7 @@
     position: relative;
     color: #fff;
   }
-
+  
   .heroOverlay {
     padding: 30px;
     border-radius: 12px;
@@ -92,8 +92,8 @@
   }
   
   /* Button Styles */
-/* Contact Section Styling */
-.contactSection {
+  /* Contact Section Styling */
+  .contactSection {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
@@ -165,6 +165,7 @@
   @media (max-width: 1024px) {
     .hero {
       height: 400px;
+      margin-top: 100px;
     }
     
     .heroOverlay {
@@ -193,6 +194,7 @@
   @media (max-width: 768px) {
     .hero {
       height: 280px;
+      margin-top: 200px;
     }
   
     .heroOverlay {

@@ -1,14 +1,11 @@
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
-import AboutUs from "@/Components/AboutFirst";
-
-import SatisfactionGuarantee from "@/Components/SatisfactionGuarantee";
+import ACServiceComponent from "@/Components/AHU"
 const About = () => {
   return (
     <>
     <Navbar></Navbar>
-    <AboutUs></AboutUs>
-    <SatisfactionGuarantee></SatisfactionGuarantee>
+    <ACServiceComponent></ACServiceComponent>
     <Footer></Footer>
     </>
   );

@@ -94,7 +94,7 @@
 
 /* Sidebar */
 .sidebar {
-  width: 30%; /* Sidebar takes 30% of the page */
+  width: 35%; /* Sidebar takes 30% of the page */
   padding: 25px;
   background: #fff;
   border-radius: 12px;
@@ -119,6 +119,7 @@
   width: 100%;
   padding: 14px;
   border: 1px solid #ddd;
+  background-color: #ddd;
   border-radius: 8px;
   font-size: 1.2rem; /* Increased font size for better readability */
   transition: border 0.3s ease;
