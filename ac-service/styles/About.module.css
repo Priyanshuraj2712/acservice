@@ -7,8 +7,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     width: 100%;
@@ -19,7 +22,6 @@
     justify-content: center;
     padding-top: 80px; /* Adjust based on your navbar height */
 }
-
 
 .heroOverlay {
     position: absolute;
@@ -32,15 +34,15 @@
     border-radius: 12px;
     font-size: 2.5rem;
     font-weight: bold;
-    text-align: center;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.heroOverlay p{
+.heroOverlay p {
     font-size: 1.3rem;
     margin-top: 10px;
     font-weight: 300;
 }
+
 /* Content Section */
 .content {
     max-width: 900px;
@@ -72,7 +74,6 @@
     width: 100%;
 }
 
-
 /* Skill Bar */
 .skillBar {
     margin-bottom: 15px;
@@ -103,19 +104,68 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        height: 500px; /* Adjust height for tablet */
+        margin-top: 200px;
+    }
+    .heroOverlay {
+        font-size: 24px;
+        padding: 15px 25px;
+    }
+    .content h2 {
+        font-size: 2rem; /* Slightly smaller text */
+    }
+    .skillsContainer {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium devices */
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
-        height: 250px;
+        height: 250px; /* Adjust height for mobile */
     }
     .heroOverlay {
         font-size: 22px;
         padding: 15px 20px;
     }
+    .content h2 {
+        font-size: 1.8rem; /* Smaller heading for mobile */
+    }
+    .content p {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
     .skillsContainer {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
     .skillsColumn {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutContainer {
+        padding: 15px;
+    }
+    .heroOverlay {
+        font-size: 20px; /* Smaller text on small screens */
+        padding: 10px 15px;
+    }
+    .content h2 {
+        font-size: 1.6rem; /* Adjust heading size for mobile */
+    }
+    .content p {
+        font-size: 13px; /* Adjust paragraph size */
+    }
+    .skillsContainer {
+        gap: 15px;
+    }
+    .skillsColumn {
+        width: 100%;
+    }
+    .skillLabel {
+        font-size: 12px; /* Smaller font size for skill labels */
     }
 }

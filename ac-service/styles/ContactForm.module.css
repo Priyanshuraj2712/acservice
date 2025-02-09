@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
+/* General Styling */
 .contactPage {
   padding: 60px 20px;
   font-family: 'Poppins', sans-serif;
-  background-color: #f7f7f7;  /* Light background color */
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   min-height: 100vh;
   color: #333;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  transition: background-color 0.3s ease;
 }
 
 .contactPage:hover {
-  background-color: #f1f1f1;  /* Lighter background color on hover */
+  background-color: #f1f1f1;
 }
 
 .heading {
@@ -35,7 +34,7 @@
   border-radius: 12px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 900px;  /* Limit the width of the box */
+  max-width: 900px;
   margin-top: 20px;
   color: #333;
   margin-left: auto;
@@ -45,9 +44,9 @@
 
 .form:hover,
 .contactInfoBox:hover {
-  transform: scale(1.05);  /* Slightly enlarge the box on hover */
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
-  background-color: #fafafa;  /* Lighter background color on hover */
+  transform: scale(1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  background-color: #fafafa;
 }
 
 .row {
@@ -59,13 +58,14 @@
 
 .inputContainer {
   position: relative;
-  width: 200%;
-  max-width: 250px;  /* Limit the width of the input fields */
+  width: 100%;
+  max-width: 250px;
 }
 
 .input,
-.textarea {
-  width: 105%;
+.textarea,
+.select {
+  width: 100%;
   padding: 14px 20px;
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -74,16 +74,7 @@
   background-color: #f9f9f9;
   transition: all 0.3s ease;
 }
-.select {
-    width: 99%;
-    padding: 14px 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-size: 1em;
-    color: #333;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease;
-  }
+
 .input:focus,
 .select:focus,
 .textarea:focus {
@@ -93,7 +84,6 @@
 }
 
 .textarea {
-  width: 94%;
   min-height: 100px;
   resize: vertical;
   margin-top: 30px;
@@ -116,26 +106,6 @@
 .submitButton:hover {
   transform: scale(1.05);
   background-color: #F4A21D;
-}
-
-.contactInfoBox {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 900px;
-  margin-top: 20px;
-  color: #333;
-  margin-left: auto;
-  margin-right: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.contactInfoBox:hover {
-  transform: scale(1.05);  /* Slightly enlarge the contact info box on hover */
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
-  background-color: #fafafa;  /* Lighter background color on hover */
 }
 
 .contactInfoBox p {
@@ -197,10 +167,6 @@
   box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
 }
 
-.select {
-  padding-left: 20px;
-}
-
 .select:focus {
   border-color: #F4A21D;
   box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
@@ -212,9 +178,98 @@
   padding: 10px;
 }
 
+/* Floating label styling */
 .input:focus + label,
 .textarea:focus + label,
 .input:valid + label,
 .textarea:valid + label {
   color: #F4A21D;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contactPage{
+    margin-top: 100px;
+  }
+  .heading {
+    font-size: 2rem; /* Slightly smaller font size */
+  }
+
+  .row {
+    gap: 30px; /* Reduce gap for tablet screens */
+  }
+
+  .inputContainer {
+    max-width: 100%; /* Allow input to take full width */
+  }
+
+  .form,
+  .contactInfoBox {
+    padding: 20px;
+    max-width: 700px; /* Reduce width for tablet screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.8rem; /* Smaller heading font */
+  }
+
+  .contactPage {
+    padding: 40px 10px;
+
+  }
+
+  .form,
+  .contactInfoBox {
+    padding: 15px;
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .inputContainer {
+    max-width: 100%; /* Full width input fields */
+  }
+
+  .submitButton {
+    font-size: 1em;
+    padding: 12px 25px; /* Smaller button for mobile */
+  }
+
+  .textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem; /* Smaller heading font */
+  }
+
+  .form,
+  .contactInfoBox {
+    padding: 10px;
+    margin-top: 15px;
+  }
+
+  .submitButton {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+
+  .textarea {
+    min-height: 80px; /* Reduced textarea height */
+  }
+
+  .row {
+    gap: 20px; /* Smaller gap for very small screens */
+  }
+
+  .inputContainer {
+    max-width: 100%; /* Full width input fields */
+  }
 }
