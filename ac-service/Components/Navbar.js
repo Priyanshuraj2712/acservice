@@ -9,18 +9,17 @@ const Navbar = () => {
   const dropdownTimeoutRef = useRef(null);
 
   const services = [
-    'Window AC',
-    'Split AC',
-    'Cassette AC',
-    'Ductable AC',
-    'VRV/VRF AC',
-    'Tower AC',
-    'AHU/CFU AC',
-    'AC On Rent',
-    'Copper Pipe Fitting',
+    { name: 'Window AC', link: '/window' },
+    { name: 'Split AC', link: '/split' },
+    { name: 'Cassette AC', link: '/cassette' },
+    { name: 'Ductable AC', link: '/ductable' },
+    { name: 'VRV/VRF AC', link: '/vrv' },
+    { name: 'Tower AC', link: '/tower' },
+    { name: 'AHU/CFU AC', link: '/ahu' },
+    { name: 'AC On Rent', link: '/split-ac-on-rent' },
+    { name: 'Copper Pipe Fitting', link: '/fitting' },
   ];
 
-  // Check window size to set mobile view flag
   React.useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth <= 768);
@@ -32,7 +31,6 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Hover for tablet & desktop
   const handleMouseEnter = () => {
     if (!isMobileView) {
       if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
@@ -48,7 +46,6 @@ const Navbar = () => {
     }
   };
 
-  // Mobile click toggle
   const handleMobileClick = () => {
     setIsServicesOpen(prev => !prev);
   };
@@ -93,10 +90,10 @@ const Navbar = () => {
                 {services.map((service, index) => (
                   <Link 
                     key={index} 
-                    href={`/services/${service.toLowerCase().replace(/\s+/g, '-')}`} 
+                    href={service.link} 
                     className={styles.dropdownItem}
                   >
-                    {service}
+                    {service.name}
                   </Link>
                 ))}
               </div>

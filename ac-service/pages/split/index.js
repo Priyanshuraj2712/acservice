@@ -5,21 +5,21 @@ import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 
 const windowACSubcategories = [
-  { name: "Window AC Service", image: "service.png", link: "/window/service" },
-  { name: "Window AC Installation/Uninstallation", image: "install.jpg", link: "/window/install" },
-  { name: "Window AC Gas Refilling", image: "gas.webp", link: "/window/gas" },
-  { name: "Window AC Other Work", image: "other.webp", link: "/window/other" },
+  { name: "Split AC Service", image: "service.png", link: "/split/service" },
+  { name: "Split AC Installation/Uninstallation", image: "install.jpg", link: "/split/install" },
+  { name: "Split AC Gas Refilling", image: "gas.webp", link: "/split/gas" },
+  { name: "Split AC Other Work", image: "other.webp", link: "/split/other" },
 ];
 
-const WindowACPage = () => {
+const SplitACPage = () => {
   return (
     <div>
       <Navbar />
       
       <div className={styles.header}>
-        <h2>Window AC Services</h2>
+        <h2>Split AC Services</h2>
         <p>
-          We provide expert services for your Window AC, ensuring it functions efficiently 
+          We provide expert services for your Split AC, ensuring it functions efficiently 
           and keeps your space cool. Whether it's installation, repair, gas refilling, or other maintenance work, 
           we’ve got you covered.
         </p>
@@ -54,4 +54,4 @@ const WindowACPage = () => {
   );
 };
 
-export default WindowACPage;
+export default SplitACPage;

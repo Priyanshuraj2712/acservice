@@ -3,6 +3,27 @@ import Footer from "@/Components/Footer";
 import styles from "@/styles/best-split-ac.module.css";
 
 const BlogPost = () => {
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_oka0lq2", // Replace with your EmailJS Service ID
+        "template_k0cxoym", // Replace with your EmailJS Template ID
+        formRef.current,
+        "KhhyFGP7FHMWlOGI9" // Replace with your EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          alert("Comment sent successfully!");
+        },
+        (error) => {
+          alert("Failed to send comment.");
+        }
+      );
+  };
   return (
     <>
       <Navbar />
@@ -58,7 +79,7 @@ const BlogPost = () => {
 
           <div className={styles.commentSection}>
             <h3>Leave a Comment</h3>
-            <form className={styles.commentForm}>
+            <form ref={formRef} className={styles.commentForm} onSubmit={handleSubmit}>
               <div className={styles.formGroup}>
                 <label>Name</label>
                 <input type="text" name="name" placeholder="Your Name" required />
