@@ -161,6 +161,7 @@
   text-align: center;
   color: #000;
   margin-bottom: auto;
+  margin-top: 100px;
 }
 
 /* Form Container */
@@ -243,10 +244,15 @@
   .commentSection {
     padding: 20px;
     max-width: 100%;
+    margin-top:100px;
   }
 
   .commentForm {
     padding: 20px;
+  }
+
+  .banner{
+    margin-top:150px;
   }
 
   .commentForm input,
@@ -268,6 +274,7 @@
   .blogPostHeader {
     flex-direction: column;
     align-items: center;
+
   }
 
   .blogPostImage {
@@ -292,5 +299,78 @@
   .commentForm input,
   .commentForm textarea {
     font-size: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .banner{
+    margin-top:150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blogPostHeader {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blogPostImage {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .commentSection {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .commentForm {
+    padding: 20px;
+  }
+
+  .commentForm input,
+  .commentForm textarea {
+    font-size: 1rem;
+  }
+
+  .submitBtn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .blogPostContent h2 {
+    font-size: 2rem;
+  }
+
+  .submitBtn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .banner{
+    margin-top:150px;
   }
 }
