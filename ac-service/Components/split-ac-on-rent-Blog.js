@@ -1,6 +1,8 @@
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import styles from "@/styles/best-split-ac.module.css";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
 
 const BlogPost = () => {
   const formRef = useRef();
