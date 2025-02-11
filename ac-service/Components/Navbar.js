@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: 'Ductable AC', link: '/ductable' },
     { name: 'VRV/VRF AC', link: '/vrv' },
     { name: 'Tower AC', link: '/tower' },
-    { name: 'AHU/CFU AC', link: '/ahu' },
+    { name: 'AHU AC', link: '/ahu' },
     { name: 'AC On Rent', link: '/split-ac-on-rent' },
     { name: 'Copper Pipe Fitting', link: '/fitting' },
   ];
