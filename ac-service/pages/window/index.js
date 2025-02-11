@@ -20,7 +20,7 @@ const WindowACPage = () => {
         <h2>Window AC Services</h2>
         <p>
           We provide expert services for your Window AC, ensuring it functions efficiently 
-          and keeps your space cool. Whether it's installation, repair, gas refilling, or other maintenance work, 
+          and keeps your space cool. Whether its installation, repair, gas refilling, or other maintenance work, 
           we’ve got you covered.
         </p>
       </div>

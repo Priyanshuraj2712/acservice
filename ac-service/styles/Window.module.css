@@ -48,7 +48,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 320px; /* Adjust this to fit your content */
+    height: 320px;
 }
 
 .card:hover {
@@ -61,11 +61,12 @@
     height: 200px;
     object-fit: cover;
     border-radius: 5px;
+    width: 100%;
 }
 
 /* Card Content */
 .cardContent {
-    flex-grow: 1; /* Pushes content evenly */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,4 +104,122 @@
     font-size: 1.1rem;
     color: #333;
     margin: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header {
+        font-size: 1.6rem;
+        margin-top: 150px;
+    }
+
+    .header p {
+        font-size: 1.1rem;
+        margin: 15px 20px 50px;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .cardContainer {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .cardTitle {
+        font-size: 1.1rem;
+    }
+
+    .additionalInfo h3 {
+        font-size: 1.4rem;
+    }
+
+    .additionalInfo li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.4rem;
+        margin-top: 250px;
+    }
+
+    .header p {
+        font-size: 1rem;
+        margin: 15px 15px 40px;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .cardContainer {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card {
+        height: 280px;
+    }
+
+    .cardImage {
+        height: 180px;
+    }
+
+    .cardTitle {
+        font-size: 1rem;
+    }
+
+    .additionalInfo h3 {
+        font-size: 1.3rem;
+    }
+
+    .additionalInfo li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 1.2rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+        margin: 10px 10px 30px;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .cardContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: 260px;
+        padding: 8px;
+    }
+
+    .cardImage {
+        height: 160px;
+    }
+
+    .cardTitle {
+        font-size: 0.9rem;
+    }
+
+    .additionalInfo h3 {
+        font-size: 1.2rem;
+    }
+
+    .additionalInfo li {
+        font-size: 0.9rem;
+    }
 }

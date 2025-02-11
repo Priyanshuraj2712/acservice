@@ -166,6 +166,9 @@
   
   /* Responsive Design */
   @media (max-width: 1024px) {
+    .aboutContainer{
+      margin-top: 100px;
+    }
     .hero {
       height: 400px;
       margin-top: 150px;
@@ -195,6 +198,9 @@
   }
   
   @media (max-width: 768px) {
+    .aboutContainer{
+      margin-top: 200px;
+    }
     .hero {
       height: 280px;
       margin-top: 200px;
