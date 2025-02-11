@@ -168,9 +168,16 @@
   color: #0056b3;
   text-decoration: underline;
 }
-
+@media (max-width: 1024px) {
+  .banner{
+    margin-top: 150px;
+  }
+}
 /* Sidebar responsive for mobile */
 @media (max-width: 768px) {
+  .banner{
+    margin-top:100px;
+  }
   .container {
     flex-direction: column;
     padding: 20px;

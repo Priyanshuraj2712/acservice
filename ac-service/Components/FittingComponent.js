@@ -63,7 +63,7 @@ const FittingComponent = () => {
         <h3>Contact Us for Reliable Copper Pipe Fitting in Gurgaon</h3>
         <p>
           At <strong>acservicegurgaon</strong>, we guarantee top-notch copper pipe fitting services across Gurgaon. 
-          Whether it's for residential, commercial, or industrial applications, our skilled professionals are ready to deliver 
+          Whether it for residential, commercial, or industrial applications, our skilled professionals are ready to deliver 
           outstanding results.
         </p>
         <p>
