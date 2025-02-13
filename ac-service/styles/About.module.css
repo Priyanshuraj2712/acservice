@@ -107,7 +107,7 @@
 @media (max-width: 1024px) {
     .hero {
         height: 500px; /* Adjust height for tablet */
-        margin-top: 200px;
+        margin-top: 125px;
     }
     .heroOverlay {
         font-size: 24px;

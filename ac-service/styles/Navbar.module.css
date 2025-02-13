@@ -11,6 +11,10 @@
   top: 0;
   width: 100%;
   z-index: 1001;
+  height: 2.5rem; /* Set a fixed height to prevent shifting */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactLink {
@@ -34,7 +38,7 @@
   background-color: #ffffff;
   border-bottom: 2px solid #f9a825;
   position: fixed;
-  top: 2.5rem;
+  top: 2.5rem; /* Adjust dynamically based on topBar height */
   width: 100%;
   z-index: 1000;
 }
@@ -117,6 +121,9 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .topBar{
+    height:3rem;
+  }
   .navbar {
     padding: 1rem;
     justify-content: center;
@@ -141,10 +148,14 @@
 
 /* Mobile (No Toggle) */
 @media (max-width: 768px) {
+  .topBar{
+    height: 3rem;
+  }
   .navbar {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    top: 3rem;
     height: auto;
   }
 

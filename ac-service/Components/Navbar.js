@@ -31,24 +31,27 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = React.useCallback(() => {
     if (!isMobileView) {
       if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
       setIsServicesOpen(true);
     }
-  };
-
-  const handleMouseLeave = () => {
+  }, [isMobileView]);
+  
+  const handleMouseLeave = React.useCallback(() => {
     if (!isMobileView) {
       dropdownTimeoutRef.current = setTimeout(() => {
         setIsServicesOpen(false);
       }, 300);
     }
-  };
+  }, [isMobileView]);
+  
 
-  const handleMobileClick = () => {
-    setIsServicesOpen(prev => !prev);
+  const handleMobileClick = (e) => {
+    e.stopPropagation();
+    setIsServicesOpen((prev) => !prev);
   };
+  
 
   return (
     <>

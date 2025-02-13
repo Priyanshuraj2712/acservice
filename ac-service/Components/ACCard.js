@@ -10,7 +10,7 @@ const acTypes = [
   { name: "VRV/VRF AC", image: "vrv.jpg", link: "/vrv" },
   { name: "Tower AC", image: "tower.jpg", link: "/tower" },
   { name: "Copper Pipe Fitting", image: "copper.jpg", link: "/fitting" },
-  { name: "AHU/CFU AC", image: "AHU.jpg", link: "/ahu" },
+  { name: "AHU AC", image: "AHU.jpg", link: "/ahu" },
   { name: "Window/Split AC On Rent", image: "package.jpg", link: "/split-ac-on-rent" },
 ];
 
