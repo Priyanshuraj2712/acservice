@@ -116,8 +116,6 @@ Stay cool, save money, and beat the heat with ACServicesGurgaon.com – your tru
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

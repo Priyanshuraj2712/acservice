@@ -119,8 +119,6 @@ If you are interested in renting a split AC and would like to get in touch with 
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };
