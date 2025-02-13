@@ -12,10 +12,10 @@ const BlogPost = () => {
 
     emailjs
       .sendForm(
-        "service_oka0lq2", // Replace with your EmailJS Service ID
-        "template_k0cxoym", // Replace with your EmailJS Template ID
+        "service_539k4ug", // Replace with your EmailJS Service ID
+        "template_g476641", // Replace with your EmailJS Template ID
         formRef.current,
-        "KhhyFGP7FHMWlOGI9" // Replace with your EmailJS Public Key
+        "V_RaldyQDJMOvR2nj" // Replace with your EmailJS Public Key
       )
       .then(
         (result) => {

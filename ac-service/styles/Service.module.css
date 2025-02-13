@@ -247,6 +247,22 @@
     .content p {
         font-size: 16px;
     }
+    .comparisonTable {
+        overflow-x: auto;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .comparisonTable table {
+        min-width: 600px; /* Ensures proper table display */
+        width: 100%;
+        display: block;
+    }
+
+    .comparisonTable th, .comparisonTable td {
+        font-size: 14px;
+        padding: 10px;
+    }
 
     .contactButton, .callButton {
         font-size: 1rem;

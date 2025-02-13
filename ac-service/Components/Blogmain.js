@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Link from "next/link";
 import styles from "@/styles/Blogmain.module.css";
 
 const blogPosts = [
@@ -120,15 +120,20 @@ const Blogcontent = () => {
           <div className={styles.popularCategories}>
             <h3>Popular Categories</h3>
             <ul>
-              {["Split AC", "Window AC", "Cassette AC", "Ducting AC", "AC Repair"].map((category, index) => (
+              {[
+                { name: "Window AC", link: "/window" },
+                { name: "Split AC", link: "/split" },
+                { name: "Cassette AC", link: "/cassette" },
+                { name: "Ductable AC", link: "/ductable" },
+                { name: "AC on rent", link: "/split-ac-on-rent" },
+              ].map((category, index) => (
                 <li key={index}>
-                  <a href={`/category/${category.toLowerCase().replace(/\s/g, "-")}`}>
-                    {category}
-                  </a>
+                  <Link href={category.link}>{category.name}</Link>
                 </li>
               ))}
             </ul>
           </div>
+
 
           {/* Recent Comments */}
 <div className={styles.recentComments}>

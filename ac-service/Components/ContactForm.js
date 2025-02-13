@@ -22,8 +22,8 @@ const ContactPage = () => {
 
     emailjs
       .send(
-        "service_oka0lq2",
-        "template_6gglxsr",
+        "service_539k4ug",
+        "template_8fdzuhx",
         {
           from_name: formData.name,
           to_name: "AC Service Gurgaon",
@@ -33,7 +33,7 @@ const ContactPage = () => {
           service: formData.service,
           message: formData.message,
         },
-        "KhhyFGP7FHMWlOGI9"
+        "V_RaldyQDJMOvR2nj"
       )
       .then(
         () => {
