@@ -6,7 +6,7 @@
     padding: 20px;
     margin-top: calc(2.5rem + 68px); /* Push container below navbar */
     gap: 70px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('/acservice/ac-service/public/service.webp');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
     background-size: cover;
     background-position: center;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
@@ -95,11 +95,12 @@
         align-items: center;
         padding: 20px;
         gap: 30px;
-        margin-top: 140px;
+        margin-top: calc(4rem + 80px); /* Push container below navbar */
     }
 
     .imageSection {
         width: 100%;
+        margin-top:55px;
         text-align: center;
     }
 
