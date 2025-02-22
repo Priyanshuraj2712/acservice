@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const ServiceContainer = () => {
   const handleRequest = (e) => {
     e.preventDefault();
-    window.location.href = "/contact";
+    window.location.href = "/contact-us";
   };
 
   return (

@@ -176,7 +176,7 @@
     grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); /* Automatically fit items in row */
     gap: 0.5rem; /* Adjust space between items */
     width: 100%;
-  }
+  } 
 
   /* Show dropdown on hover over services */
   .servicesDropdown:hover .dropdownMenu {
