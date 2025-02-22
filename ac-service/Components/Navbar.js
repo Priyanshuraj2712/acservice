@@ -9,15 +9,15 @@ const Navbar = () => {
   const dropdownTimeoutRef = useRef(null);
 
   const services = [
-    { name: 'Window AC', link: '/window' },
-    { name: 'Split AC', link: '/split' },
-    { name: 'Cassette AC', link: '/cassette' },
-    { name: 'Ductable AC', link: '/ductable' },
-    { name: 'VRV/VRF AC', link: '/vrv' },
-    { name: 'Tower AC', link: '/tower' },
-    { name: 'AHU AC', link: '/ahu' },
+    { name: 'Window AC', link: '/window-ac-services-gurgaon' },
+    { name: 'Split AC', link: '/split-ac-services' },
+    { name: 'Cassette AC', link: '/cassette-ac-services-gurgaon' },
+    { name: 'Ductable AC', link: '/ducting-ac-services-gurgaon' },
+    { name: 'VRV/VRF AC', link: '/vrv-ac-services-gurgaon' },
+    { name: 'Tower AC', link: '/tower-ac-services-gurgaon' },
+    { name: 'AHU AC', link: '/ahu-ac-services-gurgaon' },
     { name: 'AC On Rent', link: '/split-ac-on-rent' },
-    { name: 'Copper Pipe Fitting', link: '/fitting' },
+    { name: 'Copper Pipe Fitting', link: '/copper-pipe-fitting' },
   ];
 
   React.useEffect(() => {
@@ -58,7 +58,7 @@ const Navbar = () => {
       {/* Top Contact Bar */}
       <div className={styles.topBar}>
         <span>
-          📞 <a href="tel:+91810954362" className={styles.contactLink}>+91810954362</a> & 
+          📞 <a href="tel:+919810954362" className={styles.contactLink}>+919810954362</a> & 
           <a href="tel:+917011132581" className={styles.contactLink}> +917011132581</a>
         </span>
       </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
         {/* Navbar Links */}
         <div className={styles.navbarLinks}>
           <Link href="/" className={styles.navbarLink}>Home</Link>
-          <Link href="/about" className={styles.navbarLink}>About Us</Link>
+          <Link href="/about-us" className={styles.navbarLink}>About Us</Link>
 
           {/* Services Dropdown */}
           <div 
@@ -105,7 +105,7 @@ const Navbar = () => {
 
           <Link href="/why-choose-us" className={styles.navbarLink}>Why Choose Us?</Link>
           <Link href="/blog" className={styles.navbarLink}>Blog</Link>
-          <Link href="/contact" className={styles.navbarLink}>Contact Us</Link>
+          <Link href="/contact-us" className={styles.navbarLink}>Contact Us</Link>
         </div>
       </nav>
     </>

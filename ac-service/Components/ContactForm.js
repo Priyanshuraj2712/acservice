@@ -147,7 +147,7 @@ const ContactPage = () => {
         </p>
         <p>
           <strong>Phone:</strong>{" "}
-          <a href="tel:+91810954362">+91810954362</a>
+          <a href="tel:+919810954362">+919810954362</a>
         </p>
         <p>
           <strong>Landline:</strong>{" "}

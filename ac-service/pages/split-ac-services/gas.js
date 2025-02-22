@@ -10,16 +10,16 @@ const WindowACComponent = () => {
     <div className={styles.aboutContainer}>
       <div className={styles.hero}>
         <div className={styles.heroOverlay}>
-          Window AC Services
+          Split AC Services
         </div>
       </div>
       <div className={styles.content}>
         <div className={styles.com}><strong>Gas refilling is essential when your AC is not cooling effectively. AC Service Gurgaon provides professional gas refilling services using high-quality refrigerants to ensure optimal performance.</strong></div>
 
 
-        <h2>Window AC Gas Refilling</h2>
+        <h2>Split AC Gas Refilling</h2>
         
-        <h3>Types of Refrigerants Used in Window ACs:</h3>
+        <h3>Types of Refrigerants Used in Split ACs:</h3>
         <ul>
           <li><strong>R-22:</strong> Older AC models use R-22, but it is being phased out due to environmental concerns.</li>
           <li><strong>R-32:</strong> More energy-efficient and eco-friendly compared to R-22, with a lower global warming potential.</li>
@@ -45,7 +45,7 @@ const WindowACComponent = () => {
       <div className={styles.contactSection}>
         <p className={styles.tagline}>100% convenience with 0 hassle. That’s how we keep you free.</p>
         <div className={styles.buttonContainer}>
-          <a href="tel:+91810954362" className={styles.contactButton}>Contact Now</a>
+          <a href="tel:+919810954362" className={styles.contactButton}>Contact Now</a>
           <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
         </div>
       </div>
