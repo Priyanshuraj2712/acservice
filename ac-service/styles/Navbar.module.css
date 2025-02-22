@@ -148,42 +148,93 @@
 
 /* Mobile (No Toggle) */
 @media (max-width: 768px) {
-  .topBar{
-    height: 3rem;
-  }
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    top: 3rem;
-    height: auto;
+  /* Show Hamburger Menu */
+  .hamburger {
+    display: block;
+    z-index: 1100;
   }
 
+  /* Hide Default Navbar Links */
   .navbarLinks {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
     width: 100%;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 1000;
   }
 
+  /* Show Menu When Open */
+  .showMenu {
+    display: flex !important;
+  }
+
+  /* Mobile Navbar Links - Now stacked vertically */
   .navbarLink {
-    font-size: 0.9rem;
-    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease-in-out;
   }
 
-  .dropdownMenu {
-    display: none; /* Initially hide dropdown */
-    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); /* Automatically fit items in row */
-    gap: 0.5rem; /* Adjust space between items */
-    width: 100%;
-  } 
+  .navbarLink:hover {
+    background-color: #f0f0f0;
+  }
 
-  /* Show dropdown on hover over services */
-  .servicesDropdown:hover .dropdownMenu {
-    display: grid; /* Show dropdown with grid layout */
+  /* Mobile Dropdown */
+  .servicesDropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdownTrigger {
+    display: block;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+  }
+
+  /* Show dropdown options stacked vertically */
+  .servicesDropdown .dropdownMenu {
+    position: static;
+    display: none;
+    width: 100%;
+    padding: 0;
+    background-color: white;
+  }
+
+  /* Show dropdown when active */
+  .servicesDropdown.active .dropdownMenu {
+    display: block;
+  }
+
+  .dropdownItem {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .dropdownItem:hover {
+    background-color: #f5f5f5;
+  }
+}@media (min-width: 769px) {
+  .hamburger {
+    display: none;
   }
 }
-
-
-  
-
