@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "@/styles/Window.module.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 const windowACSubcategories = [
   { name: "Window AC Service", image: "service.png", link: "/window-ac-services-gurgaon/service" },
@@ -18,6 +19,25 @@ const WindowACPage = () => {
       
       <div className={styles.header}>
         <h2>Window AC Services</h2>
+        
+       
+      </div>
+
+      <div className={styles.cardContainer}>
+        {windowACSubcategories.map((sub, index) => (
+          <Link key={index} href={sub.link} passHref>
+            <button className={styles.card}>
+              <img src={sub.image} alt={`${sub.name} Illustration`} className={styles.cardImage} />
+              <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>{sub.name}</h3>
+              </div>
+            </button>
+          </Link>
+        ))}
+      </div>
+
+      <div className={styles.additionalInfo}>
+        <h3>Why Choose Us?</h3>
         <p>
           Repair, Service & Maintenance of all brands Window AC in Gurgaon, LG AC, Samsung AC, Daikin AC, Carrier AC, 
           Blue Star AC, Voltas AC, Videocon & Onida ACs. Gurgaon Repairs offers all brand air conditioners repairing.
@@ -44,24 +64,6 @@ const WindowACPage = () => {
           conditioning system does need to be replaced, you can trust our AC experts to help you choose the best new window AC system 
           for your individual needs.
         </p>
-       
-      </div>
-
-      <div className={styles.cardContainer}>
-        {windowACSubcategories.map((sub, index) => (
-          <Link key={index} href={sub.link} passHref>
-            <button className={styles.card}>
-              <img src={sub.image} alt={`${sub.name} Illustration`} className={styles.cardImage} />
-              <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>{sub.name}</h3>
-              </div>
-            </button>
-          </Link>
-        ))}
-      </div>
-
-      <div className={styles.additionalInfo}>
-        <h3>Why Choose Us?</h3>
         <p>
           If your air conditioning system is experiencing any of these signs, contact us right away. We can examine your AC unit 
           and fix any signs of trouble so that you can avoid a costly replacement installation down the road. We offer both residential 
@@ -77,6 +79,7 @@ const WindowACPage = () => {
       </div>
 
       <Footer />
+      <WhatsAppToggle/>
     </div>
   );
 };

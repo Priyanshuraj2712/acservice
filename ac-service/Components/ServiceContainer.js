@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/styles/ServiceContainer.module.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 const ServiceContainer = () => {
   const handleRequest = (e) => {
@@ -27,9 +28,21 @@ const ServiceContainer = () => {
         <p>
           Let us know how we can help. Your satisfaction is our success!
         </p>
-        <button onClick={handleRequest} className={styles.button}>
-          Request Now
-        </button>
+
+        {/* Button Container */}
+        <div className={styles.buttonContainer}>
+          <button onClick={handleRequest} className={styles.button}>
+            Request Now
+          </button>
+          <a
+            href="https://wa.me/919810954362"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.whatsappButton}
+          >
+            <FaWhatsapp /> WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   );

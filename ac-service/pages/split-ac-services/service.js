@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/Service.module.css"; 
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 const WindowACService = () => {
   return (
@@ -85,6 +86,7 @@ const WindowACService = () => {
       </div>
     </div>
     <Footer />
+    <WhatsAppToggle/>
     </>
   );
 }

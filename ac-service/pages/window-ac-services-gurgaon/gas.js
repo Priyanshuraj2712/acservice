@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/Install.module.css"; 
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 const WindowACComponent = () => {
   return (
@@ -51,6 +52,7 @@ const WindowACComponent = () => {
       </div>
     </div>
     <Footer />
+    <WhatsAppToggle/>
     </>
   );
 }

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "@/Components/Navbar";
 import VRV_VRF_Services from "@/Components/VRV";
 import Footer from "@/Components/Footer";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 export default function Contact() {
   return (
@@ -16,6 +17,7 @@ export default function Contact() {
       <Navbar></Navbar>
       <VRV_VRF_Services></VRV_VRF_Services>
       <Footer></Footer>
+      <WhatsAppToggle/>
     </>
   );
 }

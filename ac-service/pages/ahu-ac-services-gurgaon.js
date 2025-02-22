@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import ACServiceComponent from "@/Components/AHU";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 const About = () => {
   return (
@@ -20,6 +21,7 @@ const About = () => {
       <Navbar />
       <ACServiceComponent />
       <Footer />
+      <WhatsAppToggle/>
     </>
   );
 };
