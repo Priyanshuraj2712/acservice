@@ -1,7 +1,13 @@
-/* Header Section */
 .header {
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 40px 20px;
+    background: #fff;  /* White background */
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #000; /* Black text */
+    position: relative;
+    overflow: hidden;
 }
 
 .header h2 {
@@ -14,11 +20,16 @@
 
 .header p {
     font-size: 1.2rem;
-    font-weight: 300;
-    color: #555;
-    line-height: 1.6;
-    max-width: 1300px;
-    margin: 0 auto 20px;
+    font-weight: 400;
+    color: #333; /* Dark gray text */
+    line-height: 1.8;
+    max-width: 1200px;
+    margin: 15px auto 20px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: left;
+    border-left: 3px solid #f9a825;
 }
 
 /* Card Container */
@@ -74,21 +85,38 @@
 
 /* Additional Info Section */
 .additionalInfo {
-    
     margin-top: 40px;
-    padding: 40px 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 35px 25px;
+    background: #fff; /* White card */
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 2px solid #ddd; /* Light border */
 }
 
 .additionalInfo h3 {
     font-size: 1.6rem;
-    color: #f9a825;
-    text-align: center;
-    margin-bottom: 15px;
+    color: #000; /* Black text */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted #f9a825; /* Yellow dotted underline */
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
+.additionalInfo p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000; /* Black text */
+    line-height: 1.6;
+    max-width: 1100px;
+    margin: 0 auto 20px;
+    font-family: "Courier New", monospace;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 3px solid #f9a825;
+}
 .additionalInfo ul {
     list-style: none;
     padding: 0;
@@ -99,14 +127,6 @@
     color: #444;
     margin: 8px 0;
     text-align: center;
-}
-.additionalInfo p{
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #555;
-    line-height: 1.6;
-    max-width: 1300px;
-    margin: 0 auto 20px;
 }
 /* Responsive Design */
 @media (max-width: 1024px) {

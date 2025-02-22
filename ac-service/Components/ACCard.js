@@ -3,14 +3,14 @@ import Link from "next/link"; // Only for Next.js
 import styles from "@/styles/ACCard.module.css";
 
 const acTypes = [
-  { name: "Window AC", image: "window.jpg", link: "/window" },
-  { name: "Split AC", image: "split.jpg", link: "/split" },
-  { name: "Cassette AC", image: "cassette.jpg", link: "/cassette" },
-  { name: "Ductable AC", image: "ductable.jpg", link: "/ductable" },
-  { name: "VRV/VRF AC", image: "vrv.jpg", link: "/vrv" },
-  { name: "Tower AC", image: "tower.jpg", link: "/tower" },
-  { name: "Copper Pipe Fitting", image: "copper.jpg", link: "/fitting" },
-  { name: "AHU AC", image: "AHU.jpg", link: "/ahu" },
+  { name: "Window AC", image: "window.jpg", link: "/window-ac-services-gurgaon" },
+  { name: "Split AC", image: "split.jpg", link: "/split-ac-services" },
+  { name: "Cassette AC", image: "cassette.jpg", link: "/cassette-ac-services-gurgaon" },
+  { name: "Ductable AC", image: "ductable.jpg", link: "/ducting-ac-services-gurgaon" },
+  { name: "VRV/VRF AC", image: "vrv.jpg", link: "/vrv-ac-services-gurgaon" },
+  { name: "Tower AC", image: "tower.jpg", link: "/tower-ac-services-gurgaon" },
+  { name: "Copper Pipe Fitting", image: "copper.jpg", link: "/copper-pipe-fitting" },
+  { name: "AHU AC", image: "AHU.jpg", link: "/ahu-ac-services-gurgaon" },
   { name: "Window/Split AC On Rent", image: "package.jpg", link: "/split-ac-on-rent" },
 ];
 

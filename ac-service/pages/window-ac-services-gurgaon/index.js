@@ -62,13 +62,6 @@ const WindowACPage = () => {
 
       <div className={styles.additionalInfo}>
         <h3>Why Choose Us?</h3>
-        <ul>
-          <li>✔ Certified and Experienced Technicians</li>
-          <li>✔ Affordable and Transparent Pricing</li>
-          <li>✔ Fast and Reliable Services</li>
-          <li>✔ 24/7 Customer Support</li>
-          <li>✔ 100% Customer Satisfaction</li>
-        </ul>
         <p>
           If your air conditioning system is experiencing any of these signs, contact us right away. We can examine your AC unit 
           and fix any signs of trouble so that you can avoid a costly replacement installation down the road. We offer both residential 

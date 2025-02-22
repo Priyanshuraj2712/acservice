@@ -58,7 +58,7 @@ const Navbar = () => {
       {/* Top Contact Bar */}
       <div className={styles.topBar}>
         <span>
-          📞 <a href="tel:+91810954362" className={styles.contactLink}>+91810954362</a> & 
+          📞 <a href="tel:+919810954362" className={styles.contactLink}>+919810954362</a> & 
           <a href="tel:+917011132581" className={styles.contactLink}> +917011132581</a>
         </span>
       </div>

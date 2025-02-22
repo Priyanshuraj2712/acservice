@@ -53,7 +53,7 @@ const ChoosePage = () => {
       <section className={styles.cta}>
         <h2>Need AC Service?</h2>
         <p>Call us today for quick, reliable, and affordable AC service!</p>
-        <a href="tel:+91810954362" className={styles.callBtn}>
+        <a href="tel:+919810954362" className={styles.callBtn}>
           <FaPhoneAlt /> Call Now
         </a>
       </section>
