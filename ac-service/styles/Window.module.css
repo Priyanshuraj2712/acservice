@@ -3,7 +3,6 @@
     padding: 40px 20px;
     background: #fff;  /* White background */
     border-radius: 10px;
-    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #000; /* Black text */
     position: relative;
@@ -15,11 +14,11 @@
     font-weight: bold;
     color: #333;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .header p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 400;
     color: #333; /* Dark gray text */
     line-height: 1.8;
@@ -132,7 +131,7 @@
 @media (max-width: 1024px) {
     .header {
         font-size: 1.6rem;
-        margin-top: 80px;
+        margin-top: 130px;
         padding: 30px 15px;
     }
 
@@ -167,7 +166,7 @@
 @media (max-width: 768px) {
     .header {
         font-size: 1.4rem;
-        margin-top: 60px;
+        margin-top: 200px;
         padding: 20px;
     }
 
@@ -215,7 +214,7 @@
 @media (max-width: 480px) {
     .header {
         font-size: 1.2rem;
-        margin-top: 50px;
+        margin-top: 225px;
         padding: 15px;
     }
 
