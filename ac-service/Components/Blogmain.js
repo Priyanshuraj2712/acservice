@@ -153,6 +153,12 @@ const Blogcontent = () => {
 
         </div>
       </div>
+      {/* Older Entries Button */}
+      <div className={styles.olderEntries}>
+        <Link href="/blog-page-2">
+          <button className={styles.olderButton}>Older Entries</button>
+        </Link>
+      </div>
     </>
   );
 };
