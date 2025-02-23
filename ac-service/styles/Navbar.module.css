@@ -11,7 +11,7 @@
   top: 0;
   width: 100%;
   z-index: 1001;
-  height: 2.5rem; /* Set a fixed height to prevent shifting */
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
