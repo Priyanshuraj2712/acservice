@@ -216,7 +216,6 @@
 @media (max-width: 768px) {
   .heroOverlay {
       font-size: 2rem;
-      max-width: 90%;
       padding: 20px 30px;
 
   }

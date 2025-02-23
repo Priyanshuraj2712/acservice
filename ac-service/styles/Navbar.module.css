@@ -152,6 +152,8 @@
   .hamburger {
     display: block;
     z-index: 1100;
+    color: #333;
+    margin-left: 45px;
   }
 
   /* Hide Default Navbar Links */
@@ -169,12 +171,12 @@
     z-index: 1000;
   }
 
-  /* Show Menu When Open */
   .showMenu {
-    display: flex !important;
+    display: flex ;
+    flex-direction: column;
+    height: auto;
   }
 
-  /* Mobile Navbar Links - Now stacked vertically */
   .navbarLink {
     display: block;
     width: 100%;
@@ -207,11 +209,13 @@
 
   /* Show dropdown options stacked vertically */
   .servicesDropdown .dropdownMenu {
-    position: static;
+    position: relative;
     display: none;
     width: 100%;
     padding: 0;
+    max-height: 350px;
     background-color: white;
+    overflow-y:auto;
   }
 
   /* Show dropdown when active */
@@ -231,7 +235,7 @@
   }
 
   .dropdownItem:hover {
-    background-color: #f5f5f5;
+    background-color: #f9a825;
   }
 }@media (min-width: 769px) {
   .hamburger {

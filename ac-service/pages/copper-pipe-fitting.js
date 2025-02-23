@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
-import ACServiceComponent from "@/Components/Ductable";
+import ACServiceComponent from "@/Components/FittingComponent";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
 const About = () => {
