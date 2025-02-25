@@ -265,19 +265,19 @@
 .olderButton::before {
   content: "←"; /* Left arrow */
   font-size: 20px;
-  color: #ff6600; /* Matches text color */
+  color: #F4A21D; /* Matches text color */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* Hover effect */
 .olderButton:hover {
-  color: #cc4400; /* Darker orange */
+  color: #F4A21D; /* Darker orange */
   transform: translateX(-4px);
 }
 
 .olderButton:hover::before {
   transform: translateX(-6px); /* Moves arrow further left */
-  color: #cc4400;
+  color: #F4A21D;
 }
 
 /* Responsive for mobile */

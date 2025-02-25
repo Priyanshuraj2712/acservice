@@ -1,56 +1,49 @@
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
-    margin-top: calc(2.5rem + 68px); /* Push container below navbar */
-    gap: 70px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    color: white;
-    background-color: #fff;
+    margin-top: calc(3.5rem + 68px); /* Adjusted for better spacing from navbar */
+    gap: 40px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .imageSection {
-    flex: 1;
+    width: 100%;
+    text-align: center;
+    margin-top: 70px; /* Prevents overlap with navbar */
 }
 
 .fullImage {
-    max-width: 800px;
-    max-height: 600px;
+    max-width: 100%;
     height: auto;
-    opacity: 0.9;
-    transition: all 0.3s ease;
-    margin-bottom: 15px;
-    margin-left: 20px;
-    border-radius: 10px;
-    filter: brightness(85%);
-    box-shadow: 0 0 30px 15px rgba(255, 166, 0, 0.6);
-}
-
-.fullImage:hover {
-    opacity: 1;
-    filter: brightness(100%);
-    transform: scale(1.05);
-    box-shadow: 0 0 50px 25px rgba(255, 140, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .textSection {
-    flex: 1;
-    text-align: left;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid #F4A21D;
+    width: 90%;
+    max-width: 800px;
 }
 
 .textSection h2 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #333;
@@ -84,7 +77,7 @@
 }
 
 .button:hover {
-    background-color: #F4A21D;
+    background-color: #e08e10;
     transform: scale(1.05);
 }
 
@@ -92,51 +85,33 @@
 @media (max-width: 1024px) {
     .container {
         flex-direction: column;
-        align-items: center;
         padding: 20px;
         gap: 30px;
-        margin-top: calc(4rem + 80px); /* Push container below navbar */
+        margin-top: calc(5rem + 80px); /* Further adjusted for better spacing on tablets */
     }
 
     .imageSection {
-        width: 100%;
-        margin-top:55px;
-        text-align: center;
-    }
-
-    .fullImage {
-        max-width: 100%;
-        height: auto;
+        margin-top: 50px;
     }
 
     .textSection {
-        text-align: center;
         padding: 20px;
-        width: 100%;
+        width: 95%;
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        align-items: center;
         padding: 10px;
-        margin-top: 200px;
+        margin-top: 150px; /* Increased for better visibility on smaller screens */
         gap: 20px;
     }
 
     .imageSection {
-        width: 100%;
-        text-align: center;
-    }
-
-    .fullImage {
-        max-width: 90%;
-        height: auto;
+        margin-top: 60px;
     }
 
     .textSection {
-        text-align: center;
         padding: 20px;
         width: 90%;
     }
@@ -151,6 +126,11 @@
     .container {
         padding: 5px;
         gap: 15px;
+        margin-top: 180px; /* Increased margin for very small devices */
+    }
+
+    .imageSection {
+        margin-top: 70px;
     }
 
     .textSection h2 {
