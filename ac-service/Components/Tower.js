@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/AHU.module.css"; 
+import styles from "@/styles/Tower.module.css"; 
 
 const ACServiceComponent = () => {
   return (
@@ -13,13 +13,13 @@ const ACServiceComponent = () => {
     <div className={styles.content}>
   <h2>Tower AC Repair Services in Gurgaon</h2>
   <p>
-    When it comes to maintaining a comfortable indoor environment, your Tower AC plays a crucial role. 
-    Over time, these systems may experience performance issues due to dust buildup, refrigerant leaks, 
-    or mechanical wear and tear. Our expert Tower AC repair and servicing ensure that your unit runs 
-    efficiently, providing optimal cooling for homes, offices, and commercial spaces.
+  As soon as it comes to choosing Tower AC services for your air conditioning and heating needs, we want you to be pleased with the service you receive from us. Robust Tower A/C has been servicing the Gurgaon Area form last ten years. We provide our clients with top notch trained air conditioning, heating, repair services, maintenance, installations, and duct cleaning as well.
   </p>
 
   <h3>Why Choose Our Tower AC Services?</h3>
+  <p>
+  Directing towards perfection, we are engaged in rendering high end Tower Ac Servicing & Repairing in Gurgaon. Due to our perfection and promising services we are widely in demand among the industry as well as by individuals for the installation repair of servicing of air conditioner towers. Our Quality services are provided only by professionals. These Tower Ac services are required in large areas and huge buildings.
+  </p>
   <ul>
     <li>Certified and factory-trained technicians.</li>
     <li>Comprehensive repair, maintenance, and installation services.</li>
@@ -45,11 +45,10 @@ const ACServiceComponent = () => {
     At <strong>acservicegurgaon</strong>, we offer a full range of Tower AC services to keep your system running smoothly:
   </p>
   <ul>
-    <li><strong>Repair & Servicing:</strong> Fixing cooling issues, refrigerant leaks, and component malfunctions.</li>
-    <li><strong>Installation:</strong> Professional setup for residential and commercial spaces.</li>
-    <li><strong>Preventative Maintenance:</strong> Regular inspections to extend your AC’s lifespan.</li>
-    <li><strong>Filter & Coil Cleaning:</strong> Removing dust and debris for optimal performance.</li>
-    <li><strong>Electrical Component Checks:</strong> Ensuring all connections and controls function correctly.</li>
+    <li>All of our technicians are certified, factory trained.</li>
+    <li>Perfect installation/ Service/ Repair.</li>
+    <li>On time execution and completion of task.</li>
+    <li>Competitive charges</li>
   </ul>
 
   <h3>Benefits of Regular Tower AC Maintenance</h3>

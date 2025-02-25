@@ -7,7 +7,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('/contactbanner.jpg'); /* Adds a gradient overlay */
+    url('/contact-Us-Page-Banner.jpg'); /* Adds a gradient overlay */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

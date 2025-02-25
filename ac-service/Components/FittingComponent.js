@@ -16,9 +16,7 @@ const FittingComponent = () => {
       <div className={styles.content}>
         <h2>Copper Pipe Fitting Services in Gurgaon</h2>
         <p>
-          <strong>acservicegurgaon</strong> has been a trusted name in Copper Pipe Fitting Services for several years. 
-          As one of the most reputed fitting service providers in Gurgaon, our strong industry presence is a testament to our expertise. 
-          We pride ourselves on our professionalism, high-quality service, and customer-centric approach.
+          <strong>acservicegurgaon</strong> are in the Copper Pipe Fitting Services for the past several years. We are one of the best and reputed fitting service provider in Gurgaon and our strong presence in the industry is a proof for the same. Our customers are always treated with politeness and you can feel it when you are with us.
         </p>
 
         <h3>Why Choose Our Copper Pipe Fitting Services?</h3>
@@ -31,7 +29,8 @@ const FittingComponent = () => {
         </ul>
 
         <h3>Our Services</h3>
-        <p>At <strong>acservicegurgaon</strong>, we offer a comprehensive range of copper pipe fitting services, including:</p>
+        <p>
+        All services we offer are exclusive in its quality and we live up to the prospects of our clients. At acservicegurgaon we provide services such as Air Compressor Service and Air Compressor Rentals, copper Pipeline fitting in home and commercial Works, Industrial Pipeline Assembly in Gurgaon</p>
         <ul>
           <li><strong>Residential Copper Pipeline Fitting:</strong> Safe and efficient installation of copper pipelines in homes.</li>
           <li><strong>Commercial and Industrial Pipeline Assembly:</strong> Specialized fitting for businesses, factories, and industrial setups.</li>

@@ -13,12 +13,15 @@ const ACServiceComponent = () => {
     <div className={styles.content}>
   <h2>Cassette AC Repair Services in Gurgaon</h2>
   <p>
-    At <strong>acservicegurgaon</strong>, we offer a wide range of top-quality Cassette AC repair and maintenance 
-    services across Gurgaon. Our commitment to quality, reliability, and affordable pricing has made us a trusted name 
-    in the industry.
+    At <strong>acservicegurgaon</strong>, we offer wide range of unmatched quality cassette AC services in whole Gurgaon. Due to our attractive features quality and genuine price we are popular in Gurgaon. 
   </p>
-
+<p>
+The temperature of office retains it comfortable for employees as well as Clients. As a corporate, while keeping up with your hectic schedule, air-conditioning of your office building is the last thing you would want to worry about.
+</p>
   <h3>Why Choose Our Cassette AC Repair Services?</h3>
+  <p>
+  When your cassette air-conditioning starts showing problems, it not only disturbs the working environment and efficiency but also causes massive electricity bills due to low or non-maintenance of the system, and unnecessary to say, it also burns a huge hole into your wallet.
+  </p>
   <ul>
     <li>Highly skilled and certified technicians.</li>
     <li>Fast and efficient repair solutions.</li>
@@ -43,7 +46,7 @@ const ACServiceComponent = () => {
 
   <h3>Our Cassette AC Services</h3>
   <p>
-    Our expert team provides a comprehensive range of Cassette AC services, including:
+  Scheduled repairs and maintenance can be exclude costly repairs in upcoming. But finding a cassette ac expert help for machine repair, equipment installation and maintenance is all the more challenging. Our cassette ac masters have been providing supreme commercial air conditioning service in Gurgaon region. We provide a complete and extensive range of proficient services that include –
   </p>
   <ul>
     <li><strong>Repair & Service:</strong> Fixing all kinds of cassette AC issues, including cooling problems, gas refilling, and part replacements.</li>
@@ -65,9 +68,7 @@ const ACServiceComponent = () => {
 
   <h3>Book Your Cassette AC Service Today!</h3>
   <p>
-    At <strong>acservicegurgaon</strong>, we guarantee top-notch repair and maintenance services at the most competitive prices. 
-    Whether you need an urgent repair or routine maintenance, our skilled technicians are just a call away. 
-    <strong>Book an appointment today</strong> and let us take care of your air-conditioning needs!
+      For the best cassette ac repair in Gurgaon, our professional air-conditioning service at the most affordable rates, efficient and thoroughly trained technicians. Rely on our experts’ team for marketable air cassette conditioning service, commercial AC repair, commercial air conditioning maintenance, commercial AC installation and let us take care of your air- conditioning systems
   </p>
 </div>
 

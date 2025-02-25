@@ -40,7 +40,7 @@
 
 .textSection {
     flex: 1;
-    text-align: left;
+    text-align: justify;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
     margin-top: 20px;
@@ -141,7 +141,7 @@
     }
 
     .textSection {
-        text-align: center;
+        text-align: justify;
         padding: 20px;
         width: 100%;
     }
@@ -166,7 +166,7 @@
     }
 
     .textSection {
-        text-align: center;
+        text-align: justify;
         padding: 20px;
         width: 90%;
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/Cassette.module.css"; 
+import styles from "@/styles/Ductable.module.css"; 
 
 const ACServiceComponent = () => {
   return (
@@ -13,13 +13,13 @@ const ACServiceComponent = () => {
     <div className={styles.content}>
   <h2>Ductable AC Repair Services in Gurgaon</h2>
   <p>
-    Many homeowners are unaware that their ductable AC system can accumulate large amounts of dirt, dust, debris, pet dander, 
-    insects, and even rodents over time. These pollutants can negatively impact your heating and cooling system, 
-    leading to poor air quality and decreased efficiency. This can be particularly harmful for family members 
-    with allergies, asthma, or respiratory conditions, especially young children and the elderly.
+  A lot landholder isn’t alert that the duct AC in their home can obtain mounds of dirt, dust, debris, pet dander, insects, rodents and other pollutants that can disturb your heating and cooling Ducting AC system. This can be mainly cause damaging for a family member in your home that can experiences allergies or asthma, especially young children and the elderly. In Gurgaon, we are the best ducting AC repairing, servicing, cleaning, installation, even in a newer home.
   </p>
 
   <h3>Why Choose Our Ductable AC Services?</h3>
+  <p>
+  Let us help. At Ducting AC repair Service Experts Heating & Air Conditioning in Gurgaon, we can take care of this for you with one of the most comprehensive duct cleaning services available, plus it’s amazingly affordable. Our experts will come over and perform a thorough cleaning and sanitization of your air ducts so you can take comfort in improved indoor air quality.
+  </p>
   <ul>
     <li>Experienced and certified technicians.</li>
     <li>Comprehensive AC repair, servicing, and installation.</li>
@@ -54,8 +54,7 @@ const ACServiceComponent = () => {
 
   <h3>Why Sealing Your Ducts is Important</h3>
   <p>
-    Over time, air ducts can develop leaks and gaps, allowing conditioned air to escape into unwanted areas like walls, 
-    attics, and closets. This forces your AC or heating system to work harder, leading to:
+  Over time, your home’s air ducts may separate and create gaps. That means some of the air from your heating and cooling system escapes through those gaps into other areas of the home that you don’t want to target, such as closets, walls or attics. Your furnace, air conditioner or heat pump is then enforced to work much harder to uphold the temperature in the living areas. Sealing the air ducts helps to prevent air from escaping and enhances the overall energy efficiency of your heating and cooling system.
   </p>
   <ul>
     <li>Higher energy consumption and electricity bills.</li>

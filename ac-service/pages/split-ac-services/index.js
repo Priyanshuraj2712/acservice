@@ -6,10 +6,10 @@ import Footer from "@/Components/Footer";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
 const windowACSubcategories = [
-  { name: "Split AC Service", image: "service.png", link: "/split-ac-services/service" },
-  { name: "Split AC Installation/Uninstallation", image: "install.jpg", link: "/split-ac-services/install" },
-  { name: "Split AC Gas Refilling", image: "gas.webp", link: "/split-ac-services/gas" },
-  { name: "Split AC Other Work", image: "other.webp", link: "/split-ac-services/other" },
+  { name: "Split AC Service", image: "Splitservice.jpg", link: "/split-ac-services/service" },
+  { name: "Split AC Installation/Uninstallation", image: "SplitInstall.jpg", link: "/split-ac-services/install" },
+  { name: "Split AC Gas Refilling", image: "SplitGas.jpg", link: "/split-ac-services/gas" },
+  { name: "Split AC Other Work", image: "SplitOther.jpg", link: "/split-ac-services/other" },
 ];
 
 const SplitACPage = () => {

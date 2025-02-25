@@ -5,8 +5,9 @@
   }
   
   .hero {
-    background: url('/contactbanner.jpg') center/cover no-repeat;
-    height: 800px;
+    background: url('/tower-ac-repair-gurgaon.jpg') center/cover no-repeat;
+    margin-top: 105px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;

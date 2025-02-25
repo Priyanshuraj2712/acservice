@@ -10,7 +10,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <div className={styles.hero}>
         <Image
-          src="/contactbanner.jpg" // Ensure the image is in the public folder
+          src="/hvac-service-gurgaon.jpg" // Ensure the image is in the public folder
           alt="AC Repair Services"
           layout="fill"
           objectFit="cover"

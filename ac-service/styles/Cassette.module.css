@@ -5,12 +5,12 @@
   }
   
   .hero {
-    background: url('/contactbanner.jpg') center/cover no-repeat;
-    height: 800px;
+    background: url('/cassettes_ac_repair.jpg') center/cover no-repeat;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center; 
     position: relative;
     color: #fff;
   }

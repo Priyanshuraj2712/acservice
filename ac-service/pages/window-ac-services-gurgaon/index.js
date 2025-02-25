@@ -6,10 +6,10 @@ import Footer from "@/Components/Footer";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
 const windowACSubcategories = [
-  { name: "Window AC Service", image: "service.png", link: "/window-ac-services-gurgaon/service" },
-  { name: "Window AC Installation/Uninstallation", image: "install.jpg", link: "/window-ac-services-gurgaon/install" },
-  { name: "Window AC Gas Refilling", image: "gas.webp", link: "/window-ac-services-gurgaon/gas" },
-  { name: "Window AC Other Work", image: "other.webp", link: "/window-ac-services-gurgaon/other" },
+  { name: "Window AC Service", image: "windowService.png", link: "/window-ac-services-gurgaon/service" },
+  { name: "Window AC Installation/Uninstallation", image: "WindowInstall.png", link: "/window-ac-services-gurgaon/install" },
+  { name: "Window AC Gas Refilling", image: "WindowGas.png", link: "/window-ac-services-gurgaon/gas" },
+  { name: "Window AC Other Work", image: "WindowOther.jpg", link: "/window-ac-services-gurgaon/other" },
 ];
 
 const WindowACPage = () => {
