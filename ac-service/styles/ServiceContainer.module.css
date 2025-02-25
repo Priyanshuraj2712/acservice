@@ -36,10 +36,7 @@
 }
 
 .textSection {
-<<<<<<< HEAD
     flex: 1;
-=======
->>>>>>> b044146924ceb12c9ff18aad4761b1dfb06b623c
     text-align: justify;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
@@ -162,6 +159,7 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        margin-top: 80px;
         gap: 20px;
         background: none; /* Removed gradient */
     }
@@ -197,6 +195,7 @@
 
 @media (max-width: 480px) {
     .container {
+        margin-top:60px;
         padding: 5px;
         gap: 15px;
         background: none; /* Removed gradient */

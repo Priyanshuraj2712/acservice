@@ -11,7 +11,7 @@ const acTypes = [
   { name: "Tower AC", image: "tower.jpg", link: "/tower-ac-services-gurgaon" },
   { name: "Copper Pipe Fitting", image: "copper.jpg", link: "/copper-pipe-fitting" },
   { name: "AHU AC", image: "AHU.jpg", link: "/ahu-ac-services-gurgaon" },
-  { name: "Window/Split AC On Rent", image: "package.jpg", link: "/split-ac-on-rent" },
+  { name: "AC On Rent", image: "package.jpg", link: "/ac-on-rent" },
 ];
 
 const ACCards = () => {
