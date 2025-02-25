@@ -13,11 +13,11 @@ const Footer = () => {
           <div>
             <h4>Company</h4>
             <ul>
-              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/about-us">About Us</Link></li>
               <li><Link href="/">Services</Link></li>
               <li><Link href="/why-choose-us">Why Choose Us?</Link></li>
               <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/contact-us">Contact</Link></li>
             </ul>
           </div>
 
@@ -25,7 +25,7 @@ const Footer = () => {
             <h4>Support</h4>
             <ul>
               <li><Link href="/">FAQs</Link></li>  
-              <li><Link href="/contact">Help Center</Link></li> 
+              <li><Link href="/contact-us">Help Center</Link></li> 
               <li><Link href="/">Terms & Conditions</Link></li> 
               <li><Link href="/">Privacy Policy</Link></li>
 </ul>

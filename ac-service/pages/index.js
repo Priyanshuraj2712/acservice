@@ -5,6 +5,7 @@ import ACCards from  "@/Components/ACCard";
 import HowWeWork from "@/Components/HowWeWork";
 import BrandSection from "@/Components/BrandSection";
 import Footer from "@/Components/Footer";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <HowWeWork></HowWeWork>
       <BrandSection></BrandSection>
       <Footer></Footer>
+      <WhatsAppToggle/>
     </>
   );
 }

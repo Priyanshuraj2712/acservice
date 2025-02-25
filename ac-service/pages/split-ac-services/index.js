@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "@/styles/Window.module.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 const windowACSubcategories = [
   { name: "Split AC Service", image: "service.png", link: "/split-ac-services/service" },
@@ -18,7 +19,25 @@ const SplitACPage = () => {
       
       <div className={styles.header}>
         <h2>Choose Our Top-Rated, Reliable Gurgaon Split AC Repairing Services!</h2>
-        <p>
+        
+      </div>
+
+      <div className={styles.cardContainer}>
+        {windowACSubcategories.map((sub, index) => (
+          <Link key={index} href={sub.link} passHref>
+            <button className={styles.card}>
+              <img src={sub.image} alt={`${sub.name} Illustration`} className={styles.cardImage} />
+              <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>{sub.name}</h3>
+              </div>
+            </button>
+          </Link>
+        ))}
+      </div>
+
+      <div className={styles.additionalInfo}>
+      <h3>WHy Choose Us?</h3>
+      <p>
           Repair, Service & Maintenance - All brand air conditioners repairing, installation, and servicing
           by AC Expert Technicians all over Gurgaon. As a Gurgaon resident, we know that the weather can be
           extremely hot even from the end of March till October. When the brutal summer heat arrives, you and
@@ -39,23 +58,6 @@ const SplitACPage = () => {
           our technicians are experts. Our technicians possess the expertise to repair and service all brands of HVAC
           equipment in use today.
         </p>
-      </div>
-
-      <div className={styles.cardContainer}>
-        {windowACSubcategories.map((sub, index) => (
-          <Link key={index} href={sub.link} passHref>
-            <button className={styles.card}>
-              <img src={sub.image} alt={`${sub.name} Illustration`} className={styles.cardImage} />
-              <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>{sub.name}</h3>
-              </div>
-            </button>
-          </Link>
-        ))}
-      </div>
-
-      <div className={styles.additionalInfo}>
-      <h3>WHy Choose Us?</h3>
         <p>
           At AC Services Gurgaon, we have a strong history of providing reliable solutions for
           your residential and commercial air conditioning, heating, and petroleum needs. We want to be the first—and
@@ -68,6 +70,7 @@ const SplitACPage = () => {
       </div>
 
       <Footer />
+      <WhatsAppToggle/>
     </div>
   );
 };

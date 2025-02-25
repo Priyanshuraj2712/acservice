@@ -3,6 +3,7 @@ import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import AboutUs from "@/Components/AboutFirst";
 import SatisfactionGuarantee from "@/Components/SatisfactionGuarantee";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 const About = () => {
   return (
@@ -22,6 +23,7 @@ const About = () => {
       <AboutUs />
       <SatisfactionGuarantee />
       <Footer />
+      <WhatsAppToggle/>
     </>
   );
 };

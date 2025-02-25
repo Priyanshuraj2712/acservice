@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "@/Components/Navbar";
 import BlogPostPage from "@/Components/hvac-increases-home";
 import Footer from "@/Components/Footer";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 export default function Contact() {
   return (
@@ -17,6 +18,7 @@ export default function Contact() {
       <Navbar></Navbar>
       <BlogPostPage></BlogPostPage>
       <Footer></Footer>
+      <WhatsAppToggle/>
     </>
   );
 }

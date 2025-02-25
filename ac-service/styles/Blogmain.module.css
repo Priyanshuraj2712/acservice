@@ -94,7 +94,7 @@
 
 /* Sidebar */
 .sidebar {
-  width: 30%; /* Sidebar takes 30% of the page */
+  width: 35%; /* Sidebar takes 30% of the page */
   padding: 25px;
   background: #fff;
   border-radius: 12px;
@@ -165,35 +165,6 @@
 .featuredPost a:hover {
   color: #0056b3;
   text-decoration: underline;
-}
-
-/* Sidebar responsive for mobile */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .blogSection {
-    width: 100%;
-  }
-
-  .sidebar {
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  .searchBox input {
-    padding: 10px;
-  }
-
-  .sidebar h3 {
-    font-size: 1.2rem;
-  }
-
-  .banner h1 {
-    font-size: 3rem;
-  }
 }
 .popularCategories, .recentComments {
   margin-top: 20px;
@@ -279,13 +250,52 @@
   transform: translateX(-6px); /* Moves arrow further left */
   color: #F4A21D;
 }
-
-/* Responsive for mobile */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .olderButton {
-    font-size: 16px;
+  .banner {
+    margin-top: 100px;
   }
-  .olderButton::before {
-    font-size: 18px;
+
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .blogSection {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .searchBox input {
+    padding: 10px;
+  }
+
+  .sidebar h3 {
+    font-size: 1.2rem;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  /* Stack blog post image above content */
+  .post {
+    flex-direction: column; /* Stacks the image above the content */
+    align-items: flex-start;
+  }
+
+  .post img {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space between image and text */
+  }
+
+  .post .content {
+    text-align: left;
+    width: 100%;
   }
 }

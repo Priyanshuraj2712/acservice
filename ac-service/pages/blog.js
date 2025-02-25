@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "@/Components/Navbar";
 import Blogcontent from "@/Components/Blogmain";
 import Footer from "@/Components/Footer";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 export default function Blog() {
     return (
@@ -20,6 +21,7 @@ export default function Blog() {
         <Navbar />
         <Blogcontent />
         <Footer />
+        <WhatsAppToggle/>
       </>
     );
 }

@@ -1,12 +1,5 @@
 .header {
-    margin-top: 80px;
-    padding: 40px 20px;
-    background: #fff;  /* White background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #000; /* Black text */
-    position: relative;
-    overflow: hidden;
+    margin-top: 120px;
 }
 
 .header h2 {
@@ -14,77 +7,58 @@
     font-weight: bold;
     color: #333;
     text-align: center;
-    margin-bottom: 16px;
 }
 
-.header p {
-    font-size: 1.05rem;
-    font-weight: 400;
-    color: #333; /* Dark gray text */
-    line-height: 1.8;
-    max-width: 1200px;
-    margin: 15px auto 20px;
-    background: rgba(0, 0, 0, 0.05);
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-align: left;
-    border-left: 3px solid #f9a825;
-}
-
-/* Card Container */
 .cardContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    padding: 40px;
-}
-
-/* Card Styling */
-.card {
-    background: #fff;
-    border-radius: 12px;
+    background-color: #f9f9f9;;
+    grid-template-columns: repeat(4, 1fr); /* Always show 3 cards in a row */
+    gap: 30px; /* Space between the cards */
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    text-align: center;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 340px;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Card Image */
-.cardImage {
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
-}
-
-/* Card Content */
-.cardContent {
+    max-width: 350px;
+    height: 450px; /* Slightly increased card height */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    background-color: #f9f4d3;
+    transform: translateY(-15px) rotate(1deg);
+    box-shadow: 0px 20px 30px rgba(249, 168, 37, 0.6);
+    border: 2px solid #f9a825;
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 300px; /* Increased height to cover a larger area */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+  }
+  
+  .cardContent {
     padding: 15px;
-}
-
-.cardTitle {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #f9a825;
-    margin-top: 10px;
-}
-
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    margin: 10px 0;
+  }  
 /* Additional Info Section */
 .additionalInfo {
-    margin-top: 40px;
     padding: 35px 25px;
     background: #fff; /* White card */
     border-radius: 12px;
@@ -108,14 +82,21 @@
     font-weight: 400;
     color: #000; /* Black text */
     line-height: 1.6;
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto 20px;
-    font-family: "Courier New", monospace;
+    font-family: 'Poppins', sans-serif;
     background: rgba(0, 0, 0, 0.05);
     padding: 10px;
     border-radius: 6px;
     border-left: 3px solid #f9a825;
+    transition: background 0.3s ease, color 0.3s ease;
 }
+
+.additionalInfo p:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #d5a04a;
+}
+
 .additionalInfo ul {
     list-style: none;
     padding: 0;
@@ -127,6 +108,7 @@
     margin: 8px 0;
     text-align: center;
 }
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .header {
@@ -166,8 +148,8 @@
 @media (max-width: 768px) {
     .header {
         font-size: 1.4rem;
-        margin-top: 200px;
         padding: 20px;
+        
     }
 
     .header h2 {
@@ -208,52 +190,5 @@
 
     .additionalInfo li {
         font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        font-size: 1.2rem;
-        margin-top: 225px;
-        padding: 15px;
-    }
-
-    .header h2 {
-        font-size: 1.4rem;
-    }
-
-    .header p {
-        font-size: 0.95rem;
-        max-width: 90%;
-    }
-
-    .cardContainer {
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 8px;
-        padding: 15px;
-    }
-
-    .card {
-        height: 280px;
-    }
-
-    .cardImage {
-        height: 140px;
-    }
-
-    .cardTitle {
-        font-size: 1rem;
-    }
-
-    .additionalInfo {
-        padding: 15px;
-    }
-
-    .additionalInfo h3 {
-        font-size: 1.3rem;
-    }
-
-    .additionalInfo li {
-        font-size: 0.95rem;
     }
 }

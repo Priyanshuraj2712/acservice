@@ -11,7 +11,7 @@
   top: 0;
   width: 100%;
   z-index: 1001;
-  height: 2.5rem; /* Set a fixed height to prevent shifting */
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,14 +44,15 @@
 }
 
 .navbarBrand img {
-  height: 60px;
+  height: 50px; /* Reduced from 60px */
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .navbarBrand img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05); /* Slightly reduced hover effect */
 }
+
 
 /* Navbar Links */
 .navbarLinks {
@@ -148,42 +149,116 @@
 
 /* Mobile (No Toggle) */
 @media (max-width: 768px) {
-  .topBar{
-    height: 3rem;
+  /* Show Hamburger Menu */
+  .hamburger {
+    display: block;
+    z-index: 1100;
+    color: #333;
+    margin-left: 45px;
   }
-  .navbar {
+
+  /* Hide Default Navbar Links */
+  .navbarLinks {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    top: 3rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+
+  .showMenu {
+    display: flex ;
+    flex-direction: column;
     height: auto;
   }
 
-  .navbarLinks {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
   .navbarLink {
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
-
-  .dropdownMenu {
-    display: none; /* Initially hide dropdown */
-    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); /* Automatically fit items in row */
-    gap: 0.5rem; /* Adjust space between items */
+    display: block;
     width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease-in-out;
   }
 
-  /* Show dropdown on hover over services */
-  .servicesDropdown:hover .dropdownMenu {
-    display: grid; /* Show dropdown with grid layout */
+  .navbarLink:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Mobile Dropdown */
+  .servicesDropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdownTrigger {
+    display: block;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+  }
+
+  /* Show dropdown options stacked vertically */
+  .servicesDropdown .dropdownMenu {
+    position: relative;
+    display: none;
+    width: 100%;
+    padding: 0;
+    max-height: 350px;
+    background-color: white;
+    overflow-y:auto;
+  }
+
+  /* Show dropdown when active */
+  .servicesDropdown.active .dropdownMenu {
+    display: block;
+  }
+
+  .dropdownItem {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .dropdownItem:hover {
+    background-color: #f9a825;
+  }
+}@media (min-width: 769px) {
+  .hamburger {
+    display: none;
   }
 }
+@media (max-width: 768px) {
+  .navbarLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Now starts right after the navbar */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 999; /* Higher than logo but below navbar */
+  }
 
-
-  
-
+  .showMenu {
+    display: flex;
+    flex-direction: column;
+  }
+}

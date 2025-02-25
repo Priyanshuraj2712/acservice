@@ -3,6 +3,7 @@ import Navbar from "@/Components/Navbar";
 import ContactBanner from "@/Components/ContactBanner";
 import ContactForm from "@/Components/ContactForm";
 import Footer from "@/Components/Footer";
+import WhatsAppToggle from "@/Components/WhatsApp";
 
 export default function Contact() {
     return (
@@ -22,6 +23,7 @@ export default function Contact() {
         <ContactBanner />
         <ContactForm />
         <Footer />
+        <WhatsAppToggle/>
       </>
     );
 }

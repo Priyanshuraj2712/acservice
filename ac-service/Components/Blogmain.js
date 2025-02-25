@@ -121,10 +121,10 @@ const Blogcontent = () => {
             <h3>Popular Categories</h3>
             <ul>
               {[
-                { name: "Window AC", link: "/window" },
-                { name: "Split AC", link: "/split" },
-                { name: "Cassette AC", link: "/cassette" },
-                { name: "Ductable AC", link: "/ductable" },
+                { name: "Window AC", link: "/window-ac-services-gurgaon" },
+                { name: "Split AC", link: "/split-ac-services" },
+                { name: "Cassette AC", link: "/cassette-ac-services-gurgaon" },
+                { name: "Ductable AC", link: "/ducting-ac-services-gurgaon" },
                 { name: "AC on rent", link: "/split-ac-on-rent" },
               ].map((category, index) => (
                 <li key={index}>
@@ -136,21 +136,20 @@ const Blogcontent = () => {
 
 
           {/* Recent Comments */}
-<div className={styles.recentComments}>
-  <h3>Recent Comments</h3>
-  <ul>
-    {[
-      { name: "Pawan", comment: "Great tips on AC installation!", link: "/best-split-ac-installation" },
-      { name: "Priyanshu", comment: "I rented a Split AC from here, amazing service!", link: "/split-ac-on-rent" },
-      { name: "Rahul", comment: "Helped me choose the best AC for my home.", link: "/window-ac-on-rent" },
-    ].map((comment, index) => (
-      <li key={index}>
-        <strong>{comment.name}:</strong> {comment.comment} – <a href={comment.link}>Read More</a>
-      </li>
-    ))}
-  </ul>
-</div>
-
+          <div className={styles.recentComments}>
+            <h3>Recent Comments</h3>
+            <ul>
+              {[
+                { name: "Pawan", comment: "Great tips on AC installation!", link: "/best-split-ac-installation" },
+                { name: "Priyanshu", comment: "I rented a Split AC from here, amazing service!", link: "/split-ac-on-rent" },
+                { name: "Rahul", comment: "Helped me choose the best AC for my home.", link: "/window-ac-on-rent" },
+              ].map((comment, index) => (
+                <li key={index}>
+                  <strong>{comment.name}:</strong> {comment.comment} – <a href={comment.link}>Read More</a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
       {/* Older Entries Button */}

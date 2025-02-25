@@ -1,49 +1,52 @@
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
-    margin-top: calc(3.5rem + 68px); /* Adjusted for better spacing from navbar */
-    gap: 40px;
-    background-color: #f8f9fa;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-    color: black;
-}
-
-@media (min-width: 1024px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    margin-top: calc(2.5rem + 68px);
+    gap: 70px;
+    background-color: #fff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .imageSection {
-    width: 100%;
-    text-align: center;
-    margin-top: 70px; /* Prevents overlap with navbar */
+    flex: 1;
 }
 
 .fullImage {
-    max-width: 100%;
+    max-width: 800px;
+    max-height: 600px;
     height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    filter: brightness(85%);
+    box-shadow: 0 0 30px 15px rgba(255, 166, 0, 0.6);
+}
+
+.fullImage:hover {
+    opacity: 1;
+    filter: brightness(100%);
+    transform: scale(1.05);
+    box-shadow: 0 0 50px 25px rgba(255, 140, 0, 0.8);
 }
 
 .textSection {
-    text-align: center;
-    background-color: white;
-    padding: 30px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    margin-top: 20px;
     border-radius: 15px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid #F4A21D;
-    width: 90%;
-    max-width: 800px;
 }
 
 .textSection h2 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #333;
@@ -57,10 +60,17 @@
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
+    word-spacing: 2px; /* Corrected gap between words */
 }
 
 .textSection p:last-of-type {
     margin-bottom: 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .button {
@@ -77,48 +87,107 @@
 }
 
 .button:hover {
-    background-color: #e08e10;
+    background-color: #F4A21D;
     transform: scale(1.05);
+}
+
+.whatsappButton {
+    display: flex;
+    align-items: center;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.whatsappButton:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+}
+
+.whatsappButton svg {
+    margin-right: 10px;
 }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .container {
         flex-direction: column;
+        align-items: center;
         padding: 20px;
         gap: 30px;
-        margin-top: calc(5rem + 80px); /* Further adjusted for better spacing on tablets */
+        margin-top: calc(4rem + 80px);
+        background: none; /* Removed gradient */
     }
 
     .imageSection {
-        margin-top: 50px;
+        width: 100%;
+        margin-top: 55px;
+        text-align: center;
+    }
+
+    .fullImage {
+        max-width: 100%;
+        height: auto;
+        box-shadow: none; /* Removed hover effects */
+        filter: brightness(100%);
+        transition: none;
+    }
+
+    .fullImage:hover {
+        transform: none;
+        box-shadow: none;
     }
 
     .textSection {
+        text-align: justify;
         padding: 20px;
-        width: 95%;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
     .container {
+        flex-direction: column;
+        align-items: center;
         padding: 10px;
-        margin-top: 150px; /* Increased for better visibility on smaller screens */
         gap: 20px;
+        background: none; /* Removed gradient */
     }
 
     .imageSection {
-        margin-top: 60px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fullImage {
+        max-width: 90%;
+        height: auto;
+        box-shadow: none; /* Removed hover effects */
+        filter: brightness(100%);
+        transition: none;
+    }
+
+    .fullImage:hover {
+        transform: none;
+        box-shadow: none;
     }
 
     .textSection {
+        text-align: justify;
         padding: 20px;
         width: 90%;
     }
 
-    .button {
-        padding: 10px 20px;
-        font-size: 1rem;
+    .buttonContainer {
+        flex-direction: column;
     }
 }
 
@@ -126,11 +195,7 @@
     .container {
         padding: 5px;
         gap: 15px;
-        margin-top: 180px; /* Increased margin for very small devices */
-    }
-
-    .imageSection {
-        margin-top: 70px;
+        background: none; /* Removed gradient */
     }
 
     .textSection h2 {
@@ -139,10 +204,55 @@
 
     .textSection p {
         font-size: 1rem;
+        word-spacing: 2px; /* Ensured consistent spacing */
     }
 
-    .button {
+    .button, .whatsappButton {
         padding: 8px 18px;
         font-size: 0.9rem;
+    }
+
+    .fullImage {
+        max-width: 100%;
+        height: auto;
+        box-shadow: none; /* Removed hover effects */
+        filter: brightness(100%);
+        transition: none;
+    }
+
+    .fullImage:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+@media (max-width: 768px) {
+    .imageSection {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centering the image */
+        align-items: center;
+    }
+
+    .fullImage {
+        max-width: 90%;
+        height: auto;
+        display: block; /* Ensures proper alignment */
+        margin: 0 auto; /* Centers the image */
+    }
+}
+
+@media (max-width: 480px) {
+    .imageSection {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Align to the center */
+        align-items: center;
+    }
+
+    .fullImage {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Ensures it's properly centered */
     }
 }
