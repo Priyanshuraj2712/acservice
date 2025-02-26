@@ -6,8 +6,8 @@ import Footer from "@/Components/Footer";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
 const windowACSubcategories = [
-  { name: "Split AC On Rent", image: "rent_split.jpeg", link: "/split-ac-on-rent" },
-  { name: "Window AC On Rent", image: "rent_window.jpeg", link: "/window-ac-on-rent" },
+  { name: "Split AC On Rent", image: "rent_split.jpg", link: "/split-ac-on-rent" },
+  { name: "Window AC On Rent", image: "rent_window.jpg", link: "/window-ac-on-rent" },
 ];
 
 const SplitACPage = () => {
@@ -74,8 +74,9 @@ const SplitACPage = () => {
         <h3>How to Rent an AC from <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a>?</h3>
         <p>Follow these simple steps to rent an AC easily:</p>
 
-        <ul>
-          <li>Visit <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a> and browse through the available AC options.</li>
+        <ul className={styles.styledList}>
+
+          <li>Visit.<a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a>.  and browse through the available AC options.</li>
           <li>Choose between a window AC or a split AC based on your cooling needs.</li>
           <li>Select your preferred rental duration and budget-friendly plan.</li>
           <li>Place your order online or call their support team.</li>
