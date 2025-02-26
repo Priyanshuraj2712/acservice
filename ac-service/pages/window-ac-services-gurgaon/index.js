@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Window.module.css";
 import Navbar from "@/Components/Navbar";
@@ -15,12 +16,16 @@ const windowACSubcategories = [
 const WindowACPage = () => {
   return (
     <div>
+      <Head>
+        <title>Window AC Services in Gurgaon | Expert Repair & Installation</title>
+        <meta name="description" content="Top-rated Window AC repair, service, and installation in Gurgaon. Call now for expert technicians and fast service!" />
+        <meta name="keywords" content="Window AC service Gurgaon, Window AC repair, AC installation Gurgaon" />
+      </Head>
+
       <Navbar />
-      
+
       <div className={styles.header}>
         <h2>Window AC Services</h2>
-        
-       
       </div>
 
       <div className={styles.cardContainer}>
@@ -39,47 +44,21 @@ const WindowACPage = () => {
       <div className={styles.additionalInfo}>
         <h3>Why Choose Us?</h3>
         <p>
-          Repair, Service & Maintenance of all brands Window AC in Gurgaon, LG AC, Samsung AC, Daikin AC, Carrier AC, 
-          Blue Star AC, Voltas AC, Videocon & Onida ACs. Gurgaon Repairs offers all brand air conditioners repairing.
-          Delhi Gurgaon is known for hot and humid weather in north. Population and pollution can be the reason, but workload 
-          and daily life travel make it feel warmer than actual. In such a busy life, every Gurgaon and Delhi resident wants rest 
-          and comfortable nights. A malfunctioning air conditioner can spoil your entire night. This is one problem no one wants to experience.
+          We provide repair, service, and maintenance for all Window AC brands in Gurgaon, including LG, Samsung, Daikin, Carrier, Blue Star, Voltas, Videocon, and Onida.
+          Our expert AC mechanics ensure your air conditioning system functions optimally. We use state-of-the-art tools and technology to diagnose and fix even the smallest problems.
         </p>
         <p>
-          When your air conditioner is not working like it should, the temperature in your home or business could go from room 
-          temperature to sweltering very quickly. For more than ten years, we have delivered top-quality AC service, maintenance, 
-          and installation, including gas fillings, to our residential and commercial customers in Gurgaon. When you are in need 
-          of a window AC mechanic, we are available with just a single call. You can count on us to make sure that your air 
-          conditioning system is functioning at a fully operational state.
-          Our experienced air conditioning mechanics/experts have the deep knowledge and tools to find and fix any issues that 
-          your air conditioning system may be experiencing. Here at Complete Window AC Service, we can repair and service any 
-          make or model. We use state-of-the-art tools and technology to identify and repair even the smallest of problems.
+          With over ten years of experience, we offer top-quality AC services, maintenance, and installations, including gas refilling for residential and commercial customers in Gurgaon.
+          Whether you need an urgent AC repair or a complete replacement, our team is here to help.
         </p>
         <p>
-          From the smallest window unit to the most technologically advanced AC system, our technicians can handle it all. When 
-          you are in need of fast and reliable AC service in Gurgaon, you can trust us!
-          In addition to providing Window AC service or AC service in Gurugram, we also offer window AC installation. When we receive 
-          service calls from our customers, we try our best to repair their air conditioning systems and return them to perfect working 
-          condition. However, there are some instances where the AC system is beyond repair and needs to be replaced. If your air 
-          conditioning system does need to be replaced, you can trust our AC experts to help you choose the best new window AC system 
-          for your individual needs.
+          Need fast and reliable AC service in Gurgaon? Contact us today at
+          <a href="tel:+919810954362" className={styles.linking}> +91 9810954362</a> or visit our <Link href="/contact-us" className={styles.linking}>Contact Page</Link> to schedule an appointment.
         </p>
-        <p>
-          If your air conditioning system is experiencing any of these signs, <Link href="/contact-us" className={styles.linking}>Contact Us</Link> right away. We can examine your AC unit 
-          and fix any signs of trouble so that you can avoid a costly replacement installation down the road. We offer both residential 
-          AC service and commercial AC service in Gurgaon. Call us today at <a href="tel:+919810954362" className={styles.linking}>+919810954362</a> or <Link href="/contact-us" className={styles.linking}>Contact Us</Link> to take advantage of our fast 
-          and reliable Window AC service in Gurugram.
-        </p>
-        <p>
-          If your air conditioning system is experiencing any issues, <Link href="/contact-us" className={styles.linking}>Contact Us</Link> right away. We can examine your AC unit 
-          and fix any signs of trouble so that you can avoid costly replacements. We offer both residential and commercial 
-          AC services in Gurgaon. Call us today at <a href="tel:+919810954362" className={styles.linking}>+919810954362</a> or <Link href="/contact-us" className={styles.linking}>Contact Us</Link> to take advantage of our fast and reliable service.
-        </p>
-       
       </div>
 
       <Footer />
-      <WhatsAppToggle/>
+      <WhatsAppToggle />
     </div>
   );
 };
