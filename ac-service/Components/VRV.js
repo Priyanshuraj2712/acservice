@@ -105,13 +105,13 @@ const VRV_VRF_Services = () => {
         </p>
 
         <p>
-          At AC Service Gurgaon, we are committed to keeping your VRV/VRF systems in top shape, ensuring year-round comfort and efficiency. Your satisfaction is our priority!
+          At <strong><a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon</a></strong>, we are committed to keeping your VRV/VRF systems in top shape, ensuring year-round comfort and efficiency. Your satisfaction is our priority!
         </p>
       </div>
       <div className={styles.contactSection}>
         <p className={styles.tagline}>100% convenience with 0 hassle. That’s how we keep you free.</p>
         <div className={styles.buttonContainer}>
-          <a href="tel:+919810954362" className={styles.contactButton}>Contact Now</a>
+          <a href="https://acservicegurgaon.com/contact-us" className={styles.contactButton}>Contact Now</a>
           <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
         </div>
       </div>

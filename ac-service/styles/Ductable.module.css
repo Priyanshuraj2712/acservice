@@ -24,7 +24,9 @@
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1s ease-in-out;
   }
-  
+  .linking{
+    color: #d5a04a;
+  }
   .heroOverlay p {
     font-size: 22px;
     font-weight: 800px;

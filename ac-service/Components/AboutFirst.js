@@ -33,7 +33,7 @@ const AboutUs = () => {
         </p>
         <p>
           Our prices are competitive, and we guarantee our work. If you need
-          professional appliance repair at your home in Gurgaon, contact us via
+          professional appliance repair at your home in Gurgaon, <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.linking}>Contact us</a> via
           Phone, Email, or schedule a service online.
         </p>
 

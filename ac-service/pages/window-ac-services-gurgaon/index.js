@@ -65,15 +65,15 @@ const WindowACPage = () => {
           for your individual needs.
         </p>
         <p>
-          If your air conditioning system is experiencing any of these signs, contact us right away. We can examine your AC unit 
+          If your air conditioning system is experiencing any of these signs, <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.linking}>Contact Us</a> right away. We can examine your AC unit 
           and fix any signs of trouble so that you can avoid a costly replacement installation down the road. We offer both residential 
-          AC service and commercial AC service in Gurgaon. Call us today at +91-9810954362 or contact us to take advantage of our fast 
+          AC service and commercial AC service in Gurgaon. Call us today at <a href="tel:+919810954362" className={styles.linking}>+919810954362</a> or <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.linking}>Contact Us</a> to take advantage of our fast 
           and reliable Window AC service in Gurugram.
         </p>
         <p>
-          If your air conditioning system is experiencing any issues, contact us right away. We can examine your AC unit 
+          If your air conditioning system is experiencing any issues, <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.linking}>Contact Us</a> right away. We can examine your AC unit 
           and fix any signs of trouble so that you can avoid costly replacements. We offer both residential and commercial 
-          AC services in Gurgaon. Call us today at +91-9810954362 or contact us to take advantage of our fast and reliable service.
+          AC services in Gurgaon. Call us today at <a href="tel:+919810954362" className={styles.linking}>+919810954362</a> or <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.linking}>Contact Us</a> to take advantage of our fast and reliable service.
         </p>
        
       </div>

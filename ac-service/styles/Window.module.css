@@ -70,9 +70,9 @@
 .additionalInfo h3 {
     font-size: 1.6rem;
     color: #000; /* Black text */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: 10px;
-    border-bottom: 2px dotted #f9a825; /* Yellow dotted underline */
+    /* border-bottom: 2px dotted #f9a825; Yellow dotted underline */
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -92,11 +92,13 @@
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-.additionalInfo p:hover {
+/* .additionalInfo p:hover {
     background: rgba(0, 0, 0, 0.1);
     color: #d5a04a;
-}
-
+} */
+.linking{
+    color: #d5a04a;
+  }
 .additionalInfo ul {
     list-style: none;
     padding: 0;

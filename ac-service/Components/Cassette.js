@@ -13,7 +13,7 @@ const ACServiceComponent = () => {
     <div className={styles.content}>
   <h2>Cassette AC Repair Services in Gurgaon</h2>
   <p>
-    At <strong>acservicegurgaon</strong>, we offer wide range of unmatched quality cassette AC services in whole Gurgaon. Due to our attractive features quality and genuine price we are popular in Gurgaon. 
+    At <strong><a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon.com</a></strong>, we offer wide range of unmatched quality cassette AC services in whole Gurgaon. Due to our attractive features quality and genuine price we are popular in Gurgaon. 
   </p>
 <p>
 The temperature of office retains it comfortable for employees as well as Clients. As a corporate, while keeping up with your hectic schedule, air-conditioning of your office building is the last thing you would want to worry about.

@@ -42,7 +42,7 @@ const ACServiceComponent = () => {
 
   <h3>Our Ductable AC Services in Gurgaon</h3>
   <p>
-    At <strong>acservicegurgaon</strong>, we provide a complete range of ductable AC services, including:
+    At <strong><a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon</a></strong>, we provide a complete range of ductable AC services, including:
   </p>
   <ul>
     <li><strong>Repair & Servicing:</strong> Fixing airflow issues, refrigerant leaks, and component malfunctions.</li>
@@ -68,7 +68,7 @@ const ACServiceComponent = () => {
 
   <h3>Book Your Ductable AC Repair Today!</h3>
   <p>
-    Don’t let a faulty duct system affect your comfort. <strong>acservicegurgaon</strong> offers expert AC repair, servicing, 
+    Don’t let a faulty duct system affect your comfort. <strong><a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon</a></strong> offers expert AC repair, servicing, 
     and duct cleaning solutions at competitive prices.
   </p>
 </div>
@@ -77,7 +77,8 @@ const ACServiceComponent = () => {
       <div className={styles.contactSection}>
         <p className={styles.tagline}>100% convenience with 0 hassle. That’s how we keep you free.</p>
         <div className={styles.buttonContainer}>
-          <a href="tel:+919810954362" className={styles.contactButton}>Contact Now</a>
+          <a href="https://acservicegurgaon.com/contact-us" className={styles.contactButton}>Contact Now</a>
+          
           <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
         </div>
       </div>

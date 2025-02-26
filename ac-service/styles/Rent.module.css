@@ -1,119 +1,255 @@
+/* Header Section */
+.header {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222; 
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Card Container */
 .cardContainer {
-  display: flex;
-  background-color: #f9f9f9;;
-  grid-template-columns: repeat(3, 1fr); /* Always show 3 cards in a row */
-  gap: 30px; /* Space between the cards */
+  display: grid;
+  background-color: #f4f4f4;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0px;
+  justify-items: center;
+  margin-top: 100px;
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 320px;
+  height: 420px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #fff8e5;
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 25px rgba(249, 168, 37, 0.5);
+  border-color: #f9a825;
+}
+
+.cardImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  margin: 12px 0;
+}
+
+/* Additional Info Section */
+.additionalInfo {
+  width: 80%; /* Adjust width as needed */
+  max-width: 1200px; /* Prevents it from getting too large on bigger screens */
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 2px solid #ddd;
+  font-size: 1rem;
+  color: #222;
+  text-transform: uppercase;
+  margin: 20px auto; /* Centers it horizontally */
+  display: block; /* Ensures proper alignment */
+}
+
+
+.additionalInfo h3 {
+  font-size: 1.8rem;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  /* border-bottom: 3px dotted #f9a825; */
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.additionalInfo p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto 15px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #f9a825;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* .additionalInfo p:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #d5a04a;
+} */
+.linking{
+  color: #d5a04a;
+}
+.additionalInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.additionalInfo li {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 8px 0;
+  text-align: center;
+}
+.contactSection {
+  text-align: center;
+  margin-top: 40px;
   padding: 20px;
+  background-color: #f5f5f5; /* Light background for the section */
+  border-radius: 12px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.tagline {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+}
+
+.buttonContainer {
+  display: flex;
   justify-content: center;
-  margin-top:120px;
+  gap: 20px;
+}
+
+.contactButton, .callButton {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #f9a825; /* Button background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contactButton:hover, .callButton:hover {
+  background-color: #d17a00; /* Darker shade on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.contactButton:focus, .callButton:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle focus outline */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header {
+    margin-top: 120px;
+    padding: 20px;
   }
-  
+
+  .header h2 {
+    font-size: 1.9rem;
+  }
+
+  .header p {
+    font-size: 1.1rem;
+    max-width: 750px;
+  }
+
+  .cardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 30px;
+  }
+
   .card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 350px;
-    height: 450px; /* Slightly increased card height */
-    margin-top: 20px;
-    margin-bottom: 40px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    border: none;
-    cursor: pointer;
+    height: 350px;
   }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-  }
-  
-  .card:hover {
-    background-color: #f9f4d3;
-    transform: translateY(-15px) rotate(1deg);
-    box-shadow: 0px 20px 30px rgba(249, 168, 37, 0.6);
-    border: 2px solid #f9a825;
-  }
-  
+
   .cardImage {
-    width: 100%;
-    height: 300px; /* Increased height to cover a larger area */
-    object-fit: cover; /* Ensures the image fills the space without distortion */
+    height: 180px;
   }
-  
-  .cardContent {
+
+  .additionalInfo {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
     padding: 15px;
   }
-  
-  .cardTitle {
-    font-size: 1.5rem;
-    font-family: "Poppins", sans-serif;
-    color: #333333;
-    margin: 10px 0;
-  }  
-  
-  .cardButton {
-    background: linear-gradient(to right, #f9a825, #ffcc33); /* White-yellow gradient */
-    color: #ffffff; /* White text */
-    padding: 10px 20px;
-    font-size: 1.1rem; /* Slightly larger button text */
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .cardButton:hover {
-    background: linear-gradient(to right, #ffd54f, #f9a825); /* Brighter yellow on hover */
-    transform: scale(1.05);
-  }
-  
-  .header {
-    text-align: center;
-    margin: 50px 0 20px;
-  }
-  
+
   .header h2 {
-    font-size: 1.8rem;
-    color: #2c3e50;
+    font-size: 1.7rem;
   }
-  
-  .content {
-    max-width: 800px;
-    margin: 0 auto;
+
+  .header p {
     font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-    padding: 0 20px;
+    max-width: 600px;
   }
-  
-  .content h3 {
-    margin-top: 20px;
-    color: #2980b9;
+
+  .cardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
   }
-  
-  .content p {
-    margin-bottom: 15px;
+
+  .card {
+    height: 320px;
   }
-  
-  .content ol {
-    padding-left: 20px;
+
+  .cardImage {
+    height: 160px;
   }
-  
-  .content ol li {
-    margin-bottom: 10px;
+
+  .cardTitle {
+    font-size: 1.2rem;
   }
-  
-  @media (max-width: 768px) {
-    .cardContainer {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .content {
-      padding: 0 10px;
-    }
+
+  .additionalInfo {
+    padding: 20px;
   }
-  
+
+  .additionalInfo h3 {
+    font-size: 1.5rem;
+  }
+
+  .additionalInfo li {
+    font-size: 1rem;
+  }
+}

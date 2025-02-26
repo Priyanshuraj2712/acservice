@@ -17,7 +17,7 @@ const Navbar = () => {
     { name: "VRV/VRF AC", link: "/vrv-ac-services-gurgaon" },
     { name: "Tower AC", link: "/tower-ac-services-gurgaon" },
     { name: "AHU AC", link: "/ahu-ac-services-gurgaon" },
-    { name: "AC On Rent", link: "/split-ac-on-rent" },
+    { name: "AC On Rent", link: "/ac-on-rent" },
     { name: "Copper Pipe Fitting", link: "/copper-pipe-fitting" },
   ];
 

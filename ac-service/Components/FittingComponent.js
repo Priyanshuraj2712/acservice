@@ -16,7 +16,7 @@ const FittingComponent = () => {
       <div className={styles.content}>
         <h2>Copper Pipe Fitting Services in Gurgaon</h2>
         <p>
-          <strong>acservicegurgaon</strong> are in the Copper Pipe Fitting Services for the past several years. We are one of the best and reputed fitting service provider in Gurgaon and our strong presence in the industry is a proof for the same. Our customers are always treated with politeness and you can feel it when you are with us.
+          <strong><a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon.com</a></strong> are in the Copper Pipe Fitting Services for the past several years. We are one of the best and reputed fitting service provider in Gurgaon and our strong presence in the industry is a proof for the same. Our customers are always treated with politeness and you can feel it when you are with us.
         </p>
 
         <h3>Why Choose Our Copper Pipe Fitting Services?</h3>
@@ -30,7 +30,7 @@ const FittingComponent = () => {
 
         <h3>Our Services</h3>
         <p>
-        All services we offer are exclusive in its quality and we live up to the prospects of our clients. At acservicegurgaon we provide services such as Air Compressor Service and Air Compressor Rentals, copper Pipeline fitting in home and commercial Works, Industrial Pipeline Assembly in Gurgaon</p>
+        All services we offer are exclusive in its quality and we live up to the prospects of our clients. At <strong><a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon.com</a> </strong>we provide services such as Air Compressor Service and Air Compressor Rentals, copper Pipeline fitting in home and commercial Works, Industrial Pipeline Assembly in Gurgaon</p>
         <ul>
           <li><strong>Residential Copper Pipeline Fitting:</strong> Safe and efficient installation of copper pipelines in homes.</li>
           <li><strong>Commercial and Industrial Pipeline Assembly:</strong> Specialized fitting for businesses, factories, and industrial setups.</li>
@@ -61,12 +61,12 @@ const FittingComponent = () => {
 
         <h3>Contact Us for Reliable Copper Pipe Fitting in Gurgaon</h3>
         <p>
-          At <strong>acservicegurgaon</strong>, we guarantee top-notch copper pipe fitting services across Gurgaon. 
+          At <strong><a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon.com</a></strong>, we guarantee top-notch copper pipe fitting services across Gurgaon. 
           Whether it for residential, commercial, or industrial applications, our skilled professionals are ready to deliver 
           outstanding results.
         </p>
         <p>
-          <strong>Get in touch today!</strong> Call us or book an appointment for expert copper pipe fitting services in Gurgaon.
+          <strong><a href="tel:+919810954362" className={styles.linking}>Get in touch today!</a></strong> Call us or book an appointment for expert copper pipe fitting services in Gurgaon.
         </p>
       </div>
 
@@ -75,7 +75,7 @@ const FittingComponent = () => {
       <div className={styles.contactSection}>
         <p className={styles.tagline}>100% convenience with 0 hassle. That’s how we keep you free.</p>
         <div className={styles.buttonContainer}>
-          <a href="tel:+919810954362" className={styles.contactButton}>Contact Now</a>
+          <a href="https://acservicegurgaon.com/contact-us" className={styles.contactButton}>Contact Now</a>
           <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
         </div>
       </div>

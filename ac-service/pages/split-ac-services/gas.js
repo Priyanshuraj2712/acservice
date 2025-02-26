@@ -15,7 +15,7 @@ const SplitACComponent = () => {
         </div>
       </div>
       <div className={styles.content}>
-        <h1>Best Split AC Gas Refilling Service in Gurgaon – ACServiceGurgaon.com</h1>
+        <h1>Best Split AC Gas Refilling Service in Gurgaon – <a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon.com</a></h1>
         <p>A Split AC relies on refrigerant gas to cool your space efficiently. If your AC is not cooling properly, blowing warm air, or taking too long to cool, it might be time for a gas refill. At AC Service Gurgaon, we offer the best Split AC gas refilling service in Gurgaon, ensuring your air conditioner performs at its peak efficiency.</p>
         
         <h2>Signs Your Split AC Needs Gas Refilling</h2>
@@ -37,7 +37,7 @@ const SplitACComponent = () => {
         </ul>
 
         <h2>Best AC Gas Refill Prices in Gurgaon</h2>
-        <p>At AC Service Gurgaon, we provide cost-effective Split AC gas refilling services based on your AC type and refrigerant requirements. Contact us for the latest pricing!</p>
+        <p>At AC Service Gurgaon, we provide cost-effective Split AC gas refilling services based on your AC type and refrigerant requirements. <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.linking}>Contact Us</a> for the latest pricing!</p>
 
         <h2>Book the Best Split AC Gas Refilling in Gurgaon Today!</h2>
         <p>For professional AC gas refilling with leak detection, vacuuming, and expert service, trust AC Service Gurgaon.</p>
@@ -45,7 +45,7 @@ const SplitACComponent = () => {
         <div className={styles.contactSection}>
         <p className={styles.tagline}>100% convenience with 0 hassle. That’s how we keep you free.</p>
         <div className={styles.buttonContainer}>
-          <a href="tel:+919810954362" className={styles.contactButton}>Contact Now</a>
+        <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.contactButton}>Contact Us</a>
           <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
         </div>
       </div>

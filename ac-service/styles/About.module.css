@@ -20,7 +20,9 @@
     justify-content: center;
     padding-top: 80px; /* Adjust based on your navbar height */
 }
-
+.linking{
+    color: #d5a04a;
+  }
 .heroOverlay {
     position: absolute;
     top: 50%;

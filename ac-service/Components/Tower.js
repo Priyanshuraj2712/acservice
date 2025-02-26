@@ -42,7 +42,7 @@ const ACServiceComponent = () => {
 
   <h3>Our Tower AC Services in Gurgaon</h3>
   <p>
-    At <strong>acservicegurgaon</strong>, we offer a full range of Tower AC services to keep your system running smoothly:
+    At <strong><a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon</a></strong>, we offer a full range of Tower AC services to keep your system running smoothly:
   </p>
   <ul>
     <li>All of our technicians are certified, factory trained.</li>
@@ -65,7 +65,7 @@ const ACServiceComponent = () => {
 
   <h3>Book Your Tower AC Repair Today!</h3>
   <p>
-    Don’t let AC problems disrupt your comfort! <strong>acservicegurgaon</strong> offers expert Tower AC repair, 
+    Don’t let AC problems disrupt your comfort!<strong> <a href="https://acservicegurgaon.com/" rel="noopener noreferrer" className={styles.linking}>ACServiceGurgaon</a> </strong>offers expert Tower AC repair, 
     servicing, and maintenance at competitive rates.
   </p>
 </div>
@@ -73,7 +73,7 @@ const ACServiceComponent = () => {
       <div className={styles.contactSection}>
         <p className={styles.tagline}>100% convenience with 0 hassle. That’s how we keep you free.</p>
         <div className={styles.buttonContainer}>
-          <a href="tel:+919810954362" className={styles.contactButton}>Contact Now</a>
+          <a href="https://acservicegurgaon.com/contact-us" className={styles.contactButton}>Contact Now</a>
           <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
         </div>
       </div>
