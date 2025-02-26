@@ -76,7 +76,7 @@ const SplitACPage = () => {
 
         <ul className={styles.styledList}>
 
-          <li>Visit.<a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a>.  and browse through the available AC options.</li>
+          <li>Visit acservicegurgaon.com and browse through the available AC options.</li>
           <li>Choose between a window AC or a split AC based on your cooling needs.</li>
           <li>Select your preferred rental duration and budget-friendly plan.</li>
           <li>Place your order online or call their support team.</li>
