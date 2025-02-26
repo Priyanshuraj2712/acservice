@@ -3,6 +3,7 @@ import Footer from "@/Components/Footer";
 import styles from "@/styles/best-split-ac.module.css";
 import emailjs from "emailjs-com";
 import { useRef } from "react";
+import Link from "next/link";
 
 const BlogPost = () => {
   const formRef = useRef();
@@ -74,8 +75,10 @@ const BlogPost = () => {
             </ul>
 
             <div className={styles.callToAction}>
-  Contact us for expert 
-  <a href="/contact" className={styles.contactLink}> Split AC installation in Gurgaon today!</a>
+  
+  <Link href="/contact-us" className={styles.contactLink}>
+  Contact us for expert split AC installation in Gurgaon today!
+    </Link>
 </div>
           </div>
 

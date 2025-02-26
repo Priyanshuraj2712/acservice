@@ -3,6 +3,7 @@ import Footer from "@/Components/Footer";
 import styles from "@/styles/best-split-ac.module.css";
 import emailjs from "emailjs-com";
 import { useRef } from "react";
+import Link from "next/link";
 
 const BlogPost = () => {
   const formRef = useRef();
@@ -74,7 +75,14 @@ const BlogPost = () => {
 
             
             <p>
-            <b> If you’re looking for Gurgaon split air conditioning and repairing services, you can trust us to get the job done right at a fair price! Contact us today!   </b>         </p>
+            <b>
+        If you’re looking for Gurgaon split air conditioning and repairing services, 
+        you can trust us to get the job done right at a fair price!{' '}
+        <Link href="/contact-us">
+          Contact us
+        </Link>{' '}
+        today!
+      </b>         </p>
 
             
           </div>

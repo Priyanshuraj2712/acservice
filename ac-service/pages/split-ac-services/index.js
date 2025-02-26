@@ -65,7 +65,7 @@ const SplitACPage = () => {
         </p>
         <p>
           If you’re looking for Gurgaon split air conditioning and repairing services, you can trust us to get the job
-          done right at a fair price! <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.linking}>Contact Us</a> today!
+          done right at a fair price! <Link href="/contact-us" className={styles.linking}>Contact Us</Link> today!
         </p>
       </div>
 

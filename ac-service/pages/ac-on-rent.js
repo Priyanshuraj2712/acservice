@@ -92,11 +92,15 @@ const SplitACPage = () => {
       </div>
 
       <div className={styles.additionalInfo}>
-        <p className={styles.tagline}>Book Your AC Rental Today! Enjoy cool and comfortable summers with our affordable AC rental services.<a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.linking}> Contact</a>  AC Service Gurgaon now to get your AC installed hassle-free!</p>
+        <p className={styles.tagline}>Book Your AC Rental Today! Enjoy cool and comfortable summers with our affordable AC rental services.<Link href="/contact-us" className={styles.linking}>
+      Contact Now
+    </Link>  AC Service Gurgaon now to get your AC installed hassle-free!</p>
         <div className={styles.contactSection}>
           <p className={styles.tagline}>100% convenience with 0 hassle. That’s how we keep you free.</p>
           <div className={styles.buttonContainer}>
-            <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.contactButton}>Contact Now</a>
+          <Link href="/contact-us" className={styles.contactButton}>
+      Contact Now
+    </Link>
             <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
           </div>
         </div>

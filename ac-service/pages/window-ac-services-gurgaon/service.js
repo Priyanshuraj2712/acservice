@@ -3,6 +3,7 @@ import styles from "@/styles/Service.module.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import WhatsAppToggle from "@/Components/WhatsApp";
+import Link from 'next/link';
 
 const WindowACService = () => {
   return (
@@ -80,8 +81,10 @@ const WindowACService = () => {
         <p className={styles.tagline}>Book Your Window AC Service Today!</p>
         <p>Don’t let a poorly maintained AC affect your comfort and health. Contact AC Service Gurgaon today for expert servicing and keep your AC running smoothly all year round!</p>
         <div className={styles.buttonContainer}>
-          <a href="tel:+919810954362" className={styles.contactButton}>Contact Now</a>
-          <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
+        <Link href="/contact-us" className={styles.contactButton}>
+      Contact Now
+    </Link>
+          <a href="tel:+919810954362" className={styles.callButton}>Call Now</a>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import styles from "@/styles/InstallSplit.module.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import WhatsAppToggle from "@/Components/WhatsApp";
+import Link from "next/link";
 
 const SplitACComponent = () => {
   return (
@@ -45,7 +46,9 @@ const SplitACComponent = () => {
         <div className={styles.contactSection}>
         <p className={styles.tagline}>100% convenience with 0 hassle. That’s how we keep you free.</p>
         <div className={styles.buttonContainer}>
-        <a href="https://acservicegurgaon.com/contact-us" rel="noopener noreferrer" className={styles.contactButton}>Contact Us</a>
+        <Link href="/contact-us" className={styles.contactButton}>
+      Contact Now
+    </Link>
           <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
         </div>
       </div>
