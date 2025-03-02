@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "@/Components/Navbar";
 import ServiceContainer from "@/Components/ServiceContainer";
-import ACCards from  "@/Components/ACCard";
+import ACCards from "@/Components/ACCard";
 import HowWeWork from "@/Components/HowWeWork";
 import BrandSection from "@/Components/BrandSection";
 import Footer from "@/Components/Footer";
@@ -11,19 +11,38 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>AC Service Gurgaon | Your AC Doctor</title>
-        <meta name="description" content="At AC Service Gurgaon, we offer top-notch maintenance, installation, and repair for all types of air conditioners. We specialize in Window AC, Split AC, Ductable AC, VRV/VRF AC, Tower AC, and more. Let us take care of your AC problems with expert solutions." />
-        <meta name="keywords" content="AC service, AC maintenance, AC repair, Window AC, Split AC, Ductable AC, VRV AC, Tower AC, Gurgaon, Air Conditioner servicing" />
+        {/* Essential Meta Tags */}
+        <title>Best AC Service in Gurgaon | AC Repair & Installation</title>
+        <meta name="description" content="Get expert AC service in Gurgaon, including AC repair, installation, and maintenance. Fast & affordable air conditioning solutions. Call us now!" />
+        <meta name="keywords" content="AC service Gurgaon, AC repair Gurgaon, AC installation Gurgaon, air conditioner service, AC maintenance, best AC technician" />
+        <meta name="robots" content="index, follow" />
         <meta name="author" content="AC Service Gurgaon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Best AC Service in Gurgaon | AC Repair & Installation" />
+        <meta property="og:description" content="Get expert AC service in Gurgaon, including AC repair, installation, and maintenance. Fast & affordable air conditioning solutions." />
+        <meta property="og:image" content="https://acservicegurgaon.com/path-to-uploaded-image.jpg" />
+        <meta property="og:url" content="https://acservicegurgaon.com/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best AC Service in Gurgaon | AC Repair & Installation" />
+        <meta name="twitter:description" content="Fast & reliable AC repair, installation, and service in Gurgaon. Book now!" />
+        <meta name="twitter:image" content="https://acservicegurgaon.com/service.webp" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://acservicegurgaon.com/" />
       </Head>
 
-      <Navbar></Navbar>
-      <ServiceContainer></ServiceContainer>
-      <ACCards></ACCards>
-      <HowWeWork></HowWeWork>
-      <BrandSection></BrandSection>
-      <Footer></Footer>
-      <WhatsAppToggle/>
+      <Navbar />
+      <ServiceContainer />
+      <ACCards />
+      <HowWeWork />
+      <BrandSection />
+      <Footer />
+      <WhatsAppToggle />
     </>
   );
 }
