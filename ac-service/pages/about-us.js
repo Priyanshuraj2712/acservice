@@ -4,67 +4,73 @@ import Footer from "@/Components/Footer";
 import AboutUs from "@/Components/AboutFirst";
 import SatisfactionGuarantee from "@/Components/SatisfactionGuarantee";
 import WhatsAppToggle from "@/Components/WhatsApp";
+import Link from "next/link";
 
 const About = () => {
   return (
     <>
       <Head>
-        {/* Primary Meta Tags */}
-        <title>Best AC Service in Gurgaon | AC Repair & Installation</title>
-        <meta name="description" content="Get fast, affordable, and professional AC repair & installation services in Gurgaon. We offer Window AC, Split AC, and more. 100% satisfaction guaranteed!" />
-        <meta name="keywords" content="AC service Gurgaon, AC repair Gurgaon, best AC installation, AC maintenance, Gurgaon AC experts, Window AC repair, Split AC service, AC pipe fitting, home appliance repair" />
+        {/* SEO Meta Tags */}
+        <title>About Us - AC Repair & Service in Gurgaon | 24x7 Support</title>
+        <meta 
+          name="description" 
+          content="Learn more about AC Service Gurgaon. We provide fast, reliable, and professional AC repair services in Gurgaon. 100% satisfaction guaranteed!" 
+        />
+        <meta 
+          name="keywords" 
+          content="AC repair Gurgaon, AC service Gurgaon, AC installation, best AC technician, professional AC repair" 
+        />
         <meta name="author" content="AC Service Gurgaon" />
 
-        {/* Open Graph / Facebook */}
-        <meta property="og:title" content="Best AC Service in Gurgaon | AC Repair & Installation" />
-        <meta property="og:description" content="Reliable AC repair & installation services in Gurgaon. 100% satisfaction guaranteed. Contact us today!" />
+        {/* Open Graph (OG) Tags for Social Media */}
+        <meta property="og:title" content="About Us - AC Repair & Service in Gurgaon | 24x7 Support" />
+        <meta property="og:description" content="Learn more about AC Service Gurgaon. We provide fast, reliable, and professional AC repair services in Gurgaon. 100% satisfaction guaranteed!" />
+        <meta property="og:image" content="https://acservicegurgaon.com/satisfaction.jpg" />
         <meta property="og:url" content="https://acservicegurgaon.com/about-us/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://acservicegurgaon.com/assets/og-image.jpg" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Best AC Service in Gurgaon | AC Repair & Installation" />
-        <meta name="twitter:description" content="Expert AC repair & installation services in Gurgaon. Contact us for fast and professional service!" />
-        <meta name="twitter:image" content="https://acservicegurgaon.com/assets/twitter-image.jpg" />
+        <meta name="twitter:title" content="About Us - AC Repair & Service in Gurgaon | 24x7 Support" />
+        <meta name="twitter:description" content="Learn more about AC Service Gurgaon. We provide fast, reliable, and professional AC repair services in Gurgaon. 100% satisfaction guaranteed!" />
+        <meta name="twitter:image" content="https://acservicegurgaon.com/satisfaction.jpg" />
 
-        {/* Canonical Tag */}
-        <link rel="canonical" href="https://acservicegurgaon.com/about-us/" />
-
-        {/* Schema Markup for Local Business */}
+        {/* Schema Markup for Google SEO */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "AC Service Gurgaon",
-            "url": "https://acservicegurgaon.com",
-            "image": "https://acservicegurgaon.com/assets/logo.png",
-            "description": "We provide professional AC repair, installation, and maintenance services in Gurgaon for Window AC, Split AC, and more.",
+            "url": "https://acservicegurgaon.com/about-us/",
+            "image": "https://acservicegurgaon.com/satisfaction.jpg",
+            "description": "Learn more about AC Service Gurgaon. We provide fast, reliable, and professional AC repair services in Gurgaon. 100% satisfaction guaranteed!",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Your Street Address",
               "addressLocality": "Gurgaon",
-              "addressRegion": "HR",
-              "postalCode": "122001",
               "addressCountry": "IN"
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+919810954362",
+              "telephone": "+91 9810954362",
               "contactType": "customer service"
-            },
-            "openingHours": "Mo-Su 08:00-22:00",
-            "sameAs": [
-              "https://www.facebook.com/acservicegurgaon",
-              "https://twitter.com/acservicegurgaon"
-            ]
+            }
           })}
         </script>
       </Head>
 
       <Navbar />
+      
+      {/* About Us Section */}
       <AboutUs />
+
+      {/* Satisfaction Guarantee Section */}
       <SatisfactionGuarantee />
+
+      {/* Fix: Contact Us Link */}
+      <div style={{ textAlign: "center", margin: "20px 0" }}>
+        <p>Need AC Service? <Link href="/contact-us"><a style={{ color: "#007bff", textDecoration: "underline" }}>Contact Us</a></Link> today!</p>
+      </div>
+
       <Footer />
       <WhatsAppToggle />
     </>
