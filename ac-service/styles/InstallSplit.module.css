@@ -198,6 +198,9 @@
   .content {
       padding: 20px;
   }
+  .linking {
+    font-size: 24px;
+}
   .content h2 {
       font-size: 20px;
       margin-bottom: 18px;

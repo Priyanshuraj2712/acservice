@@ -246,10 +246,12 @@
 
   .cardContainer {
     gap: 15px;
+    
   }
 
   .card {
     max-width: 270px;
+    margin-top: 50px;
   }
 
   .cardImage {
