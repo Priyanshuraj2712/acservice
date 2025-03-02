@@ -27,6 +27,12 @@
     filter: brightness(85%);
     box-shadow: 0 0 30px 15px rgba(255, 166, 0, 0.6);
 }
+.fullImage {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Ensures it adapts to smaller screens */
+}
+
 
 .fullImage:hover {
     opacity: 1;
@@ -167,5 +173,25 @@
     .button, .whatsappButton {
         padding: 8px 18px;
         font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .imageSection {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .fullImage {
+        max-width: 90%; /* Ensures it doesn't take full width */
+        margin-left: 0; /* Centers it */
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        margin-top: 150px; /* Adjust based on your navbar height */
+        padding-top: 20px;
     }
 }
