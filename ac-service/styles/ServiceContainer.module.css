@@ -137,6 +137,9 @@
         padding: 30px;
         width: 100%;
     }
+    .textSection h2{
+        text-align: left;
+    }
 }
 
 @media (max-width: 768px) {
