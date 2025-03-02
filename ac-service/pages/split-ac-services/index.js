@@ -36,7 +36,7 @@ const SplitACPage = () => {
       </div>
 
       <div className={styles.additionalInfo}>
-      <h3>WHy Choose Us?</h3>
+      <h3>Why Choose Us?</h3>
       <p>
           Repair, Service & Maintenance - All brand air conditioners repairing, installation, and servicing
           by AC Expert Technicians all over Gurgaon. As a Gurgaon resident, we know that the weather can be

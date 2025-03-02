@@ -3,9 +3,9 @@
   display: flex;
   width: 100%;
   padding: 60px;
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #f9f9f9;
   justify-content: space-between;
-  gap: 30px; /* Adds space between the main content and sidebar */
+  gap: 30px;
   box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@
   width: 100%;
   height: 400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/contactbanner.jpg'); /* Same banner as Contact page */
+    url('/contactbanner.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -27,16 +27,16 @@
 
 .banner h1 {
   color: #fff;
-  font-size: 4rem;
-  font-weight: bold;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-  letter-spacing: 1px;
+  font-size: 3rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
   text-align: center;
 }
 
 /* Blog Section */
 .blogSection {
-  width: 65%; /* Blog posts take 65% of the page */
+  width: 65%;
   display: flex;
   flex-direction: column;
 }
@@ -45,32 +45,32 @@
   display: flex;
   align-items: center;
   background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 25px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   text-decoration: none;
-  overflow: hidden; /* Prevents overflow issues */
+  overflow: hidden;
 }
 
 .post:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
 }
 
 .post img {
-  width: 180px;
-  height: 120px;
-  border-radius: 8px;
+  width: 160px;
+  height: 110px;
+  border-radius: 6px;
   object-fit: cover;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .title {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 500;
   color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -81,51 +81,49 @@
 }
 
 .meta {
-  color: #888;
-  font-size: 1rem;
-  margin-bottom: 8px;
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
 }
 
 .summary {
-  color: #555;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Sidebar */
 .sidebar {
-  width: 35%; /* Sidebar takes 30% of the page */
-  padding: 25px;
+  width: 35%;
+  padding: 20px;
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  color: #333; /* Ensure text color is dark enough */
+  color: #333;
 }
 
-/* Sidebar on hover */
 .sidebar:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 /* Search Box */
 .searchBox {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .searchBox input {
   width: 100%;
-  padding: 14px;
+  padding: 12px;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1.2rem; /* Increased font size for better readability */
+  border-radius: 6px;
+  font-size: 1rem;
   transition: border 0.3s ease;
   box-sizing: border-box;
-  color: #ffffff; /* Ensure input text is dark enough */
+  color: #333;
 }
 
-/* Focus effect on search input */
 .searchBox input:focus {
   border: 1px solid #007bff;
   outline: none;
@@ -133,41 +131,42 @@
 
 /* Sidebar Heading */
 .sidebar h3 {
-  font-size: 1.8rem; /* Increased font size */
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: #222;
-  margin-bottom: 20px; /* Increased margin for more spacing */
+  margin-bottom: 15px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   border-bottom: 2px solid #007bff;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 /* Featured Blog List */
 .featuredPosts {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .featuredPost {
-  margin-bottom: 20px; /* Increased bottom margin */
+  margin-bottom: 15px;
 }
 
 .featuredPost a {
-  font-size: 1.3rem; /* Increased font size */
+  font-size: 1.2rem;
   color: #007bff;
   text-decoration: none;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   transition: color 0.3s ease;
 }
 
-/* Hover effect for featured posts */
 .featuredPost a:hover {
   color: #0056b3;
   text-decoration: underline;
 }
+
+/* Popular Categories and Recent Comments */
 .popularCategories, .recentComments {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .popularCategories ul, .recentComments ul {
@@ -176,8 +175,8 @@
 }
 
 .popularCategories li, .recentComments li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-size: 1rem;
 }
 
 .popularCategories a, .recentComments a {
@@ -190,70 +189,68 @@
   color: #0056b3;
   text-decoration: underline;
 }
-/* Add spacing between sidebar sections */
+
+/* Sidebar Spacing */
 .searchBox,
 .featuredPosts,
 .recentComments {
-  margin-bottom: 5px; /* Adds space between sections */
+  margin-bottom: 5px;
 }
 
-/* Optional: Add padding inside each section */
 .sidebar div {
-  padding-bottom: 10px; /* Adds spacing within each section */
-  border-bottom: 1px solid #ddd; /* Adds a subtle divider */
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
 }
 
 .sidebar div:last-child {
-  border-bottom: none; /* Remove border from last section */
+  border-bottom: none;
 }
 
-/* Aligning button to the left */
+/* Older Entries Button */
 .olderEntries {
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
-  margin-bottom: 50px; /* Adds space between the button and footer */
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 
-/* Button styles */
 .olderButton {
   background: none;
-  color: #ff6600; /* Orange text */
-  font-size: 18px;
-  font-weight: bold;
+  color: #ff6600;
+  font-size: 16px;
+  font-weight: 500;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 12px; /* Space between arrow and text */
-  font-family: 'Poppins', sans-serif; /* Clean modern font */
-  letter-spacing: 0.5px;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
   transition: color 0.3s ease, transform 0.3s ease;
-  text-transform: uppercase; /* Optional for a bold effect */
+  text-transform: uppercase;
 }
 
-/* Stylish arrow */
 .olderButton::before {
-  content: "←"; /* Left arrow */
-  font-size: 20px;
-  color: #F4A21D; /* Matches text color */
+  content: "←";
+  font-size: 18px;
+  color: #F4A21D;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect */
 .olderButton:hover {
-  color: #F4A21D; /* Darker orange */
-  transform: translateX(-4px);
+  color: #F4A21D;
+  transform: translateX(-3px);
 }
 
 .olderButton:hover::before {
-  transform: translateX(-6px); /* Moves arrow further left */
+  transform: translateX(-4px);
   color: #F4A21D;
 }
-/* Responsive adjustments */
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .banner {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .container {
@@ -267,7 +264,7 @@
 
   .sidebar {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   .searchBox input {
@@ -275,23 +272,22 @@
   }
 
   .sidebar h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .banner h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
-  /* Stack blog post image above content */
   .post {
-    flex-direction: column; /* Stacks the image above the content */
+    flex-direction: column;
     align-items: flex-start;
   }
 
   .post img {
-    width: 100%; /* Full width on smaller screens */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 15px; /* Space between image and text */
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
   }
 
   .post .content {

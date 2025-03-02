@@ -4,6 +4,7 @@
     background-color: #f4f8fc;
 }
 
+/* Hero Section */
 .hero {
     background: url('/IntsallSpilt.jpeg') center/cover no-repeat;
     height: 700px;
@@ -18,16 +19,16 @@
 .heroOverlay {
     padding: 30px;
     border-radius: 12px;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 24px; /* Slightly smaller */
+    font-weight: 500; /* Reduced boldness */
     letter-spacing: 1px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1s ease-in-out;
 }
 
 .heroOverlay p {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px; /* Slightly smaller */
+    font-weight: 500; /* Reduced boldness */
     margin-top: 10px;
     opacity: 0.9;
 }
@@ -43,8 +44,9 @@
 }
 
 .com {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
+    font-weight: 400; /* Reduced weight */
 }
 
 .content h2, .content h3 {
@@ -53,23 +55,27 @@
 }
 
 .content h2 {
-    border-bottom: 3px solid #f9a825;
+    border-bottom: 2px solid #f9a825; /* Thinner border */
     padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 26px;
-    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 500; /* Reduced boldness */
 }
 
 .content h3 {
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: 400; /* Lighter look */
 }
 
 .content p {
     line-height: 1.8;
-    font-size: 17px;
+    font-size: 16px;
     color: #444;
+    font-weight: 400; /* Less bold */
+    margin-bottom: 20px;
 }
 
 /* List Styling */
@@ -83,8 +89,9 @@
     padding-left: 30px;
     position: relative;
     margin-bottom: 12px;
-    font-size: 17px;
+    font-size: 16px;
     color: #333;
+    font-weight: 400; /* Less bold */
 }
 
 .content ul li::before {
@@ -92,14 +99,15 @@
     color: #28a745;
     position: absolute;
     left: 0;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 18px;
 }
+
 /* Table Styling */
 .comparisonTable {
     width: 100%;
     overflow-x: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     border-radius: 12px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     background: #fff;
@@ -118,31 +126,27 @@
     padding: 15px;
     text-align: left;
     border-bottom: 2px solid #ddd;
+    font-weight: 500; /* Lighter heading */
 }
-.comparisonTable td{
+
+.comparisonTable td {
     padding: 15px;
     text-align: left;
     border-bottom: 2px solid #ddd;
+    font-weight: 400; /* Less bold */
 }
 
 .comparisonTable th {
     background-color: #f9a825;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500; /* Reduced boldness */
     text-transform: uppercase;
 }
 
-.comparisonTable td {
-    color: #333;
-    font-size: 16px;
-}
-
-/* Alternate Row Colors */
 .comparisonTable tr:nth-child(even) {
     background-color: #f8f9fa;
 }
 
-/* Hover Effect */
 .comparisonTable tr:hover {
     background-color: #ffecb3;
     transition: 0.3s ease-in-out;
@@ -159,9 +163,9 @@
 }
 
 .tagline {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #333;
-    font-weight: 500;
+    font-weight: 400; /* Less bold */
     margin-bottom: 20px;
     line-height: 1.5;
     font-family: 'Lato', sans-serif;
@@ -176,13 +180,14 @@
 
 .contactButton, .callButton {
     padding: 12px 30px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #fff;
     background-color: #f9a825;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500; /* Reduced weight */
 }
 
 .contactButton:hover, .callButton:hover {
@@ -212,12 +217,14 @@
         transform: translateY(0);
     }
 }
+
+/* Responsive Design */
 @media (max-width: 1024px) {
-    .aboutContainer{
+    .aboutContainer {
         margin-top: 130px;
     }
 }
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .hero {
         height: 300px;
@@ -238,12 +245,13 @@
     }
 
     .content h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .content p {
-        font-size: 16px;
+        font-size: 15px;
     }
+
     .comparisonTable {
         overflow-x: auto;
         display: block;
@@ -251,7 +259,7 @@
     }
 
     .comparisonTable table {
-        min-width: 600px; /* Ensures proper table display */
+        min-width: 600px;
         width: 100%;
         display: block;
     }

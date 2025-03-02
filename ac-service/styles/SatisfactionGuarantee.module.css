@@ -4,13 +4,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  padding-top: 100px;
-  padding-left: 120px;
-  padding-right: 80px;
-  padding-bottom: 50px;
+  padding: 100px 80px 50px 120px;
   background-color: #f8f8f8; /* Light gray background for better contrast */
   color: #333;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Content Styling */
@@ -22,7 +20,7 @@
 
 .heading {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 400; /* Adjusted to match Home Page */
   color: #222;
   margin-bottom: 16px;
 }
@@ -32,6 +30,7 @@
   color: #444;
   line-height: 1.7;
   margin-bottom: 14px;
+  font-weight: 300; /* Adjusted to match Home Page */
 }
 
 .benefitsList {
@@ -44,7 +43,7 @@
   font-size: 17px;
   color: #333;
   margin-bottom: 10px;
-  font-weight: 500;
+  font-weight: 400; /* Adjusted to match Home Page */
 }
 
 /* Image Styling */
@@ -71,60 +70,53 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .container {
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 70px; /* Adjusted padding for tablet */
+    padding: 70px 50px; /* Adjusted padding for tablets */
   }
   .heading {
-      font-size: 26px; /* Slightly smaller heading */
+    font-size: 26px;
   }
   .description {
-      font-size: 15px; /* Adjusted font size for better readability */
+    font-size: 15px;
   }
   .imageContainer img {
-      max-width: 200px; /* Smaller image size on tablets */
+    max-width: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 50px; /* Adjust padding for mobile */
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
   }
   .heading {
-      font-size: 22px; /* Smaller heading on mobile */
-      text-align: center;
+    font-size: 24px;
+    text-align: center;
   }
   .description {
-      font-size: 14px; /* Smaller text for mobile */
-      text-align: center;
-      padding: 0 10px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
   }
-  
   .benefitsList li {
-      font-size: 15px; /* Adjust font size for better readability */
+    font-size: 15px;
   }
   .imageContainer img {
-      max-width: 180px; /* Smaller image size for mobile */
+    max-width: 180px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 30px; /* Adjust padding for very small screens */
+    padding: 30px 20px;
   }
   .heading {
-      font-size: 20px; /* Smaller heading for small devices */
-      text-align: center;
+    font-size: 22px;
   }
   .description {
-      font-size: 12px; /* Smaller text for small screens */
-      text-align: center;
+    font-size: 13px;
   }
   .imageContainer img {
-      max-width: 150px; /* Adjust image size for very small screens */
+    max-width: 150px;
   }
 }

@@ -1,234 +1,217 @@
 .aboutContainer {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-color: #f4f8fc;
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  background-color: #f4f8fc;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/IntsallSpilt.jpeg') center/cover no-repeat;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.linking {
+  color: #d5a04a;
+}
+
+.heroOverlay {
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.heroOverlay p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+/* Content Section */
+.content {
+  padding: 40px 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  margin: 30px 15px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.com {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.content h2 {
+  color: #f9a825;
+  border-bottom: 2px solid #f9a825;
+  padding-bottom: 8px;
+  margin-bottom: 25px; /* Increased gap */
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.content h3 {
+  color: #f9a825;
+  margin-top: 30px; /* Increased gap */
+  margin-bottom: 18px; /* Added more spacing */
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 18px; /* Added space below paragraphs */
+}
+
+/* List Styling */
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.content ul li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 14px; /* More spacing between list items */
+  font-size: 16px;
+  color: #444;
+}
+
+.content ul li::before {
+  content: '✔';
+  color: #28a745;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+}
+
+/* Contact Section */
+.contactSection {
+  text-align: center;
+  margin-top: 45px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.08);
+}
+
+.tagline {
+  font-size: 18px;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-family: 'Lato', sans-serif;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contactButton, .callButton {
+  padding: 10px 24px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f9a825;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contactButton:hover, .callButton:hover {
+  background-color: #d17a00;
+  transform: translateY(-2px);
+}
+
+.contactButton:focus, .callButton:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .aboutContainer {
+      margin-top: 120px;
   }
-  
   .hero {
-    background: url('/IntsallSpilt.jpeg') center/cover no-repeat;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    color: #fff;
-  }
-  
-  .linking{
-    color: #d5a04a;
+      height: 380px;
   }
   .heroOverlay {
-    padding: 30px;
-    border-radius: 12px;
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 1s ease-in-out;
+      font-size: 22px;
+      padding: 20px;
   }
-  
-  .heroOverlay p {
-    font-size: 22px;
-    font-weight: 800px;
-    margin-top: 10px;
-    opacity: 0.9;
-  }
-  
-  /* Content Section */
   .content {
-    padding: 50px 30px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    margin-top: 40px;
-    margin-left:20px;
-    margin-right:20px;
-    animation: slideUp 1s ease-in-out;
-  }
-  .com{
-    font-size: 20px;
-    margin-bottom: 30px;
+      padding: 30px;
   }
   .content h2 {
-    color: #f9a825;
-    border-bottom: 3px solid #f9a825;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 28px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  
-  .content h3 {
-    color: #f9a825;
-    margin-top: 25px;
-    font-size: 22px;
-    font-weight: 500;
-  }
-  
-  .content p {
-    line-height: 1.8;
-    font-size: 17px;
-    color: #444;
-  }
-  
-  /* List Styling */
-  .content ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
-  }
-  
-  .content ul li {
-    padding-left: 30px;
-    position: relative;
-    margin-bottom: 12px;
-    font-size: 17px;
-    color: #333;
-  }
-  
-  .content ul li::before {
-    content: '✓';
-    color: #28a745;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  /* Button Styles */
-  /* Contact Section Styling */
-  .contactSection {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #f5f5f5; /* Light background for the section */
-    border-radius: 12px;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tagline {
-    font-size: 1.4rem;
-    color: #333;
-    font-weight: 500;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    font-family: 'Lato', sans-serif;
-  }
-  
-  .buttonContainer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .contactButton, .callButton {
-    padding: 12px 30px;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #f9a825; /* Button background color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .contactButton:hover, .callButton:hover {
-    background-color: #d17a00; /* Darker shade on hover */
-    transform: translateY(-3px); /* Slight lift on hover */
-  }
-  
-  .contactButton:focus, .callButton:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle focus outline */
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .aboutContainer{
-      margin-top: 130px;
-    }
-    .hero {
-      height: 400px;
-      margin-top: 150px;
-    }
-    
-    .heroOverlay {
-      font-size: 24px;
-      padding: 25px;
-    }
-  
-    .content {
-      padding: 30px;
-    }
-  
-    .content h2 {
-      font-size: 24px;
-    }
-  
-    .content h3 {
-      font-size: 20px;
-    }
-  
-    .button {
-      font-size: 16px;
-      padding: 10px 20px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .hero {
-      height: 280px;
-    }
-  
-    .heroOverlay {
-      font-size: 20px;
-      padding: 20px;
-    }
-  
-    .content {
-      padding: 20px;
-    }
-  
-    .content h2 {
       font-size: 22px;
-    }
-  
-    .content h3 {
-      font-size: 18px;
-    }
-  
-    .content p {
-      font-size: 16px;
-    }
-  
-    .button {
-      font-size: 14px;
-      padding: 8px 15px;
-    }
+      margin-bottom: 20px; /* Adjusted spacing for tablets */
   }
-  
+  .content h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+  }
+  .button {
+      font-size: 15px;
+      padding: 9px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+      height: 250px;
+  }
+  .heroOverlay {
+      font-size: 18px;
+      padding: 16px;
+  }
+  .content {
+      padding: 20px;
+  }
+  .content h2 {
+      font-size: 20px;
+      margin-bottom: 18px;
+  }
+  .content h3 {
+      font-size: 17px;
+      margin-bottom: 14px;
+  }
+  .content p {
+      font-size: 15px;
+      margin-bottom: 16px;
+  }
+  .button {
+      font-size: 14px;
+      padding: 8px 14px;
+  }
+}

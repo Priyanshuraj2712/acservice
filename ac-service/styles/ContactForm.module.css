@@ -17,10 +17,10 @@
 }
 
 .heading {
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-align: center;
-  margin-bottom: 40px;
-  font-weight: 600;
+  margin-bottom: 35px;
+  font-weight: 500; /* Reduced boldness */
   text-transform: uppercase;
   color: #333;
   margin-left: auto;
@@ -29,10 +29,10 @@
 
 .form,
 .contactInfoBox {
-  padding: 30px;
+  padding: 25px;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
   width: 100%;
   max-width: 900px;
   margin-top: 20px;
@@ -44,16 +44,16 @@
 
 .form:hover,
 .contactInfoBox:hover {
-  transform: scale(1.05);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   background-color: #fafafa;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
-  margin-bottom: 30px;
+  gap: 60px;
+  margin-bottom: 25px;
 }
 
 .inputContainer {
@@ -66,10 +66,11 @@
 .textarea,
 .select {
   width: 100%;
-  padding: 14px 20px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+  padding: 12px 18px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
   font-size: 1em;
+  font-weight: 500; /* Reduced boldness */
   color: #333;
   background-color: #f9f9f9;
   transition: all 0.3s ease;
@@ -80,23 +81,23 @@
 .textarea:focus {
   outline: none;
   border-color: #F4A21D;
-  box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
+  box-shadow: 0 0 8px rgba(0, 180, 216, 0.15);
 }
 
 .textarea {
   min-height: 100px;
   resize: vertical;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .submitButton {
-  padding: 15px 30px;
+  padding: 12px 28px;
   background-color: #F4A21D;
   color: white;
   border: none;
-  border-radius: 30px;
-  font-size: 1.1em;
-  font-weight: 600;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: 500; /* Reduced boldness */
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
   width: 100%;
@@ -104,19 +105,19 @@
 }
 
 .submitButton:hover {
-  transform: scale(1.05);
-  background-color: #F4A21D;
+  transform: scale(1.04);
+  background-color: #e69517;
 }
 
 .contactInfoBox p {
-  margin: 12px 0;
-  font-size: 1.1em;
+  margin: 10px 0;
+  font-size: 1em;
 }
 
 .contactInfoBox a {
   color: #F4A21D;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500; /* Reduced boldness */
   transition: all 0.3s ease;
 }
 
@@ -130,12 +131,12 @@
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  font-size: 20px;
+  font-size: 18px;
   color: #F4A21D;
 }
 
 .input {
-  padding-left: 40px;
+  padding-left: 38px;
   padding-right: 10px;
 }
 
@@ -143,9 +144,9 @@
 .inputContainer label,
 .inputContainer textarea {
   position: absolute;
-  top: 14px;
-  left: 20px;
-  font-size: 16px;
+  top: 12px;
+  left: 18px;
+  font-size: 15px;
   color: #aaa;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -155,89 +156,65 @@
 .textarea:focus + label,
 .input:valid + label,
 .textarea:valid + label {
-  top: -10px;
-  left: 20px;
+  top: -8px;
+  left: 18px;
   font-size: 12px;
   color: #F4A21D;
 }
 
-.input:focus,
-.textarea:focus {
-  border-color: #F4A21D;
-  box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
-}
-
-.select:focus {
-  border-color: #F4A21D;
-  box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
-}
-
-/* Optional: Styling for the select element */
 .select option {
   font-size: 1em;
   padding: 10px;
 }
 
-/* Floating label styling */
-.input:focus + label,
-.textarea:focus + label,
-.input:valid + label,
-.textarea:valid + label {
-  color: #F4A21D;
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
-  /* .contactPage{
-    margin-top: 100px;
-  } */
   .heading {
-    font-size: 2rem; /* Slightly smaller font size */
+    font-size: 2rem;
   }
 
   .row {
-    gap: 30px; /* Reduce gap for tablet screens */
+    gap: 30px;
   }
 
   .inputContainer {
-    max-width: 100%; /* Allow input to take full width */
+    max-width: 100%;
   }
 
   .form,
   .contactInfoBox {
-    padding: 20px;
-    max-width: 700px; /* Reduce width for tablet screens */
+    padding: 18px;
+    max-width: 700px;
   }
 }
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 1.8rem; /* Smaller heading font */
+    font-size: 1.8rem;
   }
 
   .contactPage {
     padding: 40px 10px;
-
   }
 
   .form,
   .contactInfoBox {
     padding: 15px;
-    max-width: 100%; /* Full width for smaller screens */
+    max-width: 100%;
   }
 
   .row {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
 
   .inputContainer {
-    max-width: 100%; /* Full width input fields */
+    max-width: 100%;
   }
 
   .submitButton {
     font-size: 1em;
-    padding: 12px 25px; /* Smaller button for mobile */
+    padding: 10px 24px;
   }
 
   .textarea {
@@ -247,7 +224,7 @@
 
 @media (max-width: 480px) {
   .heading {
-    font-size: 1.5rem; /* Smaller heading font */
+    font-size: 1.5rem;
   }
 
   .form,
@@ -258,18 +235,18 @@
 
   .submitButton {
     font-size: 0.9em;
-    padding: 10px 20px;
+    padding: 10px 18px;
   }
 
   .textarea {
-    min-height: 80px; /* Reduced textarea height */
+    min-height: 80px;
   }
 
   .row {
-    gap: 20px; /* Smaller gap for very small screens */
+    gap: 20px;
   }
 
   .inputContainer {
-    max-width: 100%; /* Full width input fields */
+    max-width: 100%;
   }
 }

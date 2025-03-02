@@ -1,6 +1,6 @@
 /* Light Mode Styles */
 .aboutContainer {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #f9f9f9; /* Light background */
     color: #222; /* Dark text for readability */
     display: flex;
@@ -20,9 +20,11 @@
     justify-content: center;
     padding-top: 80px; /* Adjust based on your navbar height */
 }
-.linking{
+
+.linking {
     color: #d5a04a;
-  }
+}
+
 .heroOverlay {
     position: absolute;
     top: 50%;
@@ -33,14 +35,14 @@
     padding: 20px 30px;
     border-radius: 12px;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 400; /* Adjusted font weight */
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .heroOverlay p {
     font-size: 1.3rem;
     margin-top: 10px;
-    font-weight: 300;
+    font-weight: 300; /* Adjusted font weight */
 }
 
 /* Content Section */
@@ -50,14 +52,17 @@
     text-align: center;
 }
 
+
 .content h2 {
     font-size: 2.5rem;
     color: #222;
     margin-bottom: 15px;
+    font-weight: 400; /* Adjusted to match home page */
 }
 
 .content p {
-    font-size: 16px;
+    font-size: 1.1rem;
+    font-weight: 300; /* Adjusted to match home page */
     line-height: 1.8;
     color: #555;
 }
@@ -83,7 +88,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 400; /* Adjusted font weight */
     color: #444;
     margin-bottom: 5px;
 }
@@ -131,9 +136,11 @@
     }
     .content h2 {
         font-size: 1.8rem; /* Smaller heading for mobile */
+        font-weight: 400;
     }
     .content p {
-        font-size: 14px; /* Adjust font size for better readability */
+        font-size: 14px;
+        font-weight: 300;
     }
     .skillsContainer {
         flex-direction: column;
@@ -150,14 +157,16 @@
         padding: 15px;
     }
     .heroOverlay {
-        font-size: 20px; /* Smaller text on small screens */
+        font-size: 20px;
         padding: 10px 15px;
     }
     .content h2 {
-        font-size: 1.6rem; /* Adjust heading size for mobile */
+        font-size: 1.6rem;
+        font-weight: 400;
     }
     .content p {
-        font-size: 13px; /* Adjust paragraph size */
+        font-size: 13px;
+        font-weight: 300;
     }
     .skillsContainer {
         gap: 15px;
@@ -166,6 +175,6 @@
         width: 100%;
     }
     .skillLabel {
-        font-size: 12px; /* Smaller font size for skill labels */
+        font-size: 12px;
     }
 }
