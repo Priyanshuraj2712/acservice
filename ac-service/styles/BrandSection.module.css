@@ -1,16 +1,24 @@
 /* Base styling to apply Poppins font globally */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+.container {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand Section */
 .brandSection {
   display: flex;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 40px 20px;
-  background-color: #f9f9f9; /* Soft background */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+  background-color: #f9f9f9;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   gap: 20px;
-  font-family: 'Poppins', sans-serif; /* Apply font globally to this section */
 }
 
 .brandLogos {
@@ -19,22 +27,21 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  max-width: 400px; /* Keep logo container balanced */
-  width: 100%; /* Ensure full width in smaller screens */
+  max-width: 400px;
+  width: 100%;
 }
 
 .brandLogos img {
   width: 600px;
-  height: 300px; /* Maintains aspect ratio */
-  border-radius: 12px; /* Softly rounded corners for the image */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  height: 300px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-left: 300px;
 }
 
-
 .brandLogos img:hover {
-  transform: scale(1.08); /* Slightly stronger zoom effect on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .brandInfo {
@@ -42,141 +49,138 @@
   max-width: 600px;
   padding: 20px;
   margin-right: 40px;
-  text-align: left; /* Aligns text to the left for structure */
-  background: linear-gradient(135deg, #f9f9f9, #ffffff); /* Soft gradient background */
-  border-radius: 12px; /* Smooth rounded corners */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+  text-align: left;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .brandInfo:hover {
-  transform: translateY(-10px); /* Lift effect on hover */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .brandInfo h2 {
-  font-size: 1.8rem; /* Bold and eye-catching */
-  font-weight: 700; /* Bolder for elegance */
+  font-size: 1.8rem;
+  font-weight: 700;
   margin-bottom: 20px;
-  color: #1a1a1a; /* Darker for strong contrast */
+  color: #1a1a1a;
   text-align: left;
-  letter-spacing: 1.5px; /* Slightly wider spacing for emphasis */
-  line-height: 1.2; /* Balanced spacing */
-  background: linear-gradient(90deg, #1db954, #1a73e8); /* Gradient text */
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #1db954, #1a73e8);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Make gradient text visible */
+  -webkit-text-fill-color: transparent;
 }
 
 .brandInfo p {
-  font-size: 1.3rem; /* Larger for readability */
-  font-weight: 350; /* Light weight for contrast */
-  line-height: 1.6; /* Comfortable line spacing */
-  letter-spacing: 0.6px; /* Slightly wider for elegance */
+  font-size: 1.3rem;
+  font-weight: 350;
+  line-height: 1.6;
+  letter-spacing: 0.6px;
   text-align: left;
-  color: #555555; /* Neutral gray tone */
+  color: #555555;
 }
 
 .brandInfo p:hover {
-  color: #1db954; /* Subtle hover effect on text */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: #1db954;
+  transition: color 0.3s ease;
 }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .brandSection {
-    flex-direction: column; /* Stack content on smaller screens */
+    flex-direction: column;
     padding: 20px;
   }
 
   .brandLogos {
-    max-width: 100%; /* Full width for small screens */
+    max-width: 100%;
     padding: 10px;
   }
-  .brandLogos img{
+  
+  .brandLogos img {
     margin-left: auto;
     margin-right: auto;
   }
 
   .brandInfo {
-    text-align: center; /* Center-align text for small screens */
-    margin-right: 0; /* Remove margin for better spacing */
+    text-align: center;
+    margin-right: 0;
   }
 
   .brandInfo h2 {
-    font-size: 2rem; /* Adjust headline size for smaller devices */
+    font-size: 2rem;
   }
 
   .brandInfo p {
-    font-size: 1rem; /* Adjust body text size for smaller screens */
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   .brandSection {
-    flex-direction: column; /* Stack content for mobile */
+    flex-direction: column;
     padding: 20px;
     gap: 10px;
   }
 
   .brandLogos {
-    max-width: 100%; /* Ensure logo container takes full width */
+    max-width: 100%;
     padding: 0;
   }
-  .brandLogos img{
+
+  .brandLogos img {
     margin-left: auto;
     margin-right: auto;
   }
 
-
   .brandInfo {
-    max-width: 100%; /* Ensure info container takes full width */
+    max-width: 100%;
     padding: 20px;
-    text-align: center; /* Center-align content */
-    margin-right: 0; /* No margin on mobile */
+    text-align: center;
+    margin-right: 0;
   }
 
   .brandInfo h2 {
-    font-size: 1.5rem; /* Smaller headline for mobile */
+    font-size: 1.5rem;
   }
 
   .brandInfo p {
-    font-size: 1rem; /* Smaller text for better readability */
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .brandSection {
-    padding: 15px; /* Reduced padding for mobile */
+    padding: 15px;
     gap: 10px;
   }
-  .brandLogos img{
+
+  .brandLogos img {
     margin-left: auto;
     margin-right: auto;
   }
 
-
   .brandInfo {
-    padding: 15px; /* Reduced padding for mobile */
+    padding: 15px;
   }
 
   .brandInfo h2 {
-    font-size: 1.4rem; /* Smaller font for mobile */
+    font-size: 1.4rem;
   }
 
   .brandInfo p {
-    font-size: 0.9rem; /* Smaller text for mobile */
+    font-size: 0.9rem;
   }
 
   .brandLogos img {
-    max-width: 100%; /* Ensure images take full width */
+    max-width: 100%;
   }
 }
 
-/* Optional: Add subtle animations */
-.brandSection {
-  animation: fadeIn 1s ease-in-out;
-}
-
+/* Fade-in animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -186,4 +190,8 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.brandSection {
+  animation: fadeIn 1s ease-in-out;
 }

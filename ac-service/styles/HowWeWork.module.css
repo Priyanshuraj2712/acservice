@@ -1,40 +1,40 @@
 /* Add this to the top of your CSS file to ensure Poppins is applied globally */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 .container {
-  font-family: 'Poppins', sans-serif; /* Apply Poppins to the entire component */
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  padding: 2rem; /* Increased padding for better spacing */
-  background: #f9f9f9; /* Soft background */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 2rem;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .heading {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #333; /* Darker text color for contrast */
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #333;
   margin-top: 40px;
-  text-transform: uppercase; /* Adds a bold feel */
+  text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
 .subheading {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #666;
   margin-bottom: 2rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.6; /* Improved readability */
+  line-height: 1.6;
 }
 
 .steps {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap: 2rem; /* Increased spacing between steps */
-  flex-wrap: wrap; /* Ensures that steps stack properly on smaller screens */
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .step {
@@ -43,115 +43,113 @@
   text-align: center;
   padding: 1.5rem;
   margin-bottom: 40px;
-  background: #ffffff; /* Step background */
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .step:hover {
-  transform: translateY(-10px); /* Step lifts on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
   height: 80px;
   margin-bottom: 1rem;
-  transition: transform 0.3s ease; /* Smooth animation */
+  transition: transform 0.3s ease;
 }
 
 .step:hover .icon {
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
 }
 
 .title {
-  font-size: 1.4rem;
-  font-weight: 600; /* Medium weight for titles */
-  color: #444; /* Slightly darker title */
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #444;
   margin-bottom: 0.7rem;
 }
 
 .description {
   font-size: 1rem;
-  font-weight: 300; /* Light weight for descriptions */
+  font-weight: 300;
   color: #777;
   line-height: 1.5;
-  padding: 0 0.5rem; /* Added padding for cleaner alignment */
+  padding: 0 0.5rem;
 }
 
-/* Responsive Design for Small Screens */
 @media (max-width: 1024px) {
   .heading {
-    font-size: 2.4rem; /* Slightly smaller heading for medium screens */
+    font-size: 2.2rem;
   }
 
   .subheading {
-    font-size: 1.1rem; /* Adjust subheading size for smaller screens */
+    font-size: 1.1rem;
   }
 
   .steps {
-    flex-wrap: wrap; /* Allow wrapping on medium screens */
-    justify-content: center; /* Center items */
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .step {
-    max-width: 45%; /* Allow steps to take more width on medium screens */
-    margin-bottom: 2rem; /* Increase space between steps */
+    max-width: 45%;
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 1.5rem; /* Reduce padding on smaller screens */
+    padding: 1.5rem;
   }
 
   .heading {
-    font-size: 2rem; /* Adjust heading size */
+    font-size: 1.9rem;
   }
 
   .subheading {
-    font-size: 1rem; /* Adjust subheading size */
+    font-size: 1rem;
   }
 
   .steps {
-    flex-direction: column; /* Stack steps vertically */
-    gap: 1.5rem; /* Add space between stacked steps */
-    justify-content: center; /* Center content */
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
   }
 
   .step {
-    max-width: 90%; /* Full width for small screens */
-    margin-bottom: 1.5rem; /* More space between steps */
+    max-width: 90%;
+    margin-bottom: 1.5rem;
   }
 
   .icon {
-    height: 60px; /* Reduce icon size for mobile */
+    height: 60px;
   }
 
   .title {
-    font-size: 1.2rem; /* Smaller title size */
+    font-size: 1.1rem;
   }
 
   .description {
-    font-size: 0.9rem; /* Adjust description text for smaller screens */
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .heading {
-    font-size: 1.8rem; /* Even smaller heading for very small screens */
+    font-size: 1.7rem;
   }
 
   .subheading {
-    font-size: 0.9rem; /* Smaller subheading for tiny screens */
+    font-size: 0.9rem;
   }
 
   .step {
-    max-width: 100%; /* Full width for very small screens */
+    max-width: 100%;
   }
 }
 
-/* Add subtle animation */
 @keyframes fadeIn {
   from {
     opacity: 0;

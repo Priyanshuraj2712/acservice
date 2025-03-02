@@ -37,7 +37,6 @@
 
 .textSection {
     flex: 1;
-    /* text-align: justify; */
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
     margin-top: 20px;
@@ -47,21 +46,22 @@
 }
 
 .textSection h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     color: #333;
     margin-bottom: 20px;
     text-transform: capitalize;
 }
 
 .textSection p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
-    word-spacing: 2px; /* Corrected gap between words */
+    word-spacing: 2px;
+    font-weight: 300;
 }
 
 .textSection p:last-of-type {
@@ -78,9 +78,9 @@
     background-color: #F4A21D;
     color: #fff;
     padding: 12px 24px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -100,9 +100,9 @@
     padding: 12px 20px;
     border-radius: 25px;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -125,31 +125,10 @@
         padding: 20px;
         gap: 30px;
         margin-top: 65px;
-        background: none; /* Removed gradient */
     }
-
-    .imageSection {
-        width: 100%;
-        margin-top: 55px;
-        text-align: center;
-    }
-
-    .fullImage {
-        max-width: 100%;
-        height: auto;
-        box-shadow: none; /* Removed hover effects */
-        filter: brightness(100%);
-        transition: none;
-    }
-
-    .fullImage:hover {
-        transform: none;
-        box-shadow: none;
-    }
-
     .textSection {
         text-align: justify;
-        padding: 20px;
+        padding: 30px;
         width: 100%;
     }
 }
@@ -161,33 +140,13 @@
         padding: 10px;
         margin-top: 80px;
         gap: 20px;
-        background: none; /* Removed gradient */
     }
-
-    .imageSection {
-        width: 100%;
-        text-align: center;
+    .textSection h2 {
+        font-size: 2rem;
     }
-
-    .fullImage {
-        max-width: 90%;
-        height: auto;
-        box-shadow: none; /* Removed hover effects */
-        filter: brightness(100%);
-        transition: none;
+    .textSection p {
+        font-size: 1rem;
     }
-
-    .fullImage:hover {
-        transform: none;
-        box-shadow: none;
-    }
-
-    .textSection {
-        text-align: justify;
-        padding: 20px;
-        width: 90%;
-    }
-
     .buttonContainer {
         flex-direction: column;
     }
@@ -195,67 +154,18 @@
 
 @media (max-width: 480px) {
     .container {
-        margin-top:80px;
+        margin-top: 80px;
         padding: 5px;
         gap: 15px;
-        background: none; /* Removed gradient */
     }
-
     .textSection h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
-
     .textSection p {
-        font-size: 1rem;
-        word-spacing: 2px; /* Ensured consistent spacing */
+        font-size: 0.9rem;
     }
-
     .button, .whatsappButton {
         padding: 8px 18px;
         font-size: 0.9rem;
-    }
-
-    .fullImage {
-        max-width: 100%;
-        height: auto;
-        box-shadow: none; /* Removed hover effects */
-        filter: brightness(100%);
-        transition: none;
-    }
-
-    .fullImage:hover {
-        transform: none;
-        box-shadow: none;
-    }
-}
-@media (max-width: 768px) {
-    .imageSection {
-        width: 100%;
-        display: flex;
-        justify-content: center; /* Centering the image */
-        align-items: center;
-    }
-
-    .fullImage {
-        max-width: 90%;
-        height: auto;
-        display: block; /* Ensures proper alignment */
-        margin: 0 auto; /* Centers the image */
-    }
-}
-
-@media (max-width: 480px) {
-    .imageSection {
-        width: 100%;
-        display: flex;
-        justify-content: center; /* Align to the center */
-        align-items: center;
-    }
-
-    .fullImage {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto; /* Ensures it's properly centered */
     }
 }
