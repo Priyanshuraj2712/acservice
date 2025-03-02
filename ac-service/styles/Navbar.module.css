@@ -50,9 +50,8 @@
 }
 
 .navbarBrand img:hover {
-  transform: scale(1.05); /* Slightly reduced hover effect */
+  transform: scale(1.05);
 }
-
 
 /* Navbar Links */
 .navbarLinks {
@@ -122,9 +121,10 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .topBar{
-    height:3rem;
+  .topBar {
+    height: 3rem;
   }
+
   .navbar {
     padding: 1rem;
     justify-content: center;
@@ -147,7 +147,7 @@
   }
 }
 
-/* Mobile (No Toggle) */
+/* Mobile Navigation */
 @media (max-width: 768px) {
   /* Show Hamburger Menu */
   .hamburger {
@@ -162,20 +162,18 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 3.5rem;
+    top: 100%; /* Ensures it starts exactly below navbar */
     left: 0;
     width: 100%;
     background-color: white;
-    border-top: 1px solid #ddd;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
-    z-index: 1000;
+    z-index: 999; /* Higher than logo but below navbar */
   }
 
   .showMenu {
-    display: flex ;
+    display: flex;
     flex-direction: column;
-    height: auto;
   }
 
   .navbarLink {
@@ -216,7 +214,7 @@
     padding: 0;
     max-height: 350px;
     background-color: white;
-    overflow-y:auto;
+    overflow-y: auto;
   }
 
   /* Show dropdown when active */
@@ -238,28 +236,12 @@
   .dropdownItem:hover {
     background-color: #f9a825;
   }
-}@media (min-width: 769px) {
+}
+
+/* Hide Hamburger Menu on Desktop */
+@media (min-width: 769px) {
   .hamburger {
     display: none;
-  }
-}
-@media (max-width: 768px) {
-  .navbarLinks {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Now starts right after the navbar */
-    left: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
-    z-index: 999; /* Higher than logo but below navbar */
-  }
-
-  .showMenu {
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -277,7 +259,7 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 3.5rem;
+    top: 100%; /* Ensures it starts right after navbar */
     left: 0;
     width: 100%;
     background-color: white;
@@ -288,7 +270,7 @@
   }
 
   .showMenu {
-    display: flex ;
+    display: flex;
     flex-direction: column;
     height: auto;
   }
@@ -323,34 +305,8 @@
     background-color: white;
   }
 
-  /* Show dropdown options stacked vertically */
-  .servicesDropdown .dropdownMenu {
-    position: relative;
-    display: none;
-    width: 100%;
-    padding: 0;
-    max-height: 350px;
-    background-color: white;
-    overflow-y:auto;
-  }
-
   /* Show dropdown when active */
   .servicesDropdown.active .dropdownMenu {
     display: block;
-  }
-
-  .dropdownItem {
-    padding: 1rem;
-    text-align: center;
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
-    color: black;
-    text-decoration: none;
-    transition: background 0.3s ease-in-out;
-  }
-
-  .dropdownItem:hover {
-    background-color: #f9a825;
   }
 }
