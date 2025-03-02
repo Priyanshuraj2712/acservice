@@ -66,10 +66,6 @@ const About = () => {
       {/* Satisfaction Guarantee Section */}
       <SatisfactionGuarantee />
 
-      {/* Fix: Contact Us Link */}
-      <div style={{ textAlign: "center", margin: "20px 0" }}>
-        <p>Need AC Service? <Link href="/contact-us"><a style={{ color: "#007bff", textDecoration: "underline" }}>Contact Us</a></Link> today!</p>
-      </div>
 
       <Footer />
       <WhatsAppToggle />
