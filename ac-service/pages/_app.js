@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
       window.dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("config", "G-4FTXG546D7"); // Replace with your Measurement ID
+    gtag("config", "G-DVKLMJ80RV"); // Replace with your Measurement ID
   }, []);
 
   return (
@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
       {/* Google Analytics Script */}
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-4FTXG546D7`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-DVKLMJ80RV`}
       />
       <Script
         id="google-analytics"
@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){window.dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-4FTXG546D7', {
+            gtag('config', 'G-DVKLMJ80RV', {
               page_path: window.location.pathname,
             });
           `,
