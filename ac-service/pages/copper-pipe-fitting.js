@@ -4,26 +4,30 @@ import Footer from "@/Components/Footer";
 import ACServiceComponent from "@/Components/FittingComponent";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
-const About = () => {
+const CopperPipeFitting = () => {
   return (
     <>
       <Head>
-        <title>Ductable AC Repair & Maintenance Services in Gurgaon</title>
-        <meta name="description" content="Get expert Ductable AC repair, maintenance, and duct cleaning services in Gurgaon. Improve air quality, efficiency, and performance with our certified technicians." />
-        <meta name="keywords" content="Ductable AC repair Gurgaon, Duct cleaning Gurgaon, AC servicing, HVAC maintenance, Energy-efficient AC solutions" />
-        <meta name="author" content="AC Service Gurgaon" />
+        <title>Copper Pipe Fitting Services in Gurgaon | Expert Installation & Repair</title>
+        <meta 
+          name="description" 
+          content="Professional copper pipe fitting services in Gurgaon. Expert installation, repair, and maintenance for residential, commercial, and industrial pipelines." 
+        />
+        <meta 
+          name="keywords" 
+          content="Copper pipe fitting Gurgaon, AC copper pipe installation, pipeline fitting services, industrial pipeline assembly, copper pipeline repair" 
+        />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Ductable AC Repair & Maintenance Services in Gurgaon" />
-        <meta property="og:description" content="Professional Ductable AC servicing and repair solutions in Gurgaon. Contact us today for expert duct cleaning and maintenance!" />
-        <meta property="og:url" content="https://acservicegurgaon.com/ductable" />
-        <meta property="og:type" content="website" />
+        <meta name="author" content="AC Services Gurgaon" />
+        <link rel="canonical" href="https://acservicegurgaon.com/copper-pipe-fitting" />
       </Head>
+
       <Navbar />
       <ACServiceComponent />
       <Footer />
-      <WhatsAppToggle/>
+      <WhatsAppToggle />
     </>
   );
 };
 
-export default About;
+export default CopperPipeFitting;
