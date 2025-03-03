@@ -8,7 +8,7 @@ const blogPosts = [
     date: "May 2, 2024",
     categories: ["Cassette AC", "Ducting AC", "Split AC", "Uncategorized", "Window AC"],
     summary: "A Split Air Conditioner system has become a necessity rather than a luxury...",
-    link: "/best-split-ac-installation",
+    link: "/split-ac-installation",
     image: "/Best_Ac.png",
   },
   {
@@ -16,7 +16,7 @@ const blogPosts = [
     date: "Jan 25, 2024",
     categories: ["Split AC"],
     summary: "ACServiceGurgaon.com stands out as the preferred choice for those seeking reliable AC rental...",
-    link: "/split-ac-on-rent",
+    link: "/split-ac-on-rent-in-gurgaon",
     image: "/rent_split.jpeg",
   },
   {
@@ -24,7 +24,7 @@ const blogPosts = [
     date: "Jan 24, 2024",
     categories: ["Window AC"],
     summary: "Welcome to ACServiceGurgaon.com, your one-stop destination for hassle-free Window AC rentals...",
-    link: "/window-ac-on-rent",
+    link: "/window-ac-on-rent-gurgaon",
     image: "/rent_window.jpeg",
   },
 ];
@@ -35,7 +35,7 @@ const additionalBlogs = [
     date: "May 8, 2022",
     categories: ["Cassette AC", "Ducting AC", "Split AC", "Window AC"],
     summary: "Is Your Split AC Functioning? Call us for Your Split AC repair anywhere in Gurgaon +91-9810954362...",
-    link: "/split-ac-service-repair",
+    link: "/split-ac-service-repair-sector21",
     image: "/Split-AC.jpg",
   },
   {
@@ -43,7 +43,7 @@ const additionalBlogs = [
     date: "Feb 20, 2021",
     categories: ["Uncategorized"],
     summary: "We repair Commercial AC units for all makes and models in Sector 23 Gurgaon. Contact us at +919810954362...",
-    link: "/commercial-residential-ac-repair",
+    link: "/commercial-and-residential-ac-repair-services-in-sector-23-gurgaon",
     image: "/Commercial-AC.jpg",
   },
   {
@@ -51,7 +51,7 @@ const additionalBlogs = [
     date: "Feb 20, 2021",
     categories: ["Uncategorized"],
     summary: "As the leading AC Repair and Services in Gurgaon Sector 22, we provide AC Repair, AC Installation, AC Servicing...",
-    link: "/ac-repair-sector-22",
+    link: "/ac-repair-service-in-sector-22-gurgaon",
     image: "/AC-Gas.jpg",
   },
 ];

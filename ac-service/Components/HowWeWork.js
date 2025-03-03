@@ -6,22 +6,22 @@ const HowWeWork = () => {
     {
       title: "Call Receive",
       description: "Fill the easy form so we can contact you, or receive direct call.",
-      icon: "icon1.png", // Replace with actual image path
+      icon: "/icon1.png", // Replace with actual image path
     },
     {
       title: "Feed Entry",
       description: "Our top notch customer service reps with schedule the next available appliance service appointment for you.",
-      icon: "icon2.png", // Replace with actual image path
+      icon: "/icon2.png", // Replace with actual image path
     },
     {
       title: "In-house Tech",
       description: "Our strategy is to arrive on time and then diagnose, repair, and leave our clients with a smile.",
-      icon: "icon3.png", // Replace with actual image path
+      icon: "/icon3.png", // Replace with actual image path
     },
     {
       title: "Happy Call",
       description: "We are calls made to our customers right after you’ve been there to do service or install work.",
-      icon: "icon4.png", // Replace with actual image path
+      icon: "/icon4.png", // Replace with actual image path
     },
   ];
 

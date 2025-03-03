@@ -7,8 +7,8 @@ import Footer from "@/Components/Footer";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
 const windowACSubcategories = [
-  { name: "Split AC On Rent", image: "rent_split.jpg", link: "/split-ac-on-rent" },
-  { name: "Window AC On Rent", image: "rent_window.jpg", link: "/window-ac-on-rent" },
+  { name: "Split AC On Rent", image: "/rent_split.jpg", link: "/split-ac-on-rent" },
+  { name: "Window AC On Rent", image: "/rent_window.jpg", link: "/window-ac-on-rent" },
 ];
 
 const SplitACPage = () => {
