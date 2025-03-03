@@ -1,33 +1,29 @@
 import Head from "next/head";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
-import ACServiceComponent from "@/Components/Tower";
+import ACServiceComponent from "@/Components/AHU";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
-const TowerACServices = () => {
+const About = () => {
   return (
     <>
       <Head>
-        <title>Tower AC Repair & Maintenance Services in Gurgaon | Expert Cooling Solutions</title>
-        <meta 
-          name="description" 
-          content="Get professional Tower AC repair, servicing, and maintenance in Gurgaon. Expert technicians ensuring efficient cooling and long-lasting performance." 
-        />
-        <meta 
-          name="keywords" 
-          content="Tower AC service Gurgaon, Tower AC repair, Tower AC installation, HVAC maintenance, Tower AC troubleshooting, AC gas refilling" 
-        />
+        <title>AHU Air Conditioning System Maintenance Services in Gurgaon</title>
+        <meta name="description" content="Expert AHU air conditioning system maintenance services in Gurgaon. We provide routine inspections, filter cleaning, coil servicing, and more for optimal HVAC performance." />
+        <meta name="keywords" content="AHU maintenance Gurgaon, air handling unit service, HVAC system maintenance, AHU cleaning, commercial AHU repair, industrial HVAC services" />
+        <meta name="author" content="AC Service Gurgaon" />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="AC Services Gurgaon" />
-        <link rel="canonical" href="https://acservicegurgaon.com/tower-ac-services-gurgaon" />
+        <meta property="og:title" content="AHU Air Conditioning System Maintenance Services in Gurgaon" />
+        <meta property="og:description" content="Professional AHU maintenance services for offices, industries, hospitals, and residential complexes. Ensure clean air, energy efficiency, and system longevity." />
+        <meta property="og:url" content="https://acservicegurgaon.com/ahu" />
+        <meta property="og:type" content="website" />
       </Head>
-
       <Navbar />
       <ACServiceComponent />
       <Footer />
-      <WhatsAppToggle />
+      <WhatsAppToggle/>
     </>
   );
 };
 
-export default TowerACServices;
+export default About;
