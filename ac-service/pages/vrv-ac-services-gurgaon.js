@@ -4,20 +4,30 @@ import VRV_VRF_Services from "@/Components/VRV";
 import Footer from "@/Components/Footer";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
-export default function Contact() {
+const VRVACServices = () => {
   return (
     <>
       <Head>
-        <title>VRV/VRF AC Services in Gurgaon | Installation, Repair, and Maintenance</title>
-        <meta name="description" content="AC Service Gurgaon offers expert VRV and VRF air conditioner installation, repair, maintenance, and gas refilling services. Our certified technicians ensure energy-efficient and reliable solutions for homes and businesses in Gurgaon." />
-        <meta name="keywords" content="VRV AC service, VRF AC service, VRV AC installation, VRF AC repair, VRV maintenance, VRF gas refilling, AC service in Gurgaon, HVAC solutions, Daikin, Mitsubishi, Toshiba" />
-        <meta name="author" content="AC Service Gurgaon" />
+        <title>VRV & VRF AC Repair & Maintenance Services in Gurgaon | Expert HVAC Solutions</title>
+        <meta 
+          name="description" 
+          content="Professional VRV & VRF AC installation, repair, gas refilling, and maintenance services in Gurgaon. Certified technicians ensuring efficiency and reliability." 
+        />
+        <meta 
+          name="keywords" 
+          content="VRV AC service Gurgaon, VRF AC repair, VRV installation, HVAC maintenance, VRV gas refilling, VRF troubleshooting" 
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="AC Services Gurgaon" />
+        <link rel="canonical" href="https://acservicegurgaon.com/vrv-ac-services-gurgaon" />
       </Head>
 
-      <Navbar></Navbar>
-      <VRV_VRF_Services></VRV_VRF_Services>
-      <Footer></Footer>
-      <WhatsAppToggle/>
+      <Navbar />
+      <VRV_VRF_Services />
+      <Footer />
+      <WhatsAppToggle />
     </>
   );
-}
+};
+
+export default VRVACServices;

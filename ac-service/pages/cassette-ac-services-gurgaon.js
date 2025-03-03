@@ -8,25 +8,20 @@ const CassetteACServices = () => {
   return (
     <>
       <Head>
-        <title>Cassette AC Maintenance & Repair Services in Gurgaon</title>
+        <title>Cassette AC Repair & Maintenance Services in Gurgaon | Expert Technicians</title>
         <meta 
           name="description" 
-          content="Expert Cassette AC maintenance and repair services in Gurgaon. Fast and reliable solutions by certified technicians with affordable pricing. Book now!" 
+          content="Professional Cassette AC repair, installation, and maintenance services in Gurgaon. Reliable service, expert technicians, and affordable pricing. Book now!" 
         />
         <meta 
           name="keywords" 
-          content="Cassette AC repair Gurgaon, Cassette AC maintenance, commercial AC services, HVAC repair, Cassette AC installation" 
+          content="Cassette AC service Gurgaon, Cassette AC repair, Cassette AC installation, AC maintenance, commercial AC repair" 
         />
-        <meta name="author" content="AC Service Gurgaon" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Cassette AC Maintenance & Repair Services in Gurgaon" />
-        <meta 
-          property="og:description" 
-          content="Top-quality Cassette AC repair and maintenance services in Gurgaon. Get expert solutions, genuine parts, and hassle-free service today!" 
-        />
-        <meta property="og:url" content="https://acservicegurgaon.com/cassette-ac-maintenance" />
-        <meta property="og:type" content="website" />
+        <meta name="author" content="AC Services Gurgaon" />
+        <link rel="canonical" href="https://acservicegurgaon.com/cassette-ac-services-gurgaon" />
       </Head>
+
       <Navbar />
       <ACServiceComponent />
       <Footer />

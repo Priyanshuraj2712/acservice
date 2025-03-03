@@ -4,22 +4,30 @@ import Footer from "@/Components/Footer";
 import ACServiceComponent from "@/Components/Tower";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
-const About = () => {
+const TowerACServices = () => {
   return (
     <>
       <Head>
-        <title>Tower AC Repair & Maintenance in Gurgaon | AC Service Gurgaon</title>
-        <meta name="description" content="AC Service Gurgaon offers expert Tower AC repair, servicing, and maintenance in Gurgaon. Our certified technicians provide reliable solutions for cooling issues, energy efficiency, and more." />
-        <meta name="keywords" content="Tower AC service, Tower AC repair, Tower AC maintenance, AC repair in Gurgaon, AC servicing, air conditioner maintenance, energy-efficient AC solutions" />
-        <meta name="author" content="AC Service Gurgaon" />
+        <title>Tower AC Repair & Maintenance Services in Gurgaon | Expert Cooling Solutions</title>
+        <meta 
+          name="description" 
+          content="Get professional Tower AC repair, servicing, and maintenance in Gurgaon. Expert technicians ensuring efficient cooling and long-lasting performance." 
+        />
+        <meta 
+          name="keywords" 
+          content="Tower AC service Gurgaon, Tower AC repair, Tower AC installation, HVAC maintenance, Tower AC troubleshooting, AC gas refilling" 
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="AC Services Gurgaon" />
+        <link rel="canonical" href="https://acservicegurgaon.com/tower-ac-services-gurgaon" />
       </Head>
 
-      <Navbar></Navbar>
-      <ACServiceComponent></ACServiceComponent>
-      <Footer></Footer>
-      <WhatsAppToggle/>
+      <Navbar />
+      <ACServiceComponent />
+      <Footer />
+      <WhatsAppToggle />
     </>
   );
 };
 
-export default About;
+export default TowerACServices;

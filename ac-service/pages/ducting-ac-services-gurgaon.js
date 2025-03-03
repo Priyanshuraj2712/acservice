@@ -4,26 +4,30 @@ import Footer from "@/Components/Footer";
 import ACServiceComponent from "@/Components/Ductable";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
-const About = () => {
+const DuctableACServices = () => {
   return (
     <>
       <Head>
-        <title>Ductable AC Repair & Maintenance Services in Gurgaon</title>
-        <meta name="description" content="Get expert Ductable AC repair, maintenance, and duct cleaning services in Gurgaon. Improve air quality, efficiency, and performance with our certified technicians." />
-        <meta name="keywords" content="Ductable AC repair Gurgaon, Duct cleaning Gurgaon, AC servicing, HVAC maintenance, Energy-efficient AC solutions" />
-        <meta name="author" content="AC Service Gurgaon" />
+        <title>Ductable AC Repair & Maintenance Services in Gurgaon | Expert Technicians</title>
+        <meta 
+          name="description" 
+          content="Get professional Ductable AC repair, servicing, and installation in Gurgaon. Improve air quality with expert duct cleaning and maintenance. Book today!" 
+        />
+        <meta 
+          name="keywords" 
+          content="Ductable AC service Gurgaon, Ductable AC repair, duct cleaning, AC maintenance, energy-efficient AC, HVAC repair" 
+        />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Ductable AC Repair & Maintenance Services in Gurgaon" />
-        <meta property="og:description" content="Professional Ductable AC servicing and repair solutions in Gurgaon. Contact us today for expert duct cleaning and maintenance!" />
-        <meta property="og:url" content="https://acservicegurgaon.com/ductable" />
-        <meta property="og:type" content="website" />
+        <meta name="author" content="AC Services Gurgaon" />
+        <link rel="canonical" href="https://acservicegurgaon.com/ducting-ac-services-gurgaon" />
       </Head>
+
       <Navbar />
       <ACServiceComponent />
       <Footer />
-      <WhatsAppToggle/>
+      <WhatsAppToggle />
     </>
   );
 };
 
-export default About;
+export default DuctableACServices;

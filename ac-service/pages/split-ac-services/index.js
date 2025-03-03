@@ -1,11 +1,12 @@
 import React from "react";
+import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Window.module.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import WhatsAppToggle from "@/Components/WhatsApp";
 
-const windowACSubcategories = [
+const splitACSubcategories = [
   { name: "Split AC Service", image: "SplitService.jpg", link: "/split-ac-services/service" },
   { name: "Split AC Installation/Uninstallation", image: "SplitInstall.jpg", link: "/split-ac-services/install" },
   { name: "Split AC Gas Refilling", image: "SplitGas.jpg", link: "/split-ac-services/gas" },
@@ -15,15 +16,23 @@ const windowACSubcategories = [
 const SplitACPage = () => {
   return (
     <div>
+      <Head>
+        <title>Best Split AC Services in Gurgaon | Repair & Installation</title>
+        <meta name="description" content="Expert Split AC repair, service, and installation in Gurgaon. Get fast and reliable AC solutions from our professional technicians." />
+        <meta name="keywords" content="Split AC service Gurgaon, Split AC repair, AC installation Gurgaon, AC maintenance Gurgaon" />
+        <meta property="og:title" content="Best Split AC Services in Gurgaon | Repair & Installation" />
+        <meta property="og:description" content="Need Split AC repair or installation in Gurgaon? Contact our expert technicians for professional and affordable AC services today!" />
+        <meta property="og:url" content="https://acservicegurgaon.com/split-ac-services" />
+      </Head>
+
       <Navbar />
       
       <div className={styles.header}>
         <h2>Choose Our Top-Rated, Reliable Gurgaon Split AC Repairing Services!</h2>
-        
       </div>
 
       <div className={styles.cardContainer}>
-        {windowACSubcategories.map((sub, index) => (
+        {splitACSubcategories.map((sub, index) => (
           <Link key={index} href={sub.link} passHref>
             <button className={styles.card}>
               <img src={sub.image} alt={`${sub.name} Illustration`} className={styles.cardImage} />
@@ -36,41 +45,27 @@ const SplitACPage = () => {
       </div>
 
       <div className={styles.additionalInfo}>
-      <h3>Why Choose Us?</h3>
-      <p>
-          Repair, Service & Maintenance - All brand air conditioners repairing, installation, and servicing
-          by AC Expert Technicians all over Gurgaon. As a Gurgaon resident, we know that the weather can be
-          extremely hot even from the end of March till October. When the brutal summer heat arrives, you and
-          your family find relief in a cool, split air-conditioned home. And when those winter months bring on
-          the cold weather, you need a reliable heating system to keep your home warm and toasty. But what happens
-          if your home’s heating or cooling system fails when you need it most?
+        <h3>Why Choose Us?</h3>
+        <p>
+          Repair, Service & Maintenance - We provide expert repair, installation, and servicing for all Split AC brands across Gurgaon.
+          Our experienced technicians ensure your AC operates efficiently, keeping you comfortable throughout the seasons.
         </p>
         <p>
-          When you need air conditioning services in Gurgaon and the surrounding North areas, there’s only one
-          Gurugram split AC services provider you need to know: AC Services Gurgaon. For over 10 years, customers
-          in the Gurgaon or touching Delhi Faridabad area have turned to us because we have a track record of
-          delivering quality products and superior service at an affordable price. We are a full-scale heating,
-          split air conditioning, and repairing provider with expertise in installation, maintenance, and repair.
+          With over 10 years of experience, we have built a reputation for delivering high-quality AC services at competitive prices.
+          Whether you need emergency AC repairs or routine maintenance, our team is always ready to assist you.
         </p>
         <p>
-          We take pride in the quality workmanship we consistently deliver in all of our home and commercial services.
-          Whether you need air conditioning repair in a retail outlet or a new furnace installed in a custom-built home,
-          our technicians are experts. Our technicians possess the expertise to repair and service all brands of HVAC
-          equipment in use today.
+          Our professional team specializes in diagnosing and fixing all AC-related issues, from gas refilling to full-scale installations.
+          We cater to both residential and commercial clients, ensuring top-notch services tailored to your needs.
         </p>
         <p>
-          At AC Services Gurgaon, we have a strong history of providing reliable solutions for
-          your residential and commercial air conditioning, heating, and petroleum needs. We want to be the first—and
-          last—call you make when hiring a Gurgaon-based company.
-        </p>
-        <p>
-          If you’re looking for Gurgaon split air conditioning and repairing services, you can trust us to get the job
-          done right at a fair price! <Link href="/contact-us" className={styles.linking}>Contact Us</Link> today!
+          Contact us today for expert AC services in Gurgaon! <Link href="/contact-us" className={styles.linking}>Get in Touch</Link> or call us at
+          <a href="tel:+919810954362" className={styles.linking}> +91 9810954362</a>.
         </p>
       </div>
 
       <Footer />
-      <WhatsAppToggle/>
+      <WhatsAppToggle />
     </div>
   );
 };

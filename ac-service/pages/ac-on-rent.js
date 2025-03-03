@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Rent.module.css";
 import Navbar from "@/Components/Navbar";
@@ -13,6 +14,21 @@ const windowACSubcategories = [
 const SplitACPage = () => {
   return (
     <div>
+      <Head>
+        <title>AC on Rent in Gurgaon | Split & Window AC Rental Services</title>
+        <meta 
+          name="description" 
+          content="Affordable AC rental services in Gurgaon. Rent split and window ACs with quick installation, maintenance, and flexible rental plans. Call now for doorstep service!" 
+        />
+        <meta 
+          name="keywords" 
+          content="AC on rent Gurgaon, Split AC rental Gurgaon, Window AC on rent, AC rental services, AC lease Gurgaon, Rent AC online" 
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="AC Service Gurgaon" />
+        <link rel="canonical" href="https://acservicegurgaon.com/ac-on-rent" />
+      </Head>
+
       <Navbar />
       <div className={styles.cardContainer}>
         {windowACSubcategories.map((sub, index) => (
@@ -26,84 +42,54 @@ const SplitACPage = () => {
           </Link>
         ))}
       </div>
-      
+
       <div className={styles.additionalInfo}>
         <h2>
-          Why Choose <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a> for AC Rental – Window & Split ACs
+          Why Choose <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a> for AC Rental?
         </h2>
         <p>
-          Are you looking to rent an AC in Gurgaon? Whether it’s a window AC or a split AC, renting is a smart and cost-effective option, especially if you’re living temporarily in the city or don’t want to invest in a new unit. When it comes to hassle-free AC rentals, 
-          <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a> is your go-to solution. Here’s why:
+          Looking to rent an AC in Gurgaon? Whether you need a window or split AC, renting is a cost-effective solution. At 
+          <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}> acservicegurgaon.com</a>, we offer the best AC rental services.
         </p>
 
         <h3>1. Wide Range of ACs for Rent</h3>
-        <p>
-          <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a> offers a variety of air conditioners, including window ACs and split ACs, from top brands. Whether you need an AC for your home, office, or any commercial space, you’ll find the right fit according to your budget and cooling requirements.
-        </p>
+        <p>Choose from a variety of top-brand window and split ACs.</p>
 
         <h3>2. Affordable Rental Plans</h3>
-        <p>
-          Renting an AC should not break the bank! With flexible rental plans, you can choose from short-term and long-term options. The pricing is transparent, with no hidden costs, ensuring affordability for everyone.
-        </p>
+        <p>Flexible pricing with no hidden costs.</p>
 
         <h3>3. Quick & Hassle-Free Installation</h3>
-        <p>
-          Once you rent an AC from <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a>, the team ensures quick delivery and professional installation at your location. Their trained technicians handle the installation process smoothly, ensuring proper cooling and efficiency.
-        </p>
+        <p>Professional technicians ensure seamless setup.</p>
 
         <h3>4. Regular Maintenance & Support</h3>
-        <p>
-          Unlike purchasing an AC where you need to arrange separate servicing, renting from <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a> comes with free or low-cost maintenance. The company provides regular servicing, cleaning, and troubleshooting to ensure your AC works perfectly throughout the rental period.
-        </p>
+        <p>Enjoy free or low-cost maintenance throughout the rental period.</p>
 
         <h3>5. Energy-Efficient & Well-Maintained ACs</h3>
-        <p>
-          All the rental ACs are energy-efficient and well-maintained, ensuring low electricity consumption and high performance. You don’t have to worry about old or faulty units, as each AC is checked before delivery.
-        </p>
+        <p>All rental units are thoroughly checked for efficiency.</p>
 
         <h3>6. No Long-Term Commitment</h3>
-        <p>
-          If you’re in Gurgaon for a short time or only need an AC for a season, renting is the perfect option. <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a> offers flexible rental durations, allowing you to return the AC when you no longer need it without any penalties.
-        </p>
+        <p>Flexible rental durations to suit your needs.</p>
 
-        <h3>7. Easy Booking & Prompt Customer Support</h3>
-        <p>
-          Booking an AC rental is simple with <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a>. You can rent an AC online or via a phone call, and their customer support team is always available to assist you with queries, installations, and servicing.
-        </p>
+        <h3>7. Easy Booking & Customer Support</h3>
+        <p>Book online or via phone with 24/7 customer assistance.</p>
 
-        <h3>How to Rent an AC from <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a>?</h3>
-        <p>Follow these simple steps to rent an AC easily:</p>
-
+        <h3>How to Rent an AC?</h3>
         <ul className={styles.styledList}>
-
-          <li>Visit acservicegurgaon.com and browse through the available AC options.</li>
-          <li>Choose between a window AC or a split AC based on your cooling needs.</li>
-          <li>Select your preferred rental duration and budget-friendly plan.</li>
-          <li>Place your order online or call their support team.</li>
-          <li>Get doorstep delivery, installation, and maintenance services without any hassle!</li>
+          <li>Visit acservicegurgaon.com and choose an AC.</li>
+          <li>Select rental duration and budget-friendly plan.</li>
+          <li>Place your order online or call our support team.</li>
+          <li>Get doorstep delivery, installation, and maintenance.</li>
         </ul>
 
-        <h3>Final Thoughts</h3>
-        <p>
-          Renting an AC in Gurgaon has never been easier! With <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a>, you get reliable, affordable, and energy-efficient ACs without worrying about maintenance or hefty upfront costs. Whether you need a window AC or a split AC, they provide the best rental services with complete customer satisfaction.
-        </p>
-        <p>
-          So, why wait? Visit <a href="https://acservicegurgaon.com" rel="noopener noreferrer" className={styles.linking}>acservicegurgaon.com</a> today and book your AC rental now!
-        </p>
+        <h3>Book Your AC Rental Today!</h3>
+        <p>Enjoy cool summers with our hassle-free AC rental services.</p>
       </div>
 
-      <div className={styles.additionalInfo}>
-        <p className={styles.tagline}>Book Your AC Rental Today! Enjoy cool and comfortable summers with our affordable AC rental services.<Link href="/contact-us" className={styles.linking}>
-      Contact Now
-    </Link>  AC Service Gurgaon now to get your AC installed hassle-free!</p>
-        <div className={styles.contactSection}>
-          <p className={styles.tagline}>100% convenience with 0 hassle. That’s how we keep you free.</p>
-          <div className={styles.buttonContainer}>
-          <Link href="/contact-us" className={styles.contactButton}>
-      Contact Now
-    </Link>
-            <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
-          </div>
+      <div className={styles.contactSection}>
+        <p className={styles.tagline}>100% convenience with 0 hassle.</p>
+        <div className={styles.buttonContainer}>
+          <Link href="/contact-us" className={styles.contactButton}>Contact Now</Link>
+          <a href="tel:+917011132581" className={styles.callButton}>Call Now</a>
         </div>
       </div>
 

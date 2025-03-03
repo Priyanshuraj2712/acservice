@@ -17,9 +17,17 @@ const WindowACPage = () => {
   return (
     <div>
       <Head>
-        <title>Window AC Services in Gurgaon | Expert Repair & Installation</title>
-        <meta name="description" content="Top-rated Window AC repair, service, and installation in Gurgaon. Call now for expert technicians and fast service!" />
-        <meta name="keywords" content="Window AC service Gurgaon, Window AC repair, AC installation Gurgaon" />
+        <title>Best Window AC Services in Gurgaon | Repair & Installation</title>
+        <meta name="description" content="Get expert Window AC repair, servicing, and installation in Gurgaon. Trusted technicians, quick service, and affordable pricing. Call now!" />
+        <meta name="keywords" content="Window AC service Gurgaon, AC repair Gurgaon, Window AC installation, best AC service Gurgaon" />
+        <meta property="og:title" content="Best Window AC Services in Gurgaon | Repair & Installation" />
+        <meta property="og:description" content="Need Window AC service in Gurgaon? We provide fast and reliable AC repair, installation, and gas refilling. Contact us today!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acservicegurgaon.com/window-ac-services-gurgaon" />
+        <meta property="og:image" content="https://acservicegurgaon.com/images/window-ac-service.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best Window AC Services in Gurgaon | Repair & Installation" />
+        <meta name="twitter:description" content="Professional Window AC service in Gurgaon. Book expert repair and installation services today!" />
       </Head>
 
       <Navbar />
